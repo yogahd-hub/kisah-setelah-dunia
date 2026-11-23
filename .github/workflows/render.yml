@@ -2,7 +2,7 @@ name: Render video
 
 on:
   push:
-    paths: ["scripts/**.json"]
+    paths: ["scripts/**.json", "suara/**"]
   workflow_dispatch:
     inputs:
       scripts:
@@ -32,6 +32,11 @@ jobs:
             LIST="${{ github.event.inputs.scripts }}"
           elif [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
             LIST=$(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.sha }} -- 'scripts/*.json' | tr '\n' ' ')
+            # suara manual baru di suara/<nama>.* -> render naskah scripts/<nama>.json
+            for a in $(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.sha }} -- 'suara/*'); do
+              n=$(basename "$a"); n="${n%.*}"
+              if [ -f "scripts/$n.json" ] && ! echo " $LIST " | grep -q " scripts/$n.json "; then LIST="$LIST scripts/$n.json"; fi
+            done
           else
             LIST=""
             for f in scripts/*.json; do

@@ -60,16 +60,30 @@ def _head_ok(S, work):
     print(f"[cek-awal] terdengar: {' '.join(heard[:10])} -> {'OK' if ok else 'ADA UCAPAN TAMBAHAN'}", flush=True)
     return ok
 
-def make_vo(S, work):
+def manual_vo(name):
+    """Suara buatan sendiri (mis. unduhan Google AI Studio): suara/<nama-naskah>.wav/.mp3/.m4a/.ogg"""
+    for ext in ("wav", "mp3", "m4a", "ogg", "aac"):
+        p = f"suara/{name}.{ext}"
+        if os.path.exists(p): return p
+    return None
+
+def make_vo(S, work, name=None):
     os.makedirs(f"{work}/vo", exist_ok=True)
     raw = f"{work}/vo/full_raw.wav"
-    for attempt in range(3):
+    man = manual_vo(name) if name else None
+    if man:
+        print(f"[vo] pakai suara manual: {man} (tidak memanggil TTS)", flush=True)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", man, "-ac", "1", raw], check=True)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-ar", "24000", "-ac", "1", f"{work}/vo/full.wav"], check=True)
+        if not _head_ok(S, work):
+            print("::warning::Awal suara manual tidak diawali kata pertama naskah. Pastikan yang dibacakan sama persis dengan naskah.", flush=True)
+    for attempt in range(0 if man else 3):
         if not os.path.exists(raw): _gen_raw(S, raw)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-ar", "24000", "-ac", "1", f"{work}/vo/full.wav"], check=True)
         if _head_ok(S, work): break
         os.remove(raw)
     else:
-        raise SystemExit("Suara selalu diawali ucapan tambahan setelah 3 kali coba")
+        if not man: raise SystemExit("Suara selalu diawali ucapan tambahan setelah 3 kali coba")
     x, sr = load_wav(f"{work}/vo/full.wav")
     ivs = A.voiced_intervals(x, sr)
     texts = [sc["text"] for sc in S["scenes"]]
@@ -569,7 +583,7 @@ def main():
     os.makedirs(f"{work}/scenes", exist_ok=True); os.makedirs(outdir, exist_ok=True)
     for i, sc in enumerate(S["scenes"]):
         if sc["il"] not in ILS: raise SystemExit(f"scene {i}: ilustrasi '{sc['il']}' tidak ada. Pilihan: {sorted(ILS)}")
-    make_vo(S, work)
+    make_vo(S, work, name)
     if not a.no_check: check_vo(S, work)
     if a.preview:
         sheet = Image.new("RGB", (360 * len(S["scenes"]), 640))
