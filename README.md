@@ -8,6 +8,8 @@ Naskah JSON masuk → video jadi. Voice over pakai Gemini TTS (gratis), render p
 2. Selesai. Workflow ada di `.github/workflows/render.yml`.
 
 ## Membuat video
+Tanpa Claude: salin `TEMPLATE_NASKAH.json` dan isi sendiri, atau pakai prompt di `PROMPT_AI.md` di Gemini/ChatGPT gratis untuk membuat naskahnya.
+
 1. Tambah file naskah di `scripts/` (lihat `PANDUAN_NASKAH.md`). Bisa lewat web GitHub: **Add file → Create new file**, nama `scripts/s1-ep02.json`, tempel isinya, **Commit**.
 2. Buka tab **Actions** → run "Render video" yang sedang berjalan (±3–5 menit per video).
 3. Setelah hijau ✅, klik run-nya → bagian **Artifacts** → unduh `video-…`. Isinya per episode:
@@ -28,6 +30,9 @@ Video tersimpan 30 hari di Artifacts. File `done/<nama>.txt` menandai naskah yan
 | `scripts/` | Naskah per episode |
 | `fonts/` | Poppins + Amiri (lisensi SIL OFL) |
 | `PANDUAN_NASKAH.md` | Format naskah, daftar ilustrasi, aturan isi |
+| `TEMPLATE_NASKAH.json` | Template naskah kosong untuk diisi |
+| `PROMPT_AI.md` | Prompt siap tempel untuk membuat naskah dengan Gemini/ChatGPT |
+| `engine/check.py` | Pemeriksa naskah (jalan otomatis sebelum render) |
 | `SERI.md` | Rencana seri dan episode |
 
 ## Jalankan lokal (opsional)

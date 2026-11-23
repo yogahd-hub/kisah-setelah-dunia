@@ -1,0 +1,25 @@
+{
+ "no": 7,
+ "series": "Setelah Napas Terakhir",
+ "part": 5,
+ "title": "Judul Baris 1|Baris 2",
+ "hook": "Kalimat penasaran untuk cover",
+ "cover_scene": 1,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "ARYA", "hair": [40, 28, 22], "shirt": [176, 92, 64]},
+  "B": {"name": "BIMA", "hair": [30, 26, 30], "shirt": [64, 110, 100]}
+ },
+ "scenes": [
+  {"il": "grave", "text": "Adegan pertama: hook paling dramatis. Akhiri dengan titik atau tanda tanya.", "hl": ["dramatis"], "kw": "KATA BESAR"},
+  {"il": "solo", "who": "A", "expr": "worry", "expr2": "cry", "switch": 0.5, "text": "Adegan kedua: cerita tokoh.", "hl": ["cerita"]},
+  {"il": "angel", "text": "Adegan ketiga: Allah berfirman, atau Rasulullah bersabda, isi dalilnya.", "hl": ["Allah"], "card": ["Arti ayat atau hadits dalam bahasa Indonesia.", "QS. Nama Surat: ayat"]},
+  {"il": "night", "who": "B", "text": "Adegan keempat: tokoh kedua merenung.", "hl": ["merenung"]},
+  {"il": "door", "text": "Adegan kelima: dalil kedua (opsional).", "hl": ["dalil"], "card": ["Arti hadits.", "HR. Bukhari no. 0000", "HADITS"]},
+  {"il": "choice", "text": "Adegan keenam: pertanyaan untuk penonton. Kamu yang mana?", "hl": ["kamu"], "kw": "KAMU YANG MANA?"},
+  {"il": "cta", "text": "Part enam, judul part berikutnya. Tulis lanjut di komentar.", "hl": ["lanjut"], "kw": "PART 6", "kw2": "JUDUL PART 6"}
+ ],
+ "caption": "Ringkasan cerita 1-2 kalimat.\n\n\"Kutipan arti dalil.\" (QS. Nama Surat: ayat)",
+ "cta": "Pertanyaan untuk penonton. Tulis LANJUT untuk part berikutnya.",
+ "hashtags": ["#kisahsetelahdunia", "#setelahnapasterakhir", "#pengingatdiri", "#ceritaislami", "#animasi"]
+}

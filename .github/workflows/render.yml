@@ -61,6 +61,10 @@ jobs:
           pip install -q pillow numpy
           python -c "from PIL import features; assert features.check('raqm'), 'raqm (teks Arab) tidak aktif'; print('raqm ok')"
 
+      - name: Periksa naskah
+        if: steps.pick.outputs.list != ''
+        run: python3 engine/check.py ${{ steps.pick.outputs.list }}
+
       - name: Render
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
         env:
