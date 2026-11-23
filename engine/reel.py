@@ -18,34 +18,57 @@ import gemini as G
 from base import W, H, FPS, CX, CY, BG, STARS, YEL, WHITE, GOLD, ease, ease_back, paste_c, font, F_BOLD
 
 LEAD, TAIL = 0.35, 0.45
+INTRO = 0.7  # detik cover di awal video
 TTS_MODELS = ["gemini-3.8-flash-lite-tts", "gemini-3.8-flash-tts", "gemini-3.1-flash-tts-preview", "gemini-2.5-pro-preview-tts"]
-DEFAULT_STYLE = "[tenang, dalam, sedikit misterius, tempo sedang, jeda jelas antar kalimat]"
+DEFAULT_STYLE = ""  # JANGAN isi: model TTS kadang ikut membacakan instruksi gaya
 
 # ============================== VOICE OVER ==============================
+def _norm(s):
+    return re.findall(r"[a-z0-9]+", s.lower())
+
+def _gen_raw(S, raw):
+    text = "\n\n".join(sc["text"] for sc in S["scenes"])
+    models = [S["tts_model"]] if S.get("tts_model") else TTS_MODELS
+    last = None
+    for m in models:
+        for attempt in range(3):
+            try:
+                print(f"[vo] TTS {m} (percobaan {attempt + 1})", flush=True)
+                G.tts(text, raw, voice=S.get("voice", "Charon"), model=m, style=S.get("style", DEFAULT_STYLE))
+                return
+            except Exception as e:
+                last = e; code = getattr(e, "code", None)
+                body = e.read().decode()[:300] if hasattr(e, "read") else ""
+                print(f"[vo] gagal {code}: {body or e}", flush=True)
+                if code == 429 and "PerDay" in body: break      # kuota harian model ini habis -> model berikutnya
+                if code in (400, 404): break                      # model tidak tersedia
+                time.sleep(20)
+    raise SystemExit(f"TTS gagal di semua model: {last}")
+
+def _head_ok(S, work):
+    """Pastikan suara langsung dimulai dengan kata pertama naskah (tidak ada instruksi/ucapan tambahan di depan)."""
+    head = f"{work}/vo/head.wav"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{work}/vo/full.wav", "-t", "7", head], check=True)
+    try:
+        heard = _norm(G.transcribe(head))
+    except Exception as e:
+        print(f"[cek-awal] dilewati: {e}", flush=True); return True
+    want = _norm(S["scenes"][0]["text"])[:3]
+    idx = next((k for k, w in enumerate(heard) if w == want[0]), None)
+    ok = idx is not None and idx <= 1
+    print(f"[cek-awal] terdengar: {' '.join(heard[:10])} -> {'OK' if ok else 'ADA UCAPAN TAMBAHAN'}", flush=True)
+    return ok
+
 def make_vo(S, work):
     os.makedirs(f"{work}/vo", exist_ok=True)
     raw = f"{work}/vo/full_raw.wav"
-    if not os.path.exists(raw):
-        text = "\n\n".join(sc["text"] for sc in S["scenes"])
-        models = [S["tts_model"]] if S.get("tts_model") else TTS_MODELS
-        last = None
-        for m in models:
-            for attempt in range(3):
-                try:
-                    print(f"[vo] TTS {m} (percobaan {attempt + 1})", flush=True)
-                    G.tts(text, raw, voice=S.get("voice", "Charon"), model=m, style=S.get("style", DEFAULT_STYLE))
-                    break
-                except Exception as e:
-                    last = e; code = getattr(e, "code", None)
-                    body = e.read().decode()[:300] if hasattr(e, "read") else ""
-                    print(f"[vo] gagal {code}: {body or e}", flush=True)
-                    if code == 429 and "PerDay" in body: break      # kuota harian model ini habis -> model berikutnya
-                    if code in (400, 404): break                      # model tidak tersedia
-                    time.sleep(20)
-            if os.path.exists(raw): break
-        if not os.path.exists(raw):
-            raise SystemExit(f"TTS gagal di semua model: {last}")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-ar", "24000", "-ac", "1", f"{work}/vo/full.wav"], check=True)
+    for attempt in range(3):
+        if not os.path.exists(raw): _gen_raw(S, raw)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-ar", "24000", "-ac", "1", f"{work}/vo/full.wav"], check=True)
+        if _head_ok(S, work): break
+        os.remove(raw)
+    else:
+        raise SystemExit("Suara selalu diawali ucapan tambahan setelah 3 kali coba")
     x, sr = load_wav(f"{work}/vo/full.wav")
     ivs = A.voiced_intervals(x, sr)
     words, spans = A.align_scenes([sc["text"] for sc in S["scenes"]], ivs)
@@ -449,7 +472,9 @@ def build_audio(S, work):
         seg = np.zeros(int(round(info["n"] / FPS * SR)))
         s0 = int(LEAD * SR); seg[s0:s0 + len(x)] = x[:len(seg) - s0]
         parts.append(seg); starts.append(pos); pos += info["n"] / FPS
-    vo = np.concatenate(parts); vo = vo / (np.abs(vo).max() + 1e-9) * 0.9
+    intro = np.zeros(int(round(INTRO * FPS)) * SR // FPS)
+    vo = np.concatenate([intro] + parts); vo = vo / (np.abs(vo).max() + 1e-9) * 0.9
+    starts = [0.0] + [st + len(intro) / SR for st in starts]
     n = len(vo); t = np.arange(n) / SR; rng = np.random.default_rng(S["part"]); total = n / SR
     def tone(f, amp, det=0.3): return amp * (np.sin(2 * np.pi * f * t) + 0.6 * np.sin(2 * np.pi * (f + det) * t + 1.3) + 0.25 * np.sin(2 * np.pi * 2 * f * t + 0.7))
     progs = [[[110, 164.81, 220, 261.63], [87.31, 130.81, 174.61, 220], [130.81, 196, 261.63, 329.63], [98, 146.83, 196, 246.94]],
@@ -475,19 +500,34 @@ def build_audio(S, work):
 # ============================== COVER + CAPTION ==============================
 PART_COLORS = [(255, 92, 140), (245, 192, 74), (90, 160, 255), (110, 220, 140), (170, 130, 255), (255, 140, 70)]
 def make_cover(S, work, out):
+    """Cover 1080x1920. Semua teks penting di area aman grid 3:4 (y 240-1680)."""
     img = BG.convert("RGBA")
     sc0 = S["scenes"][S.get("cover_scene", 0)]
-    ILS[sc0["il"]](img, 3.0, 6.0, sc0, S)
-    shade = Image.new("RGBA", (W, H), (0, 0, 0, 110)); img.alpha_composite(shade)
+    art = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ILS[sc0["il"]](art, 3.0, 6.0, sc0, S)
+    img.alpha_composite(art, (0, 250))                      # ilustrasi digeser ke bawah, tidak menabrak judul
     d = ImageDraw.Draw(img)
-    d.text((80, 300), S["series"].upper(), font=font(R.F_MED, 30), fill=(210, 210, 225))
     col = PART_COLORS[(S["part"] - 1) % len(PART_COLORS)]
-    d.text((80, 360), "PART", font=font(F_BOLD, 120), fill=WHITE)
-    d.text((80 + font(F_BOLD, 120).getlength("PART "), 300), str(S["part"]), font=font(F_BOLD, 220), fill=col)
-    d.rectangle((80, 520, 200, 530), fill=col)
-    y = 570
+    d.text((80, 250), S["series"].upper(), font=font(R.F_MED, 32), fill=(215, 215, 230))
+    fp = font(F_BOLD, 110); fn = font(F_BOLD, 200)
+    d.text((80, 300), "PART", font=fp, fill=WHITE)
+    d.text((80 + fp.getlength("PART "), 245), str(S["part"]), font=fn, fill=col)
+    d.rectangle((80, 450, 210, 460), fill=col)
+    y = 490
     for line in S["title"].upper().split("|"):
-        d.text((80, y), line.strip(), font=font(F_BOLD, 96), fill=WHITE); y += 110
+        d.text((80, y), line.strip(), font=font(F_BOLD, 92), fill=WHITE); y += 104
+    hook = S.get("hook")
+    if hook:
+        band = Image.new("RGBA", (W, 560), (0, 0, 0, 0)); bd = ImageDraw.Draw(band)
+        for k in range(560): bd.line((0, k, W, k), fill=(0, 0, 0, int(215 * min(1, k / 160))))
+        img.alpha_composite(band, (0, 1240))
+        d = ImageDraw.Draw(img)
+        fh = font(F_BOLD, 84)
+        lines = R._wrap(hook.upper(), fh, 940)[:3]
+        yy = 1500 - (len(lines) - 1) * 50
+        for ln in lines:
+            d.text((CX + 4, yy + 6), ln, font=fh, fill=(0, 0, 0), anchor="mm")
+            d.text((CX, yy), ln, font=fh, fill=YEL, anchor="mm"); yy += 100
     img.convert("RGB").save(out, quality=92)
 
 def make_caption(S, out):
@@ -496,6 +536,13 @@ def make_caption(S, out):
     open(out, "w").write(cap.strip() + "\n\n" + S.get("cta", "Mau lanjut part berikutnya? Tulis LANJUT di komentar.") + "\n\n" + " ".join(tags) + "\n")
 
 # ============================== MAIN ==============================
+def nice_name(S, name):
+    m = re.match(r"s(\d+)-ep(\d+)", name)
+    code = f"S{int(m.group(1))}P{int(m.group(2))}" if m else name
+    title = re.sub(r'[\\/:*?"<>|]', "", S["title"].replace("|", " ")).strip()
+    no = S.get("no")
+    return (f"{int(no):02d} - " if no else "") + f"{code} {title}"
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("script"); ap.add_argument("--preview", action="store_true"); ap.add_argument("--no-check", action="store_true")
@@ -503,7 +550,7 @@ def main():
     a = ap.parse_args()
     S = json.load(open(a.script))
     name = os.path.splitext(os.path.basename(a.script))[0]
-    work = f"work/{name}"; outdir = f"{a.out}/{name}"
+    work = f"work/{name}"; pretty = nice_name(S, name); outdir = f"{a.out}/{pretty}"
     os.makedirs(f"{work}/scenes", exist_ok=True); os.makedirs(outdir, exist_ok=True)
     for i, sc in enumerate(S["scenes"]):
         if sc["il"] not in ILS: raise SystemExit(f"scene {i}: ilustrasi '{sc['il']}' tidak ada. Pilihan: {sorted(ILS)}")
@@ -520,13 +567,17 @@ def main():
     with ProcessPoolExecutor(max_workers=os.cpu_count() or 2) as ex:
         for i in ex.map(render_scene, jobs): print(f"[render] scene {i} selesai", flush=True)
     build_audio(S, work)
+    make_cover(S, work, f"{outdir}/cover.jpg")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"{outdir}/cover.jpg", "-vf",
+                    f"scale={W}:{H},format=yuv420p,loop=-1:1,trim=duration={round(INTRO * FPS) / FPS},fade=t=out:st={INTRO - 0.2}:d=0.2",
+                    "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", f"{work}/scenes/intro.mp4"], check=True)
     with open(f"{work}/list.txt", "w") as f:
+        f.write("file 'scenes/intro.mp4'\n")
         for i in range(len(S["scenes"])): f.write(f"file 'scenes/s{i}.mp4'\n")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{work}/list.txt", "-c", "copy", f"{work}/video.mp4"], check=True)
-    final = f"{outdir}/{name}.mp4"
+    final = f"{outdir}/{pretty}.mp4"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{work}/video.mp4", "-i", f"{work}/mix.wav", "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", final], check=True)
-    make_cover(S, work, f"{outdir}/cover.jpg")
     make_caption(S, f"{outdir}/caption.txt")
     dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", final], capture_output=True, text=True).stdout.strip()
     print(f"[ok] {final} ({float(dur):.1f} detik)")

@@ -119,19 +119,40 @@ def draw_header(img, scene_i, n, text):
         col = (235, 235, 240, 230) if i <= scene_i else (120, 120, 140, 110)
         d.rounded_rectangle((x0 + i * seg + 3, 104, x0 + (i + 1) * seg - 3, 110), 3, fill=col)
 
-def draw_card(img, arabic, ref, t, label="AL-QUR'AN"):
+def _wrap(text, f, maxw):
+    lines, cur = [], ""
+    for w in text.split():
+        t = (cur + " " + w).strip()
+        if f.getlength(t) <= maxw: cur = t
+        else: lines.append(cur); cur = w
+    if cur: lines.append(cur)
+    return lines
+
+def draw_card(img, text, ref, t, label="AL-QUR'AN"):
+    """Kartu dalil. Teks Indonesia (arti ayat/hadits) atau teks Arab (otomatis terdeteksi)."""
     a = ease(t / 0.4)
     if a <= 0: return
-    cw, chh = 900, 250
+    cw = 900
+    is_ar = any("\u0600" <= c <= "\u06ff" for c in text)
+    if is_ar:
+        lines, fq, lh = [text], FAR, 70
+    else:
+        fq = font(F_MED, 38); lh = 52
+        lines = _wrap("\u201c" + text.strip().strip('"\u201c\u201d') + "\u201d", fq, cw - 100)[:4]
+    chh = 96 + lh * len(lines) + 70
     layer = Image.new("RGBA", (cw + 40, chh + 40), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     d.rounded_rectangle((24, 28, cw + 24, chh + 28), 26, fill=(0, 0, 0, 120))
     d.rounded_rectangle((20, 20, cw + 20, chh + 20), 26, fill=CREAM + (255,))
     d.text((60, 46), label, font=FCARD_L, fill=(140, 125, 100))
-    d.text((cw + 20 - 40, 112), arabic, font=FAR, fill=(40, 34, 28), anchor="ra", direction="rtl", language="ar")
-    d.text((60, 196), ref, font=FCARD_R, fill=(30, 26, 22))
+    y = 96
+    for ln in lines:
+        if is_ar: d.text((cw - 20, y), ln, font=fq, fill=(40, 34, 28), anchor="ra", direction="rtl", language="ar")
+        else: d.text((60, y), ln, font=fq, fill=(40, 34, 28))
+        y += lh
+    d.text((60, y + 14), ref, font=FCARD_R, fill=(150, 90, 40))
     layer.putalpha(layer.getchannel("A").point(lambda v: int(v * a)))
-    img.alpha_composite(layer, (int((W - cw) / 2 - 20), int(250 + 40 * (1 - a))))
+    img.alpha_composite(layer, (int((W - cw) / 2 - 20), int(230 + 40 * (1 - a))))
 
 # ---------- illustrations ----------
 CX, CY = W // 2, 800

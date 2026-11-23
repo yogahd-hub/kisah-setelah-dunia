@@ -1,4 +1,5 @@
 {
+ "no": 3,
  "series": "Setelah Napas Terakhir",
  "voice": "Charon",
  "chars": {
@@ -81,7 +82,7 @@
     "mati"
    ],
    "card": [
-    "وَمَا تَدْرِي نَفْسٌ بِأَيِّ أَرْضٍ تَمُوتُ",
+    "Dan tidak ada seorang pun yang dapat mengetahui di bumi mana dia akan mati.",
     "QS. Luqman: 34"
    ]
   },
@@ -111,7 +112,7 @@
     "bekal"
    ],
    "card": [
-    "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ",
+    "Setiap yang bernyawa pasti akan merasakan mati.",
     "QS. Ali 'Imran: 185"
    ]
   },
@@ -127,5 +128,7 @@
   }
  ],
  "caption": "Tadi malam Arya masih tertawa. Pagi ini, ia sudah dibalut kain putih.\n\n\"Dan tidak ada seorang pun yang mengetahui di bumi mana dia akan mati.\" (QS. Luqman: 34)",
- "cta": "Kalau malam ini giliranmu, apa yang sudah kamu siapkan? Tulis LANJUT untuk part 3."
+ "cta": "Kalau malam ini giliranmu, apa yang sudah kamu siapkan? Tulis LANJUT untuk part 3.",
+ "hook": "Pesan singkat yang mengubah segalanya",
+ "cover_scene": 1
 }

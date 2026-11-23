@@ -1,4 +1,5 @@
 {
+ "no": 5,
  "series": "Setelah Napas Terakhir",
  "voice": "Charon",
  "chars": {
@@ -66,7 +67,7 @@
     "sandal"
    ],
    "card": [
-    "إِنَّهُ لَيَسْمَعُ قَرْعَ نِعَالِهِمْ",
+    "Seorang hamba yang diletakkan di kuburnya lalu ditinggal para sahabatnya, ia mendengar suara sandal mereka.",
     "HR. Bukhari no. 1338",
     "HADITS"
    ]
@@ -91,7 +92,7 @@
     "amalnya"
    ],
    "card": [
-    "يَتْبَعُ الْمَيِّتَ ثَلَاثَةٌ",
+    "Mayit diikuti tiga hal: keluarga, harta, dan amalnya. Dua kembali, satu tetap bersamanya: amalnya.",
     "HR. Bukhari no. 6514",
     "HADITS"
    ]
@@ -126,5 +127,7 @@
   }
  ],
  "caption": "Satu per satu pengantar pulang. Keluarga kembali, harta kembali. Hanya amal yang tetap tinggal.\n\nRasulullah bersabda: yang mengantar mayit ada tiga, dua kembali dan satu tetap bersamanya, yaitu amalnya. (HR. Bukhari no. 6514)",
- "cta": "Hari ini kita yang mengantar, suatu hari kita yang diantar. Tulis LANJUT untuk part 4."
+ "cta": "Hari ini kita yang mengantar, suatu hari kita yang diantar. Tulis LANJUT untuk part 4.",
+ "hook": "Ia mendengar langkah kakimu pergi",
+ "cover_scene": 1
 }

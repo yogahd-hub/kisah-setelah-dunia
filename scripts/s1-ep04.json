@@ -1,4 +1,5 @@
 {
+ "no": 6,
  "series": "Setelah Napas Terakhir",
  "voice": "Charon",
  "chars": {
@@ -58,7 +59,7 @@
     "malaikat"
    ],
    "card": [
-    "أَتَاهُ مَلَكَانِ فَأَقْعَدَاهُ",
+    "Lalu datang kepadanya dua malaikat dan mendudukkannya.",
     "HR. Bukhari no. 1338",
     "HADITS"
    ]
@@ -93,7 +94,7 @@
     "teguh"
    ],
    "card": [
-    "يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ",
+    "Allah meneguhkan orang-orang yang beriman dengan ucapan yang teguh dalam kehidupan dunia dan di akhirat.",
     "QS. Ibrahim: 27"
    ]
   },
@@ -128,5 +129,7 @@
   }
  ],
  "caption": "Siapa Tuhanmu? Apa agamamu? Siapa nabimu? Pertanyaannya sederhana, tapi jawabannya tidak bisa dihafal.\n\n\"Allah meneguhkan orang-orang yang beriman dengan ucapan yang teguh dalam kehidupan di dunia dan di akhirat.\" (QS. Ibrahim: 27)",
- "cta": "Apa jawabanmu kalau malam ini giliranmu? Tulis LANJUT untuk part 5."
+ "cta": "Apa jawabanmu kalau malam ini giliranmu? Tulis LANJUT untuk part 5.",
+ "hook": "Tiga pertanyaan yang tak bisa dicontek",
+ "cover_scene": 1
 }

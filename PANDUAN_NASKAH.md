@@ -8,9 +8,12 @@ Setiap video = satu file JSON di folder `scripts/`. Begitu file di-push, GitHub 
 ## Format
 ```json
 {
+  "no": 7,
   "series": "Setelah Napas Terakhir",
   "part": 2,
   "title": "Baris Pertama|Baris Kedua",
+  "hook": "Kalimat penasaran untuk cover",
+  "cover_scene": 1,
   "voice": "Charon",
   "chars": {
     "A": {"name": "ARYA", "hair": [40, 28, 22], "shirt": [176, 92, 64]},
@@ -18,7 +21,7 @@ Setiap video = satu file JSON di folder `scripts/`. Begitu file di-push, GitHub 
   },
   "scenes": [
     {"il": "duo", "text": "Narasi scene ini.", "hl": ["kata", "kunci"], "kw": "KATA BESAR"},
-    {"il": "candle", "text": "Narasi.", "hl": ["kata"], "card": ["<teks Arab>", "QS. Nama: ayat"]},
+    {"il": "candle", "text": "Narasi.", "hl": ["kata"], "card": ["Arti ayat dalam bahasa Indonesia.", "QS. Nama: ayat"]},
     {"il": "cta", "text": "Part tiga besok. Tulis lanjut di komentar.", "hl": ["lanjut"], "kw": "PART 3", "kw2": "JUDUL PART 3"}
   ],
   "caption": "Caption untuk diunggah.",
@@ -29,15 +32,18 @@ Setiap video = satu file JSON di folder `scripts/`. Begitu file di-push, GitHub 
 
 | Field | Arti |
 |---|---|
+| `no` | Nomor urut tayang (jadi awalan nama file: `01 - S1P1 Judul.mp4`). |
 | `title` | Judul di cover. `|` = pindah baris. Maks ±14 huruf per baris. |
+| `hook` | Kalimat penasaran besar di bagian bawah cover (maks ±40 huruf). Cover juga tampil 0,7 detik di awal video. |
+| `cover_scene` | Nomor scene (mulai 0) yang ilustrasinya dipakai di cover. |
 | `chars` | Tokoh A dan B (nama, warna rambut, warna baju RGB). Ganti nama tokoh tiap seri. |
 | `text` | Narasi yang dibacakan. Akhiri dengan `.` atau `?`. **Angka ditulis dengan huruf** ("dua puluh tiga") supaya teks layar = ucapan. |
 | `hl` | Kata yang dikuningkan di teks layar (huruf besar/kecil bebas). |
 | `kw` / `kw2` | Kata kunci besar kuning di atas teks (opsional). Maks ±18 huruf. |
-| `card` | Kartu dalil: `[teks Arab, sumber]` atau `[teks Arab, sumber, label]`. Label default `AL-QUR'AN`; untuk hadits isi `"HADITS"`. |
+| `card` | Kartu dalil: `[arti dalam bahasa Indonesia, sumber]` atau `[arti, sumber, label]`. Label default `AL-QUR'AN`; untuk hadits isi `"HADITS"`. Pakai **arti/potongan arti**, bukan teks Arab (teks Arab tidak dibacakan dan sulit dicek). Maks ±4 baris. |
 | `il` | Ilustrasi scene (daftar di bawah). |
 | `tts_model` | (opsional) paksa model TTS tertentu. |
-| `style` | (opsional) gaya suara, default `[tenang, dalam, sedikit misterius, tempo sedang, jeda jelas antar kalimat]`. |
+| `style` | **Jangan diisi.** Model TTS kadang ikut membacakan instruksi gaya. Mesin juga mengecek 7 detik pertama suara dan mengulang otomatis kalau ada ucapan tambahan. |
 
 ## Ilustrasi (`il`)
 | Nama | Isi | Opsi tambahan |
