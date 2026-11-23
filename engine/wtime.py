@@ -13,7 +13,13 @@ def listen(wav):
     from faster_whisper import WhisperModel
     name = os.environ.get("WHISPER_MODEL", "small")
     m = WhisperModel(name, device="cpu", compute_type="int8")
-    segs, _ = m.transcribe(wav, language="id", word_timestamps=True, vad_filter=False, beam_size=5)
+    # baca wav sendiri (numpy 16 kHz) -> tidak bergantung pada PyAV yang sering beda versi
+    import wave, numpy as np
+    w = wave.open(wav); sr = w.getframerate()
+    x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
+    if w.getnchannels() > 1: x = x.reshape(-1, w.getnchannels()).mean(1)
+    x = np.interp(np.arange(int(len(x) * 16000 / sr)) * sr / 16000, np.arange(len(x)), x).astype(np.float32)
+    segs, _ = m.transcribe(x, language="id", word_timestamps=True, vad_filter=False, beam_size=5)
     out = []
     for s in segs:
         for w in (s.words or []):
