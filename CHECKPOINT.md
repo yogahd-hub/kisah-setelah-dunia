@@ -14,9 +14,10 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
 - Akun: **Kisah Setelah Dunia** — cerita animasi alam akhirat & akhir zaman, nada tenang-menyentuh, sedikit misteri.
 - Render otomatis: naskah di-commit → GitHub Actions membuat suara, sinkron teks (whisper), video anime 3D, cover, caption. Hasil: tab **Releases** (permanen) dan **Actions → Artifacts** (30 hari).
 - Status seri (perbarui baris ini setiap batch):
-  - Seri 1 "Setelah Napas Terakhir" (ARYA & BIMA): part 1–6 selesai. Berikutnya: 7 Hari Dibangkitkan (padang mahsyar), 8 Kitab di Tangan.
-  - Seri 2 "Tanda Akhir Zaman" (RAKA & ILHAM): part 1–4 selesai. Berikutnya: 5 Turunnya Nabi Isa, 6 Yakjuj Makjuj, 7 Matahari dari Barat, 8 Penutup.
-  - Nomor tayang (`no`) terakhir: **10**.
+  - Seri 1 "Setelah Napas Terakhir" (ARYA & BIMA): part 1–8 selesai — TAMAT.
+  - Seri 2 "Tanda Akhir Zaman" (RAKA & ILHAM): part 1–8 selesai — TAMAT.
+  - Seri 3 "Jalan Pulang" & Seri 4 "Andai Dulu": baru USULAN di SERI.md, tunggu persetujuan user sebelum menulis naskah.
+  - Nomor tayang (`no`) terakhir: **16**.
 
 ## Aturan niche (ganti bagian ini untuk niche lain)
 - Kartu `card` = **arti** bahasa Indonesia ayat Al-Qur'an (`QS. Nama: ayat`) atau hadits shahih/hasan (`HR. Perawi no. X`, label ke-3 `"HADITS"`). Maks ±25 kata. Tidak yakin nomornya → jangan buat kartu.
@@ -27,7 +28,7 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
 ## Format JSON
 ```json
 {
- "no": 11, "series": "Setelah Napas Terakhir", "part": 7,
+ "no": 17, "series": "Setelah Napas Terakhir", "part": 7,
  "title": "Hari|Dibangkitkan", "hook": "Kalimat penasaran maks 40 huruf",
  "cover_scene": 1, "voice": "Charon",
  "chars": {"A": {"name": "ARYA", "hair": [40,28,22], "shirt": [176,92,64]},
