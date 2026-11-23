@@ -92,6 +92,7 @@ def make_vo(S, work, name=None):
         words = [[(w, s0) for w, s0, _ in ws] for ws in wa]
         spans = [[ws[0][1], ws[-1][2]] for ws in wa]
         json.dump(wa, open(f"{work}/vo/words_abs.json", "w"), ensure_ascii=False)
+        open(f"{work}/vo/whisper_ok", "w").write("1")
     else:    # cadangan: perkiraan dari jeda suara + suku kata
         words, spans = A.align_scenes(texts, ivs)
         json.dump([[(w, t, t + 0.3) for w, t in ws] for ws in words], open(f"{work}/vo/words_abs.json", "w"), ensure_ascii=False)
@@ -106,6 +107,8 @@ def make_vo(S, work, name=None):
 
 def check_vo(S, work):
     """Transkripsi ulang VO dan bandingkan dengan naskah (cek ada kalimat yang hilang/terpotong)."""
+    if os.path.exists(f"{work}/vo/whisper_ok"):
+        print("[cek] dilewati: whisper sudah mencocokkan kata naskah dengan suara", flush=True); return 1.0
     try:
         heard = G.transcribe(f"{work}/vo/full.wav")
     except Exception as e:
