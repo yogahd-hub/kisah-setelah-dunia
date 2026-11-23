@@ -7,7 +7,7 @@
   html, body { margin: 0; background: #000; }
   #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #120e22; font-family: "Poppins", "Arial Black", sans-serif; }
   #scene { position: absolute; inset: 0; width: 1080px; height: 1920px; }
-  .cap { position: absolute; left: 60px; right: 60px; text-align: center; font-weight: 700; font-size: 84px; line-height: 1.18;
+  .cap { position: absolute; left: 60px; right: 60px; text-align: center; font-weight: 700; font-size: 76px; line-height: 1.18;
          color: #fff; text-shadow: 0 6px 0 rgba(0,0,0,.6), 0 0 28px rgba(0,0,0,.55); opacity: 0; }
   .cap b { color: #f5c04a; font-weight: 700; }
   .kw { position: absolute; left: 0; right: 0; text-align: center; font-weight: 700; color: #f5c04a; opacity: 0;
@@ -20,6 +20,7 @@
   .card .ref { font: 700 34px "Poppins", sans-serif; color: #96582a; margin-top: 14px; }
   .name { position: absolute; transform: translate(-50%, -100%); font: 700 40px "Poppins", sans-serif; color: #f0f0f8;
           text-shadow: 0 4px 0 rgba(0,0,0,.6); opacity: 0; white-space: nowrap; }
+  #shade { position: absolute; left: 0; right: 0; bottom: 0; height: 760px; background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.55) 45%, rgba(0,0,0,.6)); }
   #head { position: absolute; left: 70px; top: 88px; font: 500 26px "Poppins", sans-serif; letter-spacing: 3px; color: rgba(225,225,240,.72); }
   #bars { position: absolute; left: 640px; top: 104px; width: 370px; height: 6px; display: flex; gap: 6px; }
   #bars div { flex: 1; border-radius: 3px; background: rgba(120,120,140,.45); }
@@ -39,6 +40,7 @@
   <canvas id="scene" width="1080" height="1920"></canvas>
   <div id="labels"></div>
   <div id="bubble"><div class="b"></div><div class="tail"></div><div class="dots"><i></i><i></i><i></i></div></div>
+  <div id="shade"></div>
   <div id="overlays"></div>
   <div id="head"></div>
   <div id="bars"></div>
@@ -57,7 +59,8 @@
   const W = 1080, H = 1920;
   const canvas = document.getElementById("scene");
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
-  renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+  // gambar 3D dibuat 720x1280 lalu diperbesar ke 1080x1920 (render jauh lebih cepat; teks tetap tajam karena HTML)
+  renderer.setPixelRatio(1); renderer.setSize(720, 1280, false);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(32, W / H, 0.1, 300);
@@ -315,7 +318,8 @@
     speed.children.forEach(l => l.material.opacity = 0);
     camera.clearViewOffset();
   }
-  function cam(px, py, pz, lx, ly, lz) { camera.position.set(px, py, pz); camera.lookAt(lx, ly, lz); }
+  const ZOOM = 1.28; // >1 = kamera mundur, tokoh tidak terpotong
+  function cam(px, py, pz, lx, ly, lz) { camera.position.set(lx + (px - lx) * ZOOM, ly + (py - ly) * ZOOM, lz + (pz - lz) * ZOOM); camera.lookAt(lx, ly, lz); }
   function show(k, x, z, expr, t, ry) { const c = CH[k]; c.root.visible = true; c.root.position.set(x, 0, z || 0); c.root.rotation.y = ry || 0; setExpr(c, expr, t); return c; }
   function burst(t0, t) { const sp = t > t0 ? clamp(1 - (t - t0) / 1.4) : 0; speed.children.forEach((l, i) => { l.material.opacity = sp * (0.4 + rnd(i) * 0.6); l.position.z = -3 + ((t * 6 + rnd(i) * 4) % 1) * 0.6; }); }
   function dustAnim(t) { ENV.void.userData.dust.children.forEach((d, i) => { const u = d.userData; d.position.set(u.x + Math.sin(t * 0.4 + i) * 0.3, (u.y + t * u.s) % 9, u.z); d.lookAt(camera.position); }); }
@@ -428,12 +432,13 @@
     // fade lewat hitam antar adegan
     tl.fromTo("#fade", { opacity: 1 }, { opacity: 0, duration: 0.17, ease: "none" }, s0);
     tl.to("#fade", { opacity: 1, duration: 0.17, ease: "none" }, s1 - 0.17);
-    const hasKw = !!sc.kw, capTop = hasKw ? 1240 : 1180;
-    if (sc.kw) {
-      const k = el("kw", sc.kw, { top: (sc.kw2 ? 1000 : 1050) + "px", fontSize: (sc.kw.length <= 16 ? 100 : 80) + "px" });
+    // teks besar (kw) di ATAS, subtitle di BAWAH -> tidak saling tumpuk
+    const capTop = 1420;
+    if (sc.kw && !sc.card) {
+      const k = el("kw", sc.kw, { top: "290px", fontSize: (sc.kw.length <= 16 ? 100 : 80) + "px" });
       tl.fromTo(k, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, s0 + 0.3);
       tl.to(k, { opacity: 0, duration: 0.15 }, s1 - 0.2);
-      if (sc.kw2) { const k2 = el("kw2", sc.kw2, { top: "1120px" }); tl.fromTo(k2, { opacity: 0 }, { opacity: 1, duration: 0.3 }, s0 + 0.45); tl.to(k2, { opacity: 0, duration: 0.15 }, s1 - 0.2); }
+      if (sc.kw2) { const k2 = el("kw2", sc.kw2, { top: (sc.kw.length <= 16 ? 410 : 390) + "px" }); tl.fromTo(k2, { opacity: 0 }, { opacity: 1, duration: 0.3 }, s0 + 0.45); tl.to(k2, { opacity: 0, duration: 0.15 }, s1 - 0.2); }
     }
     if (sc.card) {
       const c = el("card", '<div class="lbl">' + (sc.card[2] || "AL-QUR'AN") + '</div><div class="txt">“' + sc.card[0] + '”</div><div class="ref">' + sc.card[1] + '</div>');

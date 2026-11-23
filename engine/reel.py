@@ -15,6 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import base as R
 import align as A
 import gemini as G
+import wtime as WT
 from base import W, H, FPS, CX, CY, BG, STARS, YEL, WHITE, GOLD, ease, ease_back, paste_c, font, F_BOLD
 
 LEAD, TAIL = 0.35, 0.45
@@ -71,10 +72,19 @@ def make_vo(S, work):
         raise SystemExit("Suara selalu diawali ucapan tambahan setelah 3 kali coba")
     x, sr = load_wav(f"{work}/vo/full.wav")
     ivs = A.voiced_intervals(x, sr)
-    words, spans = A.align_scenes([sc["text"] for sc in S["scenes"]], ivs)
+    texts = [sc["text"] for sc in S["scenes"]]
+    wa = WT.align(texts, f"{work}/vo/full.wav") if os.environ.get("NO_WHISPER") is None else None
+    if wa:   # waktu kata dari whisper (akurat)
+        words = [[(w, s0) for w, s0, _ in ws] for ws in wa]
+        spans = [[ws[0][1], ws[-1][2]] for ws in wa]
+        json.dump(wa, open(f"{work}/vo/words_abs.json", "w"), ensure_ascii=False)
+    else:    # cadangan: perkiraan dari jeda suara + suku kata
+        words, spans = A.align_scenes(texts, ivs)
+        json.dump([[(w, t, t + 0.3) for w, t in ws] for ws in words], open(f"{work}/vo/words_abs.json", "w"), ensure_ascii=False)
     timing = []
     for k, ((a, b), ws) in enumerate(zip(spans, words)):
         a0 = max(0, a - 0.05); b0 = min(len(x) / sr, b + 0.10)
+        if k + 1 < len(spans): b0 = min(b0, max(a0 + 0.2, spans[k + 1][0] - 0.03))
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{work}/vo/full.wav", "-ss", f"{a0:.3f}", "-to", f"{b0:.3f}", f"{work}/vo/vo_{k}.wav"], check=True)
         timing.append([[wd, round(t - a0, 3)] for wd, t in ws])
     json.dump(timing, open(f"{work}/vo/timing.json", "w"), ensure_ascii=False)
@@ -476,6 +486,10 @@ def build_audio(S, work, intro=None):
     intro = np.zeros(int(round(intro_s * FPS)) * SR // FPS)
     vo = np.concatenate([intro] + parts); vo = vo / (np.abs(vo).max() + 1e-9) * 0.9
     starts = [0.0] + [st + len(intro) / SR for st in starts]
+    finish_mix(vo, SR, starts, S, f"{work}/mix.wav")
+
+def finish_mix(vo, SR, starts, S, out):
+    """VO + musik latar (pad) + efek 'boom' di awal tiap adegan -> wav."""
     n = len(vo); t = np.arange(n) / SR; rng = np.random.default_rng(S["part"]); total = n / SR
     def tone(f, amp, det=0.3): return amp * (np.sin(2 * np.pi * f * t) + 0.6 * np.sin(2 * np.pi * (f + det) * t + 1.3) + 0.25 * np.sin(2 * np.pi * 2 * f * t + 0.7))
     progs = [[[110, 164.81, 220, 261.63], [87.31, 130.81, 174.61, 220], [130.81, 196, 261.63, 329.63], [98, 146.83, 196, 246.94]],
@@ -495,7 +509,7 @@ def build_audio(S, work, intro=None):
     mix = vo + pad / (np.abs(pad).max() + 1e-9) * 0.16 + fx * 0.25
     mix *= np.minimum(1, np.minimum(t / 0.6, (total - t) / 1.2))
     mix = mix / (np.abs(mix).max() + 1e-9) * 0.95
-    with wave.open(f"{work}/mix.wav", "w") as w:
+    with wave.open(out, "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
 
 # ============================== COVER + CAPTION ==============================

@@ -58,12 +58,19 @@ jobs:
         with:
           node-version: 22
 
+      - name: Cache model whisper
+        if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small-v1
+
       - name: Install
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libraqm0 libfribidi0 > /dev/null
-          pip install -q pillow numpy
+          pip install -q pillow numpy faster-whisper
           mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
           python -c "from PIL import features; assert features.check('raqm'), 'raqm (teks Arab) tidak aktif'; print('raqm ok')"
 
