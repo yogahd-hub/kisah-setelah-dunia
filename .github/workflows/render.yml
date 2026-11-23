@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,12 +53,18 @@ jobs:
             echo "ok=yes" >> "$GITHUB_OUTPUT"
           fi
 
+      - uses: actions/setup-node@v4
+        if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
+        with:
+          node-version: 22
+
       - name: Install
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libraqm0 libfribidi0 > /dev/null
           pip install -q pillow numpy
+          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
           python -c "from PIL import features; assert features.check('raqm'), 'raqm (teks Arab) tidak aktif'; print('raqm ok')"
 
       - name: Periksa naskah

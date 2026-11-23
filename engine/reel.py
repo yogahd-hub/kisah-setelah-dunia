@@ -464,7 +464,8 @@ def render_scene(args):
     return i
 
 # ============================== AUDIO ==============================
-def build_audio(S, work):
+def build_audio(S, work, intro=None):
+    intro_s = INTRO if intro is None else intro
     SR = 44100; parts, starts, pos = [], [], 0.0
     for i in range(len(S["scenes"])):
         info = scene_info(S, work, i); x, sr = load_wav(f"{work}/vo/vo_{i}.wav")
@@ -472,7 +473,7 @@ def build_audio(S, work):
         seg = np.zeros(int(round(info["n"] / FPS * SR)))
         s0 = int(LEAD * SR); seg[s0:s0 + len(x)] = x[:len(seg) - s0]
         parts.append(seg); starts.append(pos); pos += info["n"] / FPS
-    intro = np.zeros(int(round(INTRO * FPS)) * SR // FPS)
+    intro = np.zeros(int(round(intro_s * FPS)) * SR // FPS)
     vo = np.concatenate([intro] + parts); vo = vo / (np.abs(vo).max() + 1e-9) * 0.9
     starts = [0.0] + [st + len(intro) / SR for st in starts]
     n = len(vo); t = np.arange(n) / SR; rng = np.random.default_rng(S["part"]); total = n / SR
@@ -563,6 +564,15 @@ def main():
             for k, fr in enumerate(frames(S, work, i)):
                 if k == target: sheet.paste(fr.resize((360, 640)), (i * 360, 0)); break
         sheet.save(f"{outdir}/preview.jpg", quality=85); print(f"[ok] {outdir}/preview.jpg"); return
+    if S.get("engine") == "anime":
+        import anime
+        final = anime.build(S, work, outdir, pretty, sys.modules[__name__])
+        make_cover(S, work, f"{outdir}/cover.jpg")
+        make_caption(S, f"{outdir}/caption.txt")
+        if final:
+            dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", final], capture_output=True, text=True).stdout.strip()
+            print(f"[ok] {final} ({float(dur):.1f} detik, gaya anime)")
+        return
     jobs = [(S, work, i) for i in range(len(S["scenes"]))]
     with ProcessPoolExecutor(max_workers=os.cpu_count() or 2) as ex:
         for i in ex.map(render_scene, jobs): print(f"[render] scene {i} selesai", flush=True)
