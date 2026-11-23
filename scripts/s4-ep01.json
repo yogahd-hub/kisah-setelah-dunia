@@ -1,0 +1,134 @@
+{
+ "no": 18,
+ "series": "Andai Dulu",
+ "part": 1,
+ "title": "Andai Aku|Tanah",
+ "hook": "Ia memohon dijadikan tanah saja",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "grave",
+   "who": "A",
+   "expr": "cry",
+   "text": "Ada orang yang pada hari itu memohon, andai saja aku dulu hanyalah tanah.",
+   "hl": [
+    "tanah"
+   ],
+   "kw": "ANDAI AKU TANAH"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah mengabadikan kalimat itu di dalam Al-Qur'an.",
+   "hl": [
+    "Al-Qur'an"
+   ],
+   "card": [
+    "Pada hari manusia melihat apa yang telah diperbuat kedua tangannya, dan orang kafir berkata, alangkah baiknya sekiranya dahulu aku jadi tanah.",
+    "QS. An-Naba: 40"
+   ]
+  },
+  {
+   "il": "dreams",
+   "who": "A",
+   "seed": 4,
+   "switch": 0.6,
+   "text": "Yuda dulu punya banyak rencana. Usaha, rumah, liburan. Semuanya selalu lebih penting dari shalat.",
+   "hl": [
+    "rencana",
+    "shalat"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "smile",
+   "expr2": "worry",
+   "switch": 0.65,
+   "text": "Satria pernah mengajaknya ke masjid. Yuda hanya tertawa. Nanti saja, kalau sudah tua.",
+   "hl": [
+    "nanti",
+    "saja"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Tapi umur tidak pernah bertanya, siap atau belum.",
+   "hl": [
+    "siap",
+    "belum"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Allah juga menceritakan seruan lain, alangkah baiknya kalau dulu aku berbuat kebajikan untuk hidupku ini.",
+   "hl": [
+    "kebajikan"
+   ],
+   "card": [
+    "Dia berkata, alangkah baiknya sekiranya dahulu aku mengerjakan kebajikan untuk hidupku ini.",
+    "QS. Al-Fajr: 24"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Penyesalan itu baru terasa ketika sudah terlambat. Kamu masih punya waktu sekarang.",
+   "hl": [
+    "terlambat",
+    "sekarang"
+   ],
+   "kw": "MASIH ADA WAKTU"
+  },
+  {
+   "il": "cta",
+   "text": "Part dua, teman yang paling disesali. Tulis lanjut di komentar.",
+   "hl": [
+    "teman",
+    "lanjut"
+   ],
+   "kw": "PART 2",
+   "kw2": "TEMAN DISESALI"
+  }
+ ],
+ "caption": "Seri baru: Andai Dulu. Kalimat-kalimat penyesalan yang Allah abadikan, supaya kita tidak mengucapkannya nanti.\n\n\"Alangkah baiknya sekiranya dahulu aku jadi tanah.\" (QS. An-Naba: 40)",
+ "cta": "Rencana apa yang selalu kamu dahulukan dari ibadah? Tulis LANJUT untuk part 2.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#andaidulu",
+  "#penyesalan",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi"
+ ]
+}

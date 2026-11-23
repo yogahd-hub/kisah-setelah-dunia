@@ -16,8 +16,10 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
 - Status seri (perbarui baris ini setiap batch):
   - Seri 1 "Setelah Napas Terakhir" (ARYA & BIMA): part 1–8 selesai — TAMAT.
   - Seri 2 "Tanda Akhir Zaman" (RAKA & ILHAM): part 1–8 selesai — TAMAT.
-  - Seri 3 "Jalan Pulang" & Seri 4 "Andai Dulu": baru USULAN di SERI.md, tunggu persetujuan user sebelum menulis naskah.
-  - Nomor tayang (`no`) terakhir: **16**.
+  - Seri 3 "Jalan Pulang" (DIMAS & FARHAN, warna chars lihat scripts/s3-ep01.json): part 1–2 selesai. Berikutnya part 3 (Telaga).
+  - Seri 4 "Andai Dulu" (YUDA & SATRIA, warna chars lihat scripts/s4-ep01.json): part 1–2 selesai. Berikutnya part 3 (Tangan yang Bicara).
+  - Rencana part 3–8 Seri 3 & 4 ada di SERI.md. Selang-seling Seri 3 dan Seri 4.
+  - Nomor tayang (`no`) terakhir: **20**.
 
 ## Aturan niche (ganti bagian ini untuk niche lain)
 - Kartu `card` = **arti** bahasa Indonesia ayat Al-Qur'an (`QS. Nama: ayat`) atau hadits shahih/hasan (`HR. Perawi no. X`, label ke-3 `"HADITS"`). Maks ±25 kata. Tidak yakin nomornya → jangan buat kartu.
@@ -28,7 +30,7 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
 ## Format JSON
 ```json
 {
- "no": 17, "series": "Setelah Napas Terakhir", "part": 7,
+ "no": 21, "series": "Jalan Pulang", "part": 3,
  "title": "Hari|Dibangkitkan", "hook": "Kalimat penasaran maks 40 huruf",
  "cover_scene": 1, "voice": "Charon",
  "chars": {"A": {"name": "ARYA", "hair": [40,28,22], "shirt": [176,92,64]},

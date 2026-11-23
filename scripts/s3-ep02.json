@@ -1,0 +1,129 @@
+{
+ "no": 19,
+ "series": "Jalan Pulang",
+ "part": 2,
+ "title": "Jembatan|Tipis",
+ "hook": "Ada yang melintas secepat kilat",
+ "cover_scene": 1,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Semua manusia berbaris. Di depan mereka, sebuah jembatan dibentangkan di atas neraka.",
+   "hl": [
+    "jembatan",
+    "neraka"
+   ],
+   "kw": "SHIRATH"
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Jembatan itu licin. Di sisinya ada pengait berduri yang menyambar orang sesuai amalnya.",
+   "hl": [
+    "licin",
+    "amalnya"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Rasulullah bersabda, ada yang melintas sekejap mata, ada yang secepat kilat, angin, dan kuda yang kencang.",
+   "hl": [
+    "sekejap",
+    "mata",
+    "kilat"
+   ],
+   "card": [
+    "Sebagian orang beriman melintasi jembatan secepat kedipan mata, sebagian secepat kilat, angin kencang, kuda yang cepat, atau unta.",
+    "HR. Bukhari no. 7439",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Dimas menelan ludah. Tapi ada juga yang tergores, dan ada yang terjatuh.",
+   "hl": [
+    "tergores",
+    "terjatuh"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Farhan berbisik, kecepatan di jembatan itu bukan dari kaki. Tapi dari amal di dunia.",
+   "hl": [
+    "amal"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Shalat yang terburu-buru. Sedekah yang ditunda. Maaf yang tidak pernah terucap.",
+   "hl": [
+    "ditunda",
+    "maaf"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Setiap amal kecil hari ini, sedang menyiapkan langkahmu di jembatan itu.",
+   "hl": [
+    "langkahmu"
+   ],
+   "kw": "SIAPKAN LANGKAH"
+  },
+  {
+   "il": "cta",
+   "text": "Part tiga, telaga yang airnya menghapus dahaga selamanya. Tulis lanjut di komentar.",
+   "hl": [
+    "telaga",
+    "lanjut"
+   ],
+   "kw": "PART 3",
+   "kw2": "TELAGA"
+  }
+ ],
+ "caption": "Semua orang akan melewati jembatan di atas neraka. Kecepatannya ditentukan amal di dunia.\n\n\"Sebagian orang beriman melintasi jembatan secepat kedipan mata, sebagian secepat kilat.\" (HR. Bukhari no. 7439)",
+ "cta": "Amal kecil apa yang mau kamu mulai hari ini? Tulis LANJUT untuk part 3.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#jalanpulang",
+  "#akhirat",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#shirath"
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "no": 20,
+ "series": "Andai Dulu",
+ "part": 2,
+ "title": "Teman yang|Disesali",
+ "hook": "Andai dulu aku tidak berteman dengannya",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "cry",
+   "text": "Ada orang yang menggigit kedua tangannya karena menyesal. Bukan karena hartanya, tapi karena temannya.",
+   "hl": [
+    "menggigit",
+    "temannya"
+   ],
+   "kw": "TEMAN"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah mengabadikan penyesalannya. Celaka aku, andai dulu aku tidak menjadikan si fulan teman akrabku.",
+   "hl": [
+    "si",
+    "fulan"
+   ],
+   "card": [
+    "Wahai, celaka aku! Sekiranya dulu aku tidak menjadikan si fulan itu teman akrab.",
+    "QS. Al-Furqan: 28"
+   ]
+  },
+  {
+   "il": "city",
+   "text": "Yuda dulu punya geng di kota. Mereka mengajaknya ke mana saja, kecuali ke arah kebaikan.",
+   "hl": [
+    "geng",
+    "kebaikan"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Satria tidak pernah memaksa. Ia hanya terus mengajak, walau sering ditertawakan.",
+   "hl": [
+    "mengajak",
+    "ditertawakan"
+   ]
+  },
+  {
+   "il": "scale",
+   "text": "Rasulullah memberi perumpamaan. Teman yang baik seperti penjual minyak wangi, teman yang buruk seperti pandai besi.",
+   "hl": [
+    "minyak",
+    "wangi",
+    "pandai",
+    "besi"
+   ],
+   "card": [
+    "Perumpamaan teman yang shalih dan teman yang buruk seperti pembawa minyak wangi dan peniup ububan pandai besi.",
+    "HR. Bukhari no. 5534",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Pada hari itu, teman-teman akrab saling bermusuhan. Kecuali orang-orang yang bertakwa.",
+   "hl": [
+    "bermusuhan",
+    "bertakwa"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "worry",
+   "text": "Coba lihat lima orang terdekatmu. Kalau mereka ditanya tentangmu nanti, apa yang akan mereka ceritakan?",
+   "hl": [
+    "lima",
+    "orang"
+   ],
+   "kw": "LIMA TERDEKATMU"
+  },
+  {
+   "il": "cta",
+   "text": "Part tiga, saat mulut dikunci dan tangan yang bicara. Tulis lanjut di komentar.",
+   "hl": [
+    "tangan",
+    "lanjut"
+   ],
+   "kw": "PART 3",
+   "kw2": "TANGAN BICARA"
+  }
+ ],
+ "caption": "Teman bisa menarik kita ke surga, atau menyeret kita ke penyesalan. Pada hari itu, teman akrab saling bermusuhan kecuali orang yang bertakwa (QS. Az-Zukhruf: 67).\n\n\"Perumpamaan teman yang shalih dan teman yang buruk seperti pembawa minyak wangi dan peniup ububan pandai besi.\" (HR. Bukhari no. 5534)",
+ "cta": "Siapa teman yang selalu mengajakmu ke kebaikan? Tag dia, dan tulis LANJUT untuk part 3.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#andaidulu",
+  "#penyesalan",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#temanshalih"
+ ]
+}

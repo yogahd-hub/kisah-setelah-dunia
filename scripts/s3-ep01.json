@@ -1,0 +1,135 @@
+{
+ "no": 17,
+ "series": "Jalan Pulang",
+ "part": 1,
+ "title": "Timbangan",
+ "hook": "Seberat biji sawi pun ditimbang",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "scale",
+   "text": "Satu timbangan berdiri di hadapan semua manusia. Tidak ada yang bisa menyuapnya.",
+   "hl": [
+    "timbangan",
+    "menyuapnya"
+   ],
+   "kw": "TIMBANGAN"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Dimas berdiri gemetar. Ia mencoba mengingat, amal apa yang pernah ia lakukan dengan ikhlas.",
+   "hl": [
+    "gemetar",
+    "ikhlas"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Allah berfirman, tidak seorang pun dirugikan, walau amalnya hanya seberat biji sawi.",
+   "hl": [
+    "biji",
+    "sawi"
+   ],
+   "card": [
+    "Kami akan memasang timbangan yang tepat pada hari kiamat, maka tidak seorang pun dirugikan walau sedikit. Sekalipun seberat biji sawi, pasti Kami mendatangkannya.",
+    "QS. Al-Anbiya: 47"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "neutral",
+   "text": "Farhan menepuk bahunya. Kadang yang paling berat di timbangan, justru yang paling ringan di lisan.",
+   "hl": [
+    "berat",
+    "ringan"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, ada dua kalimat yang ringan di lisan, tapi berat di timbangan.",
+   "hl": [
+    "dua",
+    "kalimat"
+   ],
+   "card": [
+    "Dua kalimat yang dicintai Ar-Rahman, ringan di lisan, berat di timbangan: Subhanallahi wa bihamdihi, Subhanallahil 'azhim.",
+    "HR. Bukhari no. 7563",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "expr2": "smile",
+   "switch": 0.5,
+   "text": "Dimas tersenyum kecil. Ternyata pintu kebaikan tidak selalu besar dan mahal.",
+   "hl": [
+    "pintu",
+    "kebaikan"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "smile",
+   "text": "Hari ini, berapa kali kamu sempat mengucapkannya? Satu kali saja sudah ditimbang.",
+   "hl": [
+    "ditimbang"
+   ],
+   "kw": "SATU KALI SAJA"
+  },
+  {
+   "il": "cta",
+   "text": "Part dua, jembatan yang harus dilewati semua orang. Tulis lanjut di komentar.",
+   "hl": [
+    "jembatan",
+    "lanjut"
+   ],
+   "kw": "PART 2",
+   "kw2": "JEMBATAN TIPIS"
+  }
+ ],
+ "caption": "Seri baru: Jalan Pulang. Setelah kitab amal dibagikan, semua amal ditimbang, sekecil apa pun.\n\n\"Dua kalimat yang dicintai Ar-Rahman, ringan di lisan, berat di timbangan.\" (HR. Bukhari no. 7563)",
+ "cta": "Sudah berapa kali hari ini? Tulis LANJUT untuk part 2.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#jalanpulang",
+  "#akhirat",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#mizan"
+ ]
+}
