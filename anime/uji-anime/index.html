@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Uji gaya anime - Kisah Setelah Dunia</title>
+<style>
+  html, body { margin: 0; background: #000; }
+  #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #1b1430; }
+  #scene { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+  .cap { position: absolute; left: 0; right: 0; top: 1330px; text-align: center; font-family: "Poppins", "Arial Black", sans-serif;
+         font-weight: 800; font-size: 84px; color: #fff; text-shadow: 0 6px 0 rgba(0,0,0,.55), 0 0 24px rgba(0,0,0,.5); opacity: 0; }
+  .cap b { color: #ffcf4a; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+  #title { position: absolute; left: 80px; top: 300px; font-family: "Poppins", "Arial Black", sans-serif; color: #fff; opacity: 0; }
+  #title .part { font-size: 120px; font-weight: 900; letter-spacing: 2px; text-shadow: 0 8px 0 #000; }
+  #title .part span { color: #ff5c8c; font-size: 210px; }
+  #title .name { font-size: 96px; font-weight: 900; line-height: 1.05; text-shadow: 0 8px 0 #000; }
+  #title .bar { width: 130px; height: 12px; background: #ff5c8c; margin: 10px 0 24px; }
+  #label { position: absolute; left: 70px; top: 90px; font: 600 26px "Poppins", sans-serif; letter-spacing: 6px; color: rgba(255,255,255,.7); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="uji-anime" data-start="0" data-width="1080" data-height="1920">
+  <canvas id="scene" width="1080" height="1920"></canvas>
+  <div id="label">SETELAH NAPAS TERAKHIR · PART 1</div>
+
+  <div id="c1" class="cap">Malam itu, <b>Arya</b></div>
+  <div id="c2" class="cap">masih punya <b>rencana</b></div>
+  <div id="c3" class="cap">tapi waktu <b>berhenti</b></div>
+
+  <div id="flash"></div>
+  <div id="title">
+    <div class="part">PART <span>1</span></div>
+    <div class="bar"></div>
+    <div class="name">DETIK<br>TERAKHIR</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script>
+  // ====================================================================
+  //  Gaya ANIME: toon shading 3 tingkat + garis tepi hitam (inverted hull)
+  //  Semua gerakan dihitung dari waktu t (detik) -> deterministik per frame.
+  // ====================================================================
+  const W = 1080, H = 1920, DUR = 9.0;
+  const canvas = document.getElementById("scene");
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+  renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(32, W / H, 0.1, 200);
+
+  // --- gradient 3 tingkat untuk cel shading ---
+  const grad = new THREE.DataTexture(new Uint8Array([70, 150, 255]), 3, 1, THREE.RedFormat);
+  grad.minFilter = grad.magFilter = THREE.NearestFilter; grad.needsUpdate = true;
+  const toon = (c, extra = {}) => new THREE.MeshToonMaterial({ color: c, gradientMap: grad, ...extra });
+  const INK = new THREE.MeshBasicMaterial({ color: 0x1a1210, side: THREE.BackSide });
+  function outlined(geo, mat, k = 1.045) {
+    const g = new THREE.Group();
+    const m = new THREE.Mesh(geo, mat); g.add(m);
+    const o = new THREE.Mesh(geo, INK); o.scale.setScalar(k); g.add(o);
+    g.userData.main = m; return g;
+  }
+  // angka acak deterministik
+  const rnd = (i) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+
+  // --- langit senja (gradien shader) ---
+  const sky = new THREE.Mesh(new THREE.SphereGeometry(90, 32, 16), new THREE.ShaderMaterial({
+    side: THREE.BackSide, depthWrite: false,
+    uniforms: { top: { value: new THREE.Color(0x2b1f5c) }, mid: { value: new THREE.Color(0xc75b7a) }, low: { value: new THREE.Color(0xffb45e) } },
+    vertexShader: "varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
+    fragmentShader: "uniform vec3 top; uniform vec3 mid; uniform vec3 low; varying vec3 vP; void main(){ float h = vP.y; vec3 c = h > 0.12 ? mix(mid, top, smoothstep(0.12, 0.6, h)) : mix(low, mid, smoothstep(-0.1, 0.12, h)); gl_FragColor = vec4(c,1.0); }"
+  }));
+  scene.add(sky);
+
+  // matahari
+  const sun = new THREE.Mesh(new THREE.CircleGeometry(6, 48), new THREE.MeshBasicMaterial({ color: 0xffe2a8 }));
+  sun.position.set(-14, 4, -70); scene.add(sun);
+
+  // awan (bola pipih toon)
+  const clouds = new THREE.Group();
+  for (let i = 0; i < 7; i++) {
+    const c = new THREE.Group();
+    for (let j = 0; j < 4; j++) {
+      const b = new THREE.Mesh(new THREE.SphereGeometry(2 + rnd(i * 9 + j) * 1.6, 16, 12), toon(0xffd6e0));
+      b.position.set(j * 2.4 - 3.6, rnd(i * 5 + j) * 0.8, 0); b.scale.y = 0.55; c.add(b);
+    }
+    c.position.set(-30 + i * 11, 10 + rnd(i) * 9, -55 - rnd(i + 3) * 10);
+    clouds.add(c);
+  }
+  scene.add(clouds);
+
+  // kota siluet + jendela menyala
+  const city = new THREE.Group();
+  for (let i = 0; i < 26; i++) {
+    const h = 6 + rnd(i * 3) * 18, w = 3 + rnd(i * 7) * 3;
+    const b = new THREE.Mesh(new THREE.BoxGeometry(w, h, 3), toon(0x3a2d5c));
+    b.position.set(-40 + i * 3.4, h / 2 - 6, -38 - rnd(i * 11) * 8); city.add(b);
+    for (let k = 0; k < 6; k++) {
+      if (rnd(i * 31 + k) < 0.5) continue;
+      const win = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.7), new THREE.MeshBasicMaterial({ color: 0xffd27a }));
+      win.position.set(b.position.x - w / 3 + rnd(i + k) * w * 0.6, -4 + rnd(i * 2 + k) * (h - 2), b.position.z + 1.55); city.add(win);
+    }
+  }
+  scene.add(city);
+
+  // atap gedung + pagar
+  const roof = new THREE.Mesh(new THREE.BoxGeometry(30, 0.6, 14), toon(0x6c6378)); roof.position.set(0, -0.3, -2); scene.add(roof);
+  for (let i = 0; i < 9; i++) {
+    const p = outlined(new THREE.BoxGeometry(0.12, 1.6, 0.12), toon(0xdedbe8));
+    p.position.set(-6 + i * 1.5, 0.8, -5.5); scene.add(p);
+  }
+  const rail = outlined(new THREE.BoxGeometry(13, 0.12, 0.12), toon(0xdedbe8)); rail.position.set(0, 1.55, -5.5); scene.add(rail);
+
+  // ---------------- KARAKTER ARYA (chibi anime) ----------------
+  const arya = new THREE.Group(); scene.add(arya);
+  const SKIN = 0xf6cfa8, SHIRT = 0xc7643f, PANTS = 0x2e3550, HAIR = 0x2a1d18;
+  const body = outlined(new THREE.CapsuleGeometry(0.62, 1.0, 8, 16), toon(SHIRT)); body.position.y = 1.45; arya.add(body);
+  const legs = outlined(new THREE.CapsuleGeometry(0.5, 0.6, 8, 16), toon(PANTS)); legs.position.y = 0.55; arya.add(legs);
+  const armL = outlined(new THREE.CapsuleGeometry(0.17, 0.8, 6, 12), toon(SHIRT)); armL.position.set(-0.78, 1.45, 0); armL.rotation.z = 0.25; arya.add(armL);
+  const armR = outlined(new THREE.CapsuleGeometry(0.17, 0.8, 6, 12), toon(SHIRT)); armR.position.set(0.78, 1.45, 0); armR.rotation.z = -0.25; arya.add(armR);
+
+  const head = new THREE.Group(); head.position.y = 3.05; arya.add(head);
+  const skull = outlined(new THREE.SphereGeometry(0.95, 32, 24), toon(SKIN), 1.035); skull.scale.set(1, 0.98, 0.95); head.add(skull);
+  // rambut: tudung + jambul runcing khas anime
+  const cap = outlined(new THREE.SphereGeometry(1.0, 32, 16, 0, Math.PI * 2, 0, Math.PI * 0.52), toon(HAIR), 1.03);
+  cap.position.y = 0.08; cap.rotation.x = -0.18; head.add(cap);
+  const spikes = [];
+  for (let i = 0; i < 7; i++) {
+    const s = outlined(new THREE.ConeGeometry(0.22, 0.75, 8), toon(HAIR), 1.06);
+    const a = -0.9 + i * 0.3;
+    s.position.set(Math.sin(a) * 0.78, 0.55 + Math.cos(a * 1.4) * 0.12, Math.cos(a) * 0.55 + 0.1);
+    s.rotation.set(0.9 + rnd(i) * 0.3, 0, -a * 0.8);
+    head.add(s); spikes.push(s);
+  }
+  // mata besar anime
+  function makeEye(side) {
+    const e = new THREE.Group();
+    const white = new THREE.Mesh(new THREE.SphereGeometry(0.24, 24, 16), new THREE.MeshBasicMaterial({ color: 0xffffff }));
+    white.scale.set(0.85, 1.15, 0.35); e.add(white);
+    const iris = new THREE.Mesh(new THREE.SphereGeometry(0.17, 24, 16), new THREE.MeshBasicMaterial({ color: 0x3b2a6e }));
+    iris.scale.set(0.8, 1.1, 0.3); iris.position.z = 0.06; e.add(iris);
+    const pupil = new THREE.Mesh(new THREE.SphereGeometry(0.08, 16, 12), new THREE.MeshBasicMaterial({ color: 0x0c0818 }));
+    pupil.scale.set(0.8, 1.1, 0.3); pupil.position.z = 0.1; e.add(pupil);
+    const hi = new THREE.Mesh(new THREE.SphereGeometry(0.05, 12, 8), new THREE.MeshBasicMaterial({ color: 0xffffff }));
+    hi.position.set(0.05, 0.07, 0.13); e.add(hi);
+    const lash = new THREE.Mesh(new THREE.TorusGeometry(0.22, 0.03, 6, 20, Math.PI * 0.9), new THREE.MeshBasicMaterial({ color: 0x1a1210 }));
+    lash.rotation.z = Math.PI * 0.05; lash.position.set(0, 0.04, 0.08); e.add(lash);
+    e.position.set(side * 0.36, 0.0, 0.82); e.rotation.y = side * 0.25;
+    e.userData = { white, iris, pupil, hi }; return e;
+  }
+  const eyeL = makeEye(-1), eyeR = makeEye(1); head.add(eyeL, eyeR);
+  const brows = [-1, 1].map(s => { const b = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.06, 0.04), new THREE.MeshBasicMaterial({ color: HAIR })); b.position.set(s * 0.36, 0.38, 0.86); head.add(b); return b; });
+  const mouth = new THREE.Mesh(new THREE.TorusGeometry(0.12, 0.025, 6, 16, Math.PI), new THREE.MeshBasicMaterial({ color: 0x7a2c2c }));
+  mouth.position.set(0, -0.42, 0.86); mouth.rotation.z = Math.PI; head.add(mouth);
+  const mouthO = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 12), new THREE.MeshBasicMaterial({ color: 0x5a1c1c }));
+  mouthO.scale.set(0.8, 1.1, 0.3); mouthO.position.set(0, -0.45, 0.86); mouthO.visible = false; head.add(mouthO);
+  const blush = [-1, 1].map(s => { const b = new THREE.Mesh(new THREE.CircleGeometry(0.13, 16), new THREE.MeshBasicMaterial({ color: 0xff8f9c, transparent: true, opacity: 0.55 })); b.position.set(s * 0.58, -0.2, 0.78); b.rotation.y = s * 0.5; head.add(b); return b; });
+
+  // --- cahaya ---
+  const key = new THREE.DirectionalLight(0xffd2a0, 2.2); key.position.set(-6, 6, 6); scene.add(key);
+  const rim = new THREE.DirectionalLight(0xb48cff, 1.4); rim.position.set(6, 3, -6); scene.add(rim);
+  scene.add(new THREE.AmbientLight(0x7a6aa8, 0.9));
+
+  // --- garis kecepatan anime (speed lines) saat momen kaget ---
+  const speed = new THREE.Group(); camera.add(speed); scene.add(camera);
+  for (let i = 0; i < 46; i++) {
+    const a = rnd(i * 13) * Math.PI * 2, r = 0.9 + rnd(i * 17) * 0.8, len = 0.6 + rnd(i * 19) * 1.0;
+    const l = new THREE.Mesh(new THREE.PlaneGeometry(0.018, len), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0 }));
+    l.position.set(Math.cos(a) * r, Math.sin(a) * r * 1.7, -3); l.rotation.z = a - Math.PI / 2; speed.add(l);
+  }
+  // daun/kelopak yang terbawa angin
+  const petals = new THREE.Group(); scene.add(petals);
+  for (let i = 0; i < 30; i++) {
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(0.12, 0.07), new THREE.MeshBasicMaterial({ color: 0xffc2d6, side: THREE.DoubleSide }));
+    p.userData = { x0: -8 + rnd(i) * 16, y0: rnd(i * 3) * 7, z0: -3 + rnd(i * 5) * 5, sp: 0.6 + rnd(i * 7) * 0.8 }; petals.add(p);
+  }
+
+  // ---------------- RENDER PER WAKTU ----------------
+  const ease = (x) => x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x);
+  function renderAt(t) {
+    // kamera: wide -> dolly in ke wajah -> sedikit guncang saat kaget
+    const k = ease(t / 6.5);
+    const shake = t > 6.4 && t < 7.2 ? Math.sin(t * 90) * 0.04 * (7.2 - t) : 0;
+    camera.position.set(1.6 - 1.4 * k + shake, 2.2 + 0.9 * k, 13 - 8.9 * k);
+    camera.lookAt(0, 2.2 + 0.85 * k, 0);
+
+    // karakter bernapas, rambut tertiup angin
+    arya.position.set(0, 0, 0);
+    body.position.y = 1.45 + Math.sin(t * 2.2) * 0.02;
+    spikes.forEach((s, i) => { s.rotation.y = Math.sin(t * 3 + i) * 0.12; });
+    // kepala menoleh ke kamera di detik 4.5-5.5
+    head.rotation.y = -0.5 + 0.5 * ease((t - 4.5) / 1.0);
+    head.rotation.x = Math.sin(t * 1.3) * 0.03;
+
+    // ekspresi: kedip di 3.2 dan 5.8, kaget di 6.4
+    const blink = (Math.abs(t - 3.2) < 0.08 || Math.abs(t - 5.8) < 0.08) ? 0.12 : 1;
+    const shock = t > 6.4;
+    [eyeL, eyeR].forEach(e => {
+      e.scale.y = blink * (shock ? 1.25 : 1);
+      e.userData.iris.scale.set(shock ? 0.5 : 0.8, shock ? 0.7 : 1.1, 0.3);
+      e.userData.pupil.visible = !shock;
+    });
+    brows.forEach((b, i) => { b.position.y = shock ? 0.48 : 0.38; b.rotation.z = shock ? (i ? -0.25 : 0.25) : 0; });
+    mouth.visible = !shock; mouthO.visible = shock;
+
+    // speed lines muncul saat kaget
+    const sp = shock ? Math.max(0, 1 - (t - 6.4) / 1.6) : 0;
+    speed.children.forEach((l, i) => { l.material.opacity = sp * (0.4 + rnd(i) * 0.6); l.position.z = -3 + ((t * 6 + rnd(i) * 4) % 1) * 0.6; });
+
+    // awan & kelopak bergerak
+    clouds.children.forEach((c, i) => { c.position.x = -30 + i * 11 + t * 0.6; });
+    petals.children.forEach((p, i) => {
+      const u = p.userData, tt = t * u.sp;
+      p.position.set(u.x0 + tt * 2.2 - 4, u.y0 - tt * 0.6 + Math.sin(tt * 3 + i) * 0.3, u.z0);
+      p.rotation.set(tt * 4 + i, tt * 3, tt * 2);
+    });
+    // langit makin gelap menjelang akhir
+    sky.material.uniforms.low.value.setHex(t < 6.4 ? 0xffb45e : 0x8a3a6a);
+    sun.material.color.setHex(t < 6.4 ? 0xffe2a8 : 0xff8a8a);
+    renderer.render(scene, camera);
+  }
+  renderAt(0);
+
+  // ---------------- TIMELINE (dibaca renderer HyperFrames) ----------------
+  // Objek proxy: setiap kali timeline di-seek, GSAP menulis proxy.t -> adegan 3D digambar ulang.
+  const proxy = { _t: 0, get t() { return this._t; }, set t(v) { this._t = v; renderAt(v); } };
+  const tl = gsap.timeline({ paused: true });
+  tl.to(proxy, { t: DUR, duration: DUR, ease: "none" }, 0);
+  const showCap = (id, a, b) => { tl.fromTo(id, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, a); tl.to(id, { opacity: 0, duration: 0.2 }, b); };
+  showCap("#c1", 0.4, 2.6); showCap("#c2", 2.8, 5.0); showCap("#c3", 5.2, 6.6);
+  tl.fromTo("#flash", { opacity: 0 }, { opacity: 0.9, duration: 0.06 }, 6.4).to("#flash", { opacity: 0, duration: 0.5 }, 6.46);
+  tl.fromTo("#title", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 7.2);
+  tl.to("#label", { opacity: 0, duration: 0.3 }, 7.0);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["uji-anime"] = tl;
+  // cadangan bila runtime mengirim event seek khusus Three.js
+  window.addEventListener("hf-seek", (e) => {
+    const v = (typeof window.__hfThreeTime === "number") ? window.__hfThreeTime : (e && e.detail && e.detail.time);
+    if (typeof v === "number") renderAt(v);
+  });
+  </script>
+</div>
+</body>
+</html>
