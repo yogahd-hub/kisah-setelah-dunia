@@ -94,6 +94,9 @@ Materi luar boleh dipakai sebagai **bahan cerita/hook** (mis. berita tentang ban
 ## Suara manual (opsional)
 Taruh `suara/<nama-naskah>.wav` (atau .mp3) untuk memakai suara buatan sendiri, mis. dari Google AI Studio. Lihat `suara/README.md`.
 
+## Ukuran video
+Semua hasil (MP4 dan cover) wajib **9:16, 1080x1920**. Workflow memeriksa ini otomatis; kalau ukurannya salah, run merah dan video tidak dirilis.
+
 ## Kuota
 - Gemini TTS gratis: 10 suara/hari per model, otomatis pindah ke model berikutnya kalau habis (±40 video/hari).
 - GitHub Actions (repo privat): 2.000 menit/bulan gratis. Satu video anime ±10 menit → ±200 video/bulan.

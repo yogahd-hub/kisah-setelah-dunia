@@ -98,6 +98,18 @@ jobs:
             echo "::endgroup::"
           done
 
+      - name: Cek ukuran 9:16 (1080x1920)
+        if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
+        run: |
+          bad=0
+          for f in out/*/*.mp4 out/*/cover.jpg; do
+            [ -f "$f" ] || continue
+            s=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$f")
+            echo "$f -> $s"
+            [ "$s" = "1080,1920" ] || { echo "::error::$f bukan 9:16 1080x1920 (ukuran $s)"; bad=1; }
+          done
+          exit $bad
+
       - name: Upload hasil
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
         uses: actions/upload-artifact@v5
