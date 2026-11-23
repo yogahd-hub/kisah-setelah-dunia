@@ -1,0 +1,81 @@
+name: Render video
+
+on:
+  push:
+    paths: ["scripts/**.json"]
+  workflow_dispatch:
+    inputs:
+      scripts:
+        description: "Naskah yang dirender, pisahkan spasi (contoh: scripts/s1-ep01.json). Kosongkan = semua naskah yang belum pernah dirender."
+        required: false
+        default: ""
+
+concurrency:
+  group: render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pilih naskah
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.scripts }}" ]; then
+            LIST="${{ github.event.inputs.scripts }}"
+          elif [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            LIST=$(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.sha }} -- 'scripts/*.json' | tr '\n' ' ')
+          else
+            LIST=""
+            for f in scripts/*.json; do
+              n=$(basename "$f" .json); [ -f "done/$n.txt" ] || LIST="$LIST $f"
+            done
+          fi
+          echo "list=$LIST" >> "$GITHUB_OUTPUT"
+          echo "Naskah: $LIST"
+
+      - name: Install
+        if: steps.pick.outputs.list != ''
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libraqm0 libfribidi0 > /dev/null
+          pip install -q pillow numpy
+          python -c "from PIL import features; assert features.check('raqm'), 'raqm (teks Arab) tidak aktif'; print('raqm ok')"
+
+      - name: Render
+        if: steps.pick.outputs.list != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          mkdir -p done
+          for f in ${{ steps.pick.outputs.list }}; do
+            echo "::group::$f"
+            python engine/reel.py "$f"
+            n=$(basename "$f" .json)
+            date -u +"%Y-%m-%dT%H:%MZ" > "done/$n.txt"
+            echo "::endgroup::"
+          done
+
+      - name: Upload hasil
+        if: steps.pick.outputs.list != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_number }}
+          path: out/
+          retention-days: 30
+
+      - name: Tandai selesai
+        if: steps.pick.outputs.list != ''
+        run: |
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          git add done/
+          git commit -m "Selesai render: ${{ steps.pick.outputs.list }}" || exit 0
+          git pull --rebase -q && git push -q

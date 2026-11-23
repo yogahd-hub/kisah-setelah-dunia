@@ -1,0 +1,23 @@
+{
+  "series": "Setelah Napas Terakhir",
+  "part": 1,
+  "title": "Detik|Terakhir",
+  "voice": "Charon",
+  "chars": {
+    "A": {"name": "ARYA", "hair": [40, 28, 22], "shirt": [176, 92, 64]},
+    "B": {"name": "BIMA", "hair": [30, 26, 30], "shirt": [64, 110, 100]}
+  },
+  "scenes": [
+    {"il": "duo", "text": "Arya dan Bima, sahabat sejak kecil. Malam itu, mereka masih tertawa bersama.", "hl": ["Arya", "Bima", "tertawa"], "kw": "MALAM ITU"},
+    {"il": "dreams", "who": "A", "seed": 2, "text": "Arya bercerita tentang rencananya. Motor baru, rumah sendiri, dan menikah tahun depan.", "hl": ["rencananya", "menikah"], "kw": "RENCANA ARYA", "switch": 0.95},
+    {"il": "night", "who": "B", "text": "Bima hanya diam. Sejak ayahnya wafat, ia sering bertanya, seperti apa rasanya detik terakhir itu?", "hl": ["diam", "detik", "terakhir"], "kw": "DETIK TERAKHIR"},
+    {"il": "clock", "text": "Keesokan paginya, kabar itu datang. Salah satu dari mereka, tidak akan pernah bangun lagi.", "hl": ["kabar", "tidak", "bangun"]},
+    {"il": "candle", "text": "Saat itu, ruh ditarik perlahan, sampai di kerongkongan.", "hl": ["ruh", "kerongkongan"], "card": ["فَلَوْلَا إِذَا بَلَغَتِ الْحُلْقُومَ", "QS. Al-Waqi'ah: 83"]},
+    {"il": "door", "text": "Allah berfirman, dan datanglah sakaratul maut dengan sebenar-benarnya. Itulah yang dulu selalu kamu hindari.", "hl": ["sakaratul", "maut", "hindari"], "card": ["وَجَاءَتْ سَكْرَةُ الْمَوْتِ بِالْحَقِّ", "QS. Qaf: 19"]},
+    {"il": "choice", "text": "Di detik itu, tak ada lagi rencana. Yang tersisa, hanya apa yang sudah kamu siapkan.", "hl": ["rencana", "siapkan"], "kw": "TAK ADA LAGI RENCANA"},
+    {"il": "cta", "text": "Lalu siapa yang pergi lebih dulu, Arya atau Bima? Part dua besok. Tulis lanjut di komentar.", "hl": ["Arya", "Bima", "lanjut"], "kw": "PART 2", "kw2": "SIAPA YANG PERGI?"}
+  ],
+  "caption": "Arya dan Bima masih tertawa bersama malam itu. Keesokan paginya, salah satu dari mereka tidak pernah bangun lagi.\n\n\"Dan datanglah sakaratul maut dengan sebenar-benarnya. Itulah yang dahulu hendak kamu hindari.\" (QS. Qaf: 19)",
+  "cta": "Menurutmu siapa yang pergi lebih dulu? Tulis LANJUT untuk part 2.",
+  "hashtags": ["#kisahsetelahdunia", "#setelahnapasterakhir", "#sakaratulmaut", "#pengingatdiri", "#ceritaislami", "#animasi"]
+}
