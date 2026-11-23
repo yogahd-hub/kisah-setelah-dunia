@@ -34,6 +34,7 @@ Video tersimpan 30 hari di Artifacts. File `done/<nama>.txt` menandai naskah yan
 | `PROMPT_AI.md` | Prompt siap tempel untuk membuat naskah dengan Gemini/ChatGPT |
 | `engine/check.py` | Pemeriksa naskah (jalan otomatis sebelum render) |
 | `SERI.md` | Rencana seri, episode, dan status |
+| `MASTER_PROMPT.md` | Prompt pembuka chat baru Claude untuk produksi batch |
 | `CHECKPOINT.md` | **Tempel ke chat baru** (Claude/ChatGPT/Gemini) untuk melanjutkan tanpa membuka repo |
 | `MANDIRI.md` | Cara produksi tanpa Claude + risiko & opsi gratis |
 | `NICHE.md` / `NICHE_BARU.md` | Profil niche ini / cara membuat akun niche lain dari mesin yang sama |
