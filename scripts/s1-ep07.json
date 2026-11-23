@@ -1,0 +1,156 @@
+{
+ "no": 11,
+ "series": "Setelah Napas Terakhir",
+ "part": 7,
+ "title": "Hari|Dibangkitkan",
+ "hook": "Semua bangkit tanpa alas kaki",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Sangkakala ditiup. Bumi terbelah, dan seluruh manusia bangkit dari kuburnya.",
+   "hl": [
+    "sangkakala",
+    "bangkit"
+   ],
+   "kw": "BANGKIT"
+  },
+  {
+   "il": "grave",
+   "who": "A",
+   "expr": "shock",
+   "text": "Arya terbangun. Tanah di atasnya terbuka.",
+   "hl": [
+    "terbangun"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Allah berfirman, sangkakala ditiup, lalu seketika mereka keluar dari kuburnya, menuju Tuhan mereka.",
+   "hl": [
+    "menuju",
+    "Tuhan"
+   ],
+   "card": [
+    "Lalu ditiuplah sangkakala, maka seketika itu mereka keluar dari kuburnya menuju kepada Tuhan mereka.",
+    "QS. Yasin: 51"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "expr2": "cry",
+   "switch": 0.6,
+   "text": "Sebagian orang berseru, siapa yang membangunkan kami dari tempat tidur kami?",
+   "hl": [
+    "membangunkan"
+   ]
+  },
+  {
+   "il": "crowd",
+   "move": false,
+   "text": "Tanpa alas kaki, tanpa pakaian. Tapi tidak ada yang sempat memperhatikan orang lain.",
+   "hl": [
+    "alas",
+    "kaki"
+   ],
+   "kw": "SIBUK SENDIRI"
+  },
+  {
+   "il": "sun",
+   "text": "Di padang mahsyar, matahari didekatkan hingga sejarak satu mil. Manusia tenggelam dalam keringatnya, sesuai amalnya.",
+   "hl": [
+    "satu",
+    "mil",
+    "amalnya"
+   ],
+   "card": [
+    "Matahari didekatkan kepada makhluk pada hari kiamat hingga sejarak satu mil. Manusia berkeringat sesuai kadar amal mereka.",
+    "HR. Muslim no. 2864",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Ada yang keringatnya sampai mata kaki. Ada yang sampai lutut. Ada yang sampai ke mulutnya.",
+   "hl": [
+    "lutut",
+    "mulutnya"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "worry",
+   "expr2": "smile",
+   "switch": 0.55,
+   "text": "Bima teringat, ada tujuh golongan yang dinaungi Allah hari itu. Salah satunya, pemuda yang tumbuh dalam ibadah.",
+   "hl": [
+    "tujuh",
+    "golongan"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Hari itu tidak ada naungan selain naungan-Nya. Amal apa yang sedang kamu siapkan untuk berteduh?",
+   "hl": [
+    "naungan",
+    "berteduh"
+   ],
+   "kw": "NAUNGAN"
+  },
+  {
+   "il": "cta",
+   "text": "Part delapan, kitab amal dibagikan. Kanan, atau kiri? Tulis lanjut di komentar.",
+   "hl": [
+    "kanan",
+    "kiri",
+    "lanjut"
+   ],
+   "kw": "PART 8",
+   "kw2": "KITAB DI TANGAN"
+  }
+ ],
+ "caption": "Sangkakala ditiup. Semua bangkit tanpa alas kaki, lalu berdiri di bawah matahari yang didekatkan.\n\n\"Matahari didekatkan kepada makhluk pada hari kiamat hingga sejarak satu mil.\" (HR. Muslim no. 2864)",
+ "cta": "Amal apa yang kamu siapkan untuk berteduh hari itu? Tulis LANJUT untuk part 8.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#padangmahsyar"
+ ]
+}

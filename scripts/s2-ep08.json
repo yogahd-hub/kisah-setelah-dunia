@@ -1,0 +1,151 @@
+{
+ "no": 16,
+ "series": "Tanda Akhir Zaman",
+ "part": 8,
+ "title": "Hari|Terakhir",
+ "hook": "Saat nama Allah tak disebut lagi",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "globe",
+   "text": "Akan datang hari, ketika tak seorang pun di bumi menyebut nama Allah.",
+   "hl": [
+    "nama",
+    "Allah"
+   ],
+   "kw": "TAK ADA LAGI",
+   "card": [
+    "Kiamat tidak akan terjadi hingga di bumi tidak lagi diucapkan, Allah, Allah.",
+    "HR. Muslim no. 148",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "angel",
+   "text": "Sebelumnya, Allah mengirim angin yang lembut. Angin itu mencabut nyawa setiap orang beriman.",
+   "hl": [
+    "angin",
+    "lembut"
+   ]
+  },
+  {
+   "il": "crowd",
+   "move": false,
+   "text": "Yang tersisa hanya manusia yang paling buruk. Kepada merekalah kiamat datang.",
+   "hl": [
+    "paling",
+    "buruk"
+   ],
+   "kw": "YANG TERSISA"
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Raka bertanya, jadi kapan semua itu terjadi? Ilham menggeleng. Tidak ada yang tahu.",
+   "hl": [
+    "kapan"
+   ]
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, pengetahuan tentang kiamat hanya ada di sisi-Nya. Siapa pun yang menyebut tanggalnya, keliru.",
+   "hl": [
+    "di",
+    "sisi-Nya",
+    "keliru"
+   ],
+   "card": [
+    "Mereka menanyakan kepadamu tentang kiamat, kapan terjadi? Katakanlah, pengetahuan tentang kiamat itu ada pada Tuhanku.",
+    "QS. Al-A'raf: 187"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Seorang lelaki pernah bertanya, kapan kiamat? Rasulullah balik bertanya, apa yang sudah kamu siapkan untuknya?",
+   "hl": [
+    "siapkan"
+   ],
+   "card": [
+    "Seseorang bertanya, kapan kiamat, wahai Rasulullah? Beliau bersabda, apa yang telah kamu siapkan untuknya?",
+    "HR. Bukhari no. 6171",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Ia menjawab, aku tak punya banyak shalat dan puasa, tapi aku mencintai Allah dan Rasul-Nya. Beliau bersabda, kamu bersama yang kamu cintai.",
+   "hl": [
+    "mencintai",
+    "bersama"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Delapan part tentang tanda akhir zaman. Ternyata pertanyaan terpentingnya bukan kapan, tapi apa bekalmu?",
+   "hl": [
+    "bukan",
+    "kapan",
+    "bekalmu"
+   ],
+   "kw": "APA BEKALMU"
+  },
+  {
+   "il": "cta",
+   "text": "Seri ini selesai. Seri baru akan segera hadir. Tulis lanjut di komentar.",
+   "hl": [
+    "selesai",
+    "lanjut"
+   ],
+   "kw": "TAMAT",
+   "kw2": "SERI BARU SEGERA"
+  }
+ ],
+ "caption": "Penutup Seri Tanda Akhir Zaman. Tidak ada yang tahu kapan kiamat terjadi. Yang ditanyakan Rasulullah justru: apa yang sudah kamu siapkan?\n\n\"Apa yang telah kamu siapkan untuknya?\" (HR. Bukhari no. 6171)",
+ "cta": "Apa bekal yang sedang kamu siapkan? Tulis LANJUT untuk seri baru.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#harikiamat"
+ ]
+}

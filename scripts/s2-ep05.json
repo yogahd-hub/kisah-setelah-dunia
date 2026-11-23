@@ -1,0 +1,143 @@
+{
+ "no": 12,
+ "series": "Tanda Akhir Zaman",
+ "part": 5,
+ "title": "Menara|Putih",
+ "hook": "Ia turun bersama dua malaikat",
+ "cover_scene": 2,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "eye",
+   "text": "Dajjal hampir menguasai dunia. Lalu, di saat paling gelap, seseorang turun dari langit.",
+   "hl": [
+    "turun",
+    "langit"
+   ],
+   "kw": "SAAT PALING GELAP"
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, Isa putra Maryam akan turun di menara putih, di sebelah timur Damaskus.",
+   "hl": [
+    "menara",
+    "putih"
+   ],
+   "card": [
+    "Allah mengutus Al-Masih putra Maryam. Ia turun di menara putih di sebelah timur Damaskus, kedua tangannya di atas sayap dua malaikat.",
+    "HR. Muslim no. 2937",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "angel",
+   "text": "Kedua tangannya bertumpu di sayap dua malaikat. Saat ia menundukkan kepala, air menetes dari rambutnya.",
+   "hl": [
+    "malaikat",
+    "menetes"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "shock",
+   "text": "Raka terdiam. Ilham menjelaskan, Nabi Isa akan mengejar Dajjal, lalu membunuhnya di gerbang Lud.",
+   "hl": [
+    "Dajjal",
+    "Lud"
+   ]
+  },
+  {
+   "il": "scale",
+   "text": "Rasulullah bersabda, ia turun sebagai hakim yang adil, dan harta melimpah hingga tak ada yang mau menerimanya.",
+   "hl": [
+    "hakim",
+    "adil"
+   ],
+   "card": [
+    "Hampir saja turun di tengah kalian putra Maryam sebagai hakim yang adil ... dan harta melimpah hingga tak seorang pun mau menerimanya.",
+    "HR. Bukhari no. 2222",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "globe",
+   "text": "Bayangkan dunia tanpa orang yang meminta-minta. Semua merasa cukup.",
+   "hl": [
+    "cukup"
+   ],
+   "kw": "DUNIA YANG CUKUP"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "env": "night",
+   "text": "Malam itu Raka bertanya pada dirinya sendiri. Aku menunggu keadilan datang, tapi apakah aku sudah adil pada orang terdekatku?",
+   "hl": [
+    "adil",
+    "terdekatku"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Keadilan di zaman itu dimulai dari orang-orang yang adil. Kenapa tidak dimulai dari kamu, hari ini?",
+   "hl": [
+    "kamu",
+    "hari",
+    "ini"
+   ],
+   "kw": "MULAI DARIMU"
+  },
+  {
+   "il": "cta",
+   "text": "Part enam, kaum yang tertahan di balik tembok. Tulis lanjut di komentar.",
+   "hl": [
+    "tembok",
+    "lanjut"
+   ],
+   "kw": "PART 6",
+   "kw2": "DI BALIK TEMBOK"
+  }
+ ],
+ "caption": "Di saat fitnah Dajjal paling gelap, Nabi Isa turun di menara putih sebelah timur Damaskus, lalu memimpin dengan adil.\n\n\"Hampir saja turun di tengah kalian putra Maryam sebagai hakim yang adil.\" (HR. Bukhari no. 2222)",
+ "cta": "Keadilan apa yang bisa kamu mulai hari ini? Tulis LANJUT untuk part 6.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#nabiisa"
+ ]
+}

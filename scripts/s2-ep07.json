@@ -1,0 +1,140 @@
+{
+ "no": 15,
+ "series": "Tanda Akhir Zaman",
+ "part": 7,
+ "title": "Dari|Barat",
+ "hook": "Matahari terbit dari arah yang salah",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "sunwest",
+   "who": "A",
+   "text": "Pagi itu, semua orang menatap langit. Matahari terbit, tapi dari arah yang salah.",
+   "hl": [
+    "arah",
+    "salah"
+   ],
+   "kw": "DARI BARAT"
+  },
+  {
+   "il": "duo",
+   "expr": "shock",
+   "text": "Raka menjatuhkan ponselnya. Ilham membisikkan satu hadits yang dulu sering ia dengar.",
+   "hl": [
+    "hadits"
+   ]
+  },
+  {
+   "il": "globe",
+   "text": "Rasulullah bersabda, kiamat tidak terjadi sampai matahari terbit dari barat. Saat itu semua beriman, tapi iman tak lagi bermanfaat.",
+   "hl": [
+    "bermanfaat"
+   ],
+   "card": [
+    "Kiamat tidak terjadi hingga matahari terbit dari barat. Ketika manusia melihatnya, semua beriman. Saat itulah iman tidak bermanfaat bagi yang belum beriman sebelumnya.",
+    "HR. Bukhari no. 4635",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Pintu taubat yang selama ini terbuka, akhirnya tertutup.",
+   "hl": [
+    "tertutup"
+   ],
+   "kw": "PINTU TERTUTUP"
+  },
+  {
+   "il": "mosque",
+   "text": "Padahal setiap malam, Allah membentangkan tangan-Nya, menerima taubat orang yang berdosa di siang hari.",
+   "hl": [
+    "membentangkan",
+    "taubat"
+   ],
+   "card": [
+    "Allah membentangkan tangan-Nya di malam hari agar bertaubat orang yang berbuat dosa di siang hari ... hingga matahari terbit dari barat.",
+    "HR. Muslim no. 2759",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "cry",
+   "env": "night",
+   "text": "Raka teringat semua dosa yang ia tunda taubatnya. Nanti saja, katanya dulu. Masih ada besok.",
+   "hl": [
+    "nanti",
+    "saja"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Tapi besok bisa jadi hari matahari terbit dari barat. Atau hari terakhirmu sendiri.",
+   "hl": [
+    "besok",
+    "terakhirmu"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Pagi ini matahari masih terbit dari timur. Artinya, pintu itu masih terbuka untukmu.",
+   "hl": [
+    "timur",
+    "terbuka"
+   ],
+   "kw": "MASIH DARI TIMUR"
+  },
+  {
+   "il": "cta",
+   "text": "Part delapan, penutup seri, hari terakhir di bumi. Tulis lanjut di komentar.",
+   "hl": [
+    "terakhir",
+    "lanjut"
+   ],
+   "kw": "PART 8",
+   "kw2": "HARI TERAKHIR"
+  }
+ ],
+ "caption": "Selama matahari masih terbit dari timur, pintu taubat masih terbuka. Rasulullah bersabda, siapa yang bertaubat sebelum matahari terbit dari barat, Allah menerima taubatnya (HR. Muslim no. 2703).\n\n\"Kiamat tidak terjadi hingga matahari terbit dari barat.\" (HR. Bukhari no. 4635)",
+ "cta": "Taubat apa yang masih kamu tunda? Tulis LANJUT untuk part 8.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#taubat"
+ ]
+}

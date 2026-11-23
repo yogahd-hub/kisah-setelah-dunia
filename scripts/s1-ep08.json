@@ -1,0 +1,136 @@
+{
+ "no": 13,
+ "series": "Setelah Napas Terakhir",
+ "part": 8,
+ "title": "Kitab di|Tangan",
+ "hook": "Seluruh hidupmu dalam satu kitab",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Arya menahan napas. Sebuah kitab melayang ke arahnya. Isinya, seluruh hidupnya.",
+   "hl": [
+    "kitab",
+    "seluruh",
+    "hidupnya"
+   ],
+   "kw": "SELURUH HIDUPNYA"
+  },
+  {
+   "il": "clock",
+   "text": "Setiap kata, setiap langkah, setiap hal yang dulu ia sembunyikan. Semuanya tercatat.",
+   "hl": [
+    "sembunyikan",
+    "tercatat"
+   ]
+  },
+  {
+   "il": "calendar",
+   "text": "Allah menceritakan seruan mereka. Kitab apa ini? Tidak ada yang tertinggal, yang kecil maupun yang besar.",
+   "hl": [
+    "kecil",
+    "besar"
+   ],
+   "card": [
+    "Aduhai celaka kami, kitab apakah ini? Tidak ada yang tertinggal, yang kecil dan yang besar, melainkan tercatat semuanya.",
+    "QS. Al-Kahf: 49"
+   ]
+  },
+  {
+   "il": "gate",
+   "text": "Ada yang menerima kitabnya dari tangan kanan. Ia berseru gembira, ambillah, bacalah kitabku ini.",
+   "hl": [
+    "kanan",
+    "gembira"
+   ],
+   "card": [
+    "Adapun orang yang diberikan kitabnya di tangan kanannya, dia berkata, ambillah, bacalah kitabku ini.",
+    "QS. Al-Haqqah: 19"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Ada yang menerimanya dari tangan kiri. Ia berkata, andai kitabku ini tidak pernah diberikan kepadaku.",
+   "hl": [
+    "kiri",
+    "andai"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Arya dan Bima saling menatap. Tak ada yang bisa membaca untuk orang lain. Tak ada yang bisa menukarnya.",
+   "hl": [
+    "menukarnya"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Hari ini, kitabmu belum ditutup. Penanya masih di tanganmu.",
+   "hl": [
+    "belum",
+    "ditutup"
+   ],
+   "kw": "PENA DI TANGANMU"
+  },
+  {
+   "il": "choice",
+   "text": "Satu halaman lagi hari ini. Mau kamu isi dengan apa?",
+   "hl": [
+    "halaman"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Seri ini selesai. Seri baru akan segera hadir. Tulis lanjut di komentar.",
+   "hl": [
+    "selesai",
+    "lanjut"
+   ],
+   "kw": "TAMAT",
+   "kw2": "SERI BARU SEGERA"
+  }
+ ],
+ "caption": "Part terakhir Seri Setelah Napas Terakhir. Setiap orang menerima kitab amalnya, dari kanan atau dari kiri.\n\n\"Adapun orang yang diberikan kitabnya di tangan kanannya, dia berkata, ambillah, bacalah kitabku ini.\" (QS. Al-Haqqah: 19)",
+ "cta": "Halaman hari ini mau kamu isi dengan apa? Tulis LANJUT untuk seri baru.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#kitabamal"
+ ]
+}

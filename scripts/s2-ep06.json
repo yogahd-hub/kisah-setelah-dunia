@@ -1,0 +1,142 @@
+{
+ "no": 14,
+ "series": "Tanda Akhir Zaman",
+ "part": 6,
+ "title": "Di Balik|Tembok",
+ "hook": "Tembok yang mulai terbuka",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "wall",
+   "text": "Ada satu kaum yang tertahan di balik tembok besi. Dan suatu hari, tembok itu akan terbuka.",
+   "hl": [
+    "tembok",
+    "terbuka"
+   ],
+   "kw": "YAKJUJ MAKJUJ"
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Ilham bercerita. Dulu Dzulqarnain membangun tembok dari besi dan tembaga cair, untuk menahan kaum perusak.",
+   "hl": [
+    "Dzulqarnain",
+    "perusak"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Al-Qur'an menyebut, mereka tidak mampu mendakinya, dan tidak mampu melubanginya.",
+   "hl": [
+    "mendakinya",
+    "melubanginya"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "shock",
+   "text": "Suatu hari Rasulullah masuk ke rumah Zainab dengan wajah cemas. Telah terbuka dari tembok Yakjuj dan Makjuj, sebesar ini.",
+   "hl": [
+    "cemas",
+    "terbuka"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Beliau melingkarkan ibu jari dan telunjuknya. Zainab bertanya, apakah kami akan binasa, padahal ada orang shalih?",
+   "hl": [
+    "binasa",
+    "shalih"
+   ]
+  },
+  {
+   "il": "city",
+   "text": "Rasulullah menjawab, ya, jika keburukan sudah banyak.",
+   "hl": [
+    "keburukan"
+   ],
+   "kw": "KEBURUKAN",
+   "card": [
+    "Apakah kami akan binasa, padahal di antara kami ada orang-orang shalih? Beliau menjawab, ya, jika keburukan telah banyak.",
+    "HR. Bukhari no. 3346",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Kelak saat tembok itu dibuka, mereka turun dengan cepat dari seluruh tempat yang tinggi.",
+   "hl": [
+    "turun",
+    "cepat"
+   ],
+   "card": [
+    "Hingga apabila Yakjuj dan Makjuj dibukakan, dan mereka turun dengan cepat dari seluruh tempat yang tinggi.",
+    "QS. Al-Anbiya: 96"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Menjadi shalih sendirian tidak cukup, kalau kita diam saat keburukan tumbuh. Apa yang sudah kamu lakukan untuk sekitarmu?",
+   "hl": [
+    "diam",
+    "sekitarmu"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part tujuh, hari ketika matahari terbit dari barat. Tulis lanjut di komentar.",
+   "hl": [
+    "barat",
+    "lanjut"
+   ],
+   "kw": "PART 7",
+   "kw2": "DARI BARAT"
+  }
+ ],
+ "caption": "Rasulullah pernah datang dengan wajah cemas, mengabarkan tembok Yakjuj dan Makjuj yang mulai terbuka. Pertanyaan Zainab setelahnya masih relevan sampai hari ini.\n\n\"Apakah kami akan binasa, padahal di antara kami ada orang-orang shalih? Beliau menjawab, ya, jika keburukan telah banyak.\" (HR. Bukhari no. 3346)",
+ "cta": "Apa yang sudah kamu lakukan untuk keburukan di sekitarmu? Tulis LANJUT untuk part 7.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#yakjujmakjuj"
+ ]
+}
