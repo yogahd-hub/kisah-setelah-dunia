@@ -21,7 +21,7 @@ jobs:
       contents: write
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -53,7 +53,7 @@ jobs:
             echo "ok=yes" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
         with:
           node-version: 22
@@ -87,7 +87,7 @@ jobs:
 
       - name: Upload hasil
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: video-${{ github.run_number }}
           path: out/
