@@ -37,7 +37,7 @@ dreams (tokoh + ikon rencana dunia yang lalu hilang; opsi who, seed 0-4, switch)
 night (tokoh merenung malam, bulan sabit, bubble; opsi who, expr, bubble)
 choice (sorotan bergantian A dan B — untuk pertanyaan "kamu yang mana?")
 angel (sosok bercahaya bersayap tanpa wajah)
-grave (makam, nisan, hujan)
+grave (makam, nisan, hujan; opsi who + expr untuk tokoh menangis di samping makam)
 crowd (kerumunan siluet di padang luas; opsi move true/false)
 scale (timbangan amal)
 sun (matahari sangat dekat)
@@ -45,7 +45,7 @@ gate (gerbang bercahaya; opsi dark true untuk gerbang gelap)
 wall (tembok besar retak — Yakjuj Makjuj)
 eye (satu mata besar mengintai — misteri/Dajjal secara simbolik)
 sunwest (matahari terbit dari barat)
-city (gedung-gedung makin tinggi)
+city (gedung-gedung tumbuh makin tinggi)
 clock, hourglass, calendar, globe, door, candle, mosque
 cta (WAJIB untuk scene terakhir)
 Ekspresi (expr/expr2): neutral, smile, worry, shock, cry.
@@ -77,10 +77,16 @@ CONTOH FORMAT (ikuti struktur ini persis):
  "hashtags": ["#kisahsetelahdunia", "#setelahnapasterakhir", "#pengingatdiri", "#ceritaislami", "#animasi"]
 }
 
+MATERI SUMBER (opsional)
+Kalau di bawah ada materi (berita, jurnal, artikel, catatan), pakai sebagai bahan cerita atau hook saja.
+Dalil TETAP hanya dari Al-Qur'an/hadits shahih-hasan. Jangan menyebut berita sebagai "tanda kiamat yang pasti".
+Tulis sumber materi di akhir "caption" (nama media/jurnal + tahun).
+
 PERMINTAAN SAYA:
 Seri: Setelah Napas Terakhir
 Part: 5
 Nomor urut tayang ("no"): 7
 Topik: amal saleh yang menemani di alam kubur
 Part berikutnya (untuk teaser): Part 6 — Menunggu (alam barzakh)
+Materi sumber: (tempel teks berita/jurnal di sini, atau tulis "tidak ada")
 ```

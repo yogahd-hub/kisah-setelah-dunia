@@ -595,7 +595,7 @@ def main():
             for k, fr in enumerate(frames(S, work, i)):
                 if k == target: sheet.paste(fr.resize((360, 640)), (i * 360, 0)); break
         sheet.save(f"{outdir}/preview.jpg", quality=85); print(f"[ok] {outdir}/preview.jpg"); return
-    if S.get("engine") == "anime":
+    if S.get("engine", "anime") == "anime":   # gaya anime = default; "engine": "vektor" untuk gaya lama
         import anime
         final = anime.build(S, work, outdir, pretty, sys.modules[__name__])
         make_cover(S, work, f"{outdir}/cover.jpg")

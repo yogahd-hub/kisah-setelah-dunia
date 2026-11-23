@@ -8,10 +8,10 @@ Naskah JSON masuk → video jadi. Voice over pakai Gemini TTS (gratis), render p
 2. Selesai. Workflow ada di `.github/workflows/render.yml`.
 
 ## Membuat video
-Tanpa Claude: salin `TEMPLATE_NASKAH.json` dan isi sendiri, atau pakai prompt di `PROMPT_AI.md` di Gemini/ChatGPT gratis untuk membuat naskahnya.
+**Tanpa Claude: baca `MANDIRI.md`.** Ringkasnya: salin `TEMPLATE_NASKAH.json` dan isi sendiri, atau pakai prompt di `PROMPT_AI.md` di Gemini/ChatGPT gratis untuk membuat naskahnya.
 
 1. Tambah file naskah di `scripts/` (lihat `PANDUAN_NASKAH.md`). Bisa lewat web GitHub: **Add file → Create new file**, nama `scripts/s1-ep02.json`, tempel isinya, **Commit**.
-2. Buka tab **Actions** → run "Render video" yang sedang berjalan (±3–5 menit per video).
+2. Buka tab **Actions** → run "Render video" yang sedang berjalan (±10 menit per video anime).
 3. Setelah hijau ✅, klik run-nya → bagian **Artifacts** → unduh `video-…`. Isinya per episode:
    - `<nama>.mp4` — video siap upload
    - `cover.jpg` — cover/thumbnail
@@ -33,7 +33,12 @@ Video tersimpan 30 hari di Artifacts. File `done/<nama>.txt` menandai naskah yan
 | `TEMPLATE_NASKAH.json` | Template naskah kosong untuk diisi |
 | `PROMPT_AI.md` | Prompt siap tempel untuk membuat naskah dengan Gemini/ChatGPT |
 | `engine/check.py` | Pemeriksa naskah (jalan otomatis sebelum render) |
-| `SERI.md` | Rencana seri dan episode |
+| `SERI.md` | Rencana seri, episode, dan status |
+| `MANDIRI.md` | Cara tetap produksi tanpa langganan Claude |
+| `skill/` | Instruksi kerja Claude (skill) untuk menulis naskah |
+| `suara/` | Suara manual opsional (`<nama-naskah>.wav`) |
+| `engine/anime.py`, `engine/anime_template.html` | Mesin gaya anime (default) |
+| `engine/wtime.py` | Waktu kata dari faster-whisper |
 
 ## Jalankan lokal (opsional)
 ```bash

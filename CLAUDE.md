@@ -7,3 +7,5 @@ Repo ini mesin video akun **Kisah Setelah Dunia** (animasi alam akhirat & akhir 
 - Validasi cepat sebelum commit: `python -c "import json,sys; [json.load(open(f)) for f in sys.argv[1:]]" scripts/*.json` dan pastikan setiap `il` ada di daftar ilustrasi.
 - Tulis beberapa naskah sekaligus dalam satu sesi (batch mingguan) untuk menghemat kuota.
 - Teks Arab di kartu harus disebut ke user untuk dicek ke mushaf sebelum diunggah.
+- Langkah lengkap menulis naskah (termasuk dari materi jurnal/berita): `skill/naskah-kisah-setelah-dunia/SKILL.md`. Gaya anime = default.
+- Setelah menulis naskah, perbarui kolom Status di `SERI.md`.

@@ -1,6 +1,6 @@
 # Panduan Naskah — Kisah Setelah Dunia
 
-Setiap video = satu file JSON di folder `scripts/`. Begitu file di-push, GitHub Actions otomatis membuat voice over, merender video, lalu menyimpan hasilnya (MP4 + cover.jpg + caption.txt) di tab **Actions → run terbaru → Artifacts**.
+Setiap video = satu file JSON di folder `scripts/`. **Gaya default: anime 3D** (HyperFrames + three.js). Tambahkan `"engine": "vektor"` hanya kalau ingin gaya gambar datar lama. Begitu file di-push, GitHub Actions otomatis membuat voice over, merender video, lalu menyimpan hasilnya (MP4 + cover.jpg + caption.txt) di tab **Actions → run terbaru → Artifacts**.
 
 ## Penamaan file
 `scripts/<seri>-ep<nomor>.json`, contoh `s1-ep02.json` (seri 1, part 2), `s2-ep01.json` (seri 2, part 1).
@@ -43,6 +43,8 @@ Setiap video = satu file JSON di folder `scripts/`. Begitu file di-push, GitHub 
 | `card` | Kartu dalil: `[arti dalam bahasa Indonesia, sumber]` atau `[arti, sumber, label]`. Label default `AL-QUR'AN`; untuk hadits isi `"HADITS"`. Pakai **arti/potongan arti**, bukan teks Arab (teks Arab tidak dibacakan dan sulit dicek). Maks ±4 baris. |
 | `il` | Ilustrasi scene (daftar di bawah). |
 | `tts_model` | (opsional) paksa model TTS tertentu. |
+| `engine` | (opsional) `anime` (default) atau `vektor`. |
+| `env` | (opsional, il `solo`) `night` = di kamar malam; tanpa ini = ruang gelap. |
 | `style` | **Jangan diisi.** Model TTS kadang ikut membacakan instruksi gaya. Mesin juga mengecek 7 detik pertama suara dan mengulang otomatis kalau ada ucapan tambahan. |
 
 ## Ilustrasi (`il`)
@@ -54,14 +56,15 @@ Setiap video = satu file JSON di folder `scripts/`. Begitu file di-push, GitHub 
 | `night` | Tokoh merenung malam, bulan sabit, bubble | `who`, `expr`, `bubble` |
 | `choice` | Sorotan bergantian A dan B | |
 | `angel` | Sosok bercahaya bersayap (tanpa wajah) | |
-| `grave` | Makam, nisan, hujan | |
+| `grave` | Makam, nisan, hujan | `who` (tokoh menangis di samping makam), `expr` |
 | `crowd` | Kerumunan siluet di padang luas | `move` (true/false) |
 | `scale` | Timbangan amal | |
 | `sun` | Matahari sangat dekat | |
 | `gate` | Gerbang bercahaya | `dark` (true = gerbang gelap) |
 | `wall` | Tembok besar yang retak | |
 | `eye` | Satu mata besar yang mengintai | |
-| `sunwest` | Matahari terbit dari barat | |
+| `city` | Gedung-gedung tumbuh makin tinggi | |
+| `sunwest` | Matahari terbit dari barat, tokoh kaget | `who` |
 | `clock` | Jam berputar lalu berhenti | |
 | `hourglass` | Jam pasir | |
 | `calendar` | Kalender dengan tanda tanya | |
@@ -81,6 +84,16 @@ Ekspresi (`expr`): `neutral`, `smile`, `worry`, `shock`, `cry`.
 5. Struktur yang terbukti: hook dramatis (scene 1–2) → cerita tokoh → dalil → refleksi "kamu" → teaser part berikutnya + ajakan komen. Momen paling dramatis taruh di depan atau tengah, jangan di akhir.
 6. Panjang ideal 7–10 scene, total narasi 55–90 detik.
 
+## Materi sumber (jurnal, berita, artikel)
+Materi luar boleh dipakai sebagai **bahan cerita/hook** (mis. berita tentang banyaknya kematian mendadak, riset tentang rasa waktu makin cepat). Aturannya:
+- Fakta dari materi ditulis sebagai fakta umum tanpa melebih-lebihkan, dan sumbernya dicatat di `caption`.
+- **Dalil tetap hanya dari Al-Qur'an / hadits shahih-hasan**, bukan dari berita.
+- Jangan menghubungkan berita dengan klaim "ini pasti tanda kiamat". Cukup ajak merenung.
+
+## Suara manual (opsional)
+Taruh `suara/<nama-naskah>.wav` (atau .mp3) untuk memakai suara buatan sendiri, mis. dari Google AI Studio. Lihat `suara/README.md`.
+
 ## Kuota
-- Gemini TTS gratis: 10 video/hari per model. Workflow otomatis pindah ke model berikutnya kalau kuota habis (4 model ≈ 40 video/hari).
-- GitHub Actions (repo privat): 2.000 menit/bulan gratis. Satu video ±3–5 menit.
+- Gemini TTS gratis: 10 suara/hari per model, otomatis pindah ke model berikutnya kalau habis (±40 video/hari).
+- GitHub Actions (repo privat): 2.000 menit/bulan gratis. Satu video anime ±10 menit → ±200 video/bulan.
+- Cek pemakaian: foto profil → Settings → Billing and licensing → Usage.

@@ -3,6 +3,9 @@ Dipanggil dari reel.py bila naskah berisi "engine": "anime"."""
 import os, json, re, html, shutil, subprocess, glob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# versi HyperFrames dikunci supaya update di masa depan tidak tiba-tiba merusak render.
+# Ganti angka ini (atau isi env HF_VERSION) hanya kalau sengaja ingin upgrade.
+HF = "hyperframes@" + os.environ.get("HF_VERSION", "0.9.85")
 
 def _cap_html(text):
     out = []
@@ -57,6 +60,8 @@ def build(S, work, outdir, pretty, RL):
     data = {"head": f'{S["series"].upper()}  ·  PART {S["part"]}', "total": round(pos, 4),
             "chars": S.get("chars", {}), "scenes": scenes}
     shutil.copy(f"{work}/mix.wav", f"{hf}/mix.wav")
+    for f in ("three.min.js", "gsap.min.js"):          # pustaka disimpan di repo (tidak bergantung CDN)
+        shutil.copy(f"{HERE}/vendor/{f}", f"{hf}/{f}")
     tpl = open(f"{HERE}/anime_template.html", encoding="utf-8").read()
     open(f"{hf}/index.html", "w", encoding="utf-8").write(tpl.replace("/*DATA*/null", json.dumps(data, ensure_ascii=False)))
     print(f"[anime] komposisi siap: {len(scenes)} adegan, {pos:.1f} detik", flush=True)
@@ -65,13 +70,12 @@ def build(S, work, outdir, pretty, RL):
     # proyek HyperFrames: scaffold resmi lalu ganti isinya dengan komposisi kita
     proj = f"{work}/hfproj"
     if os.path.exists(proj): shutil.rmtree(proj)
-    subprocess.run("npx --yes hyperframes@latest init hfproj", shell=True, cwd=work)
+    subprocess.run(f"npx --yes {HF} init hfproj", shell=True, cwd=work)
     os.makedirs(proj, exist_ok=True)
     for f in os.listdir(hf): shutil.copy(f"{hf}/{f}", f"{proj}/{f}")
     before = set(glob.glob(f"{proj}/**/*.mp4", recursive=True))
-    subprocess.run("npx --yes hyperframes@latest render --help", shell=True, cwd=proj)   # catat opsi render di log
     extra = os.environ.get("HF_RENDER_ARGS", "")
-    r = subprocess.run(f"npx --yes hyperframes@latest render {extra}", shell=True, cwd=proj)
+    r = subprocess.run(f"npx --yes {HF} render {extra}", shell=True, cwd=proj)
     if r.returncode != 0: raise SystemExit("HyperFrames render gagal")
     mp4s = [p for p in glob.glob(f"{proj}/**/*.mp4", recursive=True) if p not in before and "node_modules" not in p]
     if not mp4s: raise SystemExit("HyperFrames tidak menghasilkan MP4")
