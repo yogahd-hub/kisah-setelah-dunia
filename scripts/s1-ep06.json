@@ -1,0 +1,131 @@
+{
+ "no": 9,
+ "series": "Setelah Napas Terakhir",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "part": 6,
+ "title": "Menunggu",
+ "hook": "Ia minta dikembalikan ke dunia",
+ "cover_scene": 2,
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#alambarzakh"
+ ],
+ "scenes": [
+  {
+   "il": "hourglass",
+   "text": "Di alam barzakh, Arya menunggu. Sampai hari kebangkitan tiba.",
+   "hl": [
+    "barzakh",
+    "kebangkitan"
+   ],
+   "kw": "ALAM BARZAKH"
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Di sana, ada yang menyesal. Mereka memohon, satu permintaan saja.",
+   "hl": [
+    "menyesal",
+    "memohon"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Allah menceritakan permintaan mereka. Ya Tuhanku, kembalikan aku ke dunia, agar aku bisa berbuat baik yang dulu kutinggalkan.",
+   "hl": [
+    "kembalikan",
+    "baik"
+   ],
+   "card": [
+    "Ya Tuhanku, kembalikanlah aku (ke dunia), agar aku dapat berbuat kebajikan yang telah aku tinggalkan.",
+    "QS. Al-Mu'minun: 99-100"
+   ]
+  },
+  {
+   "il": "grave",
+   "text": "Jawabannya, sekali-kali tidak. Di hadapan mereka ada barzakh, sampai hari mereka dibangkitkan.",
+   "hl": [
+    "tidak",
+    "barzakh"
+   ],
+   "card": [
+    "Sekali-kali tidak! ... Dan di hadapan mereka ada barzakh sampai pada hari mereka dibangkitkan.",
+    "QS. Al-Mu'minun: 100"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "worry",
+   "expr2": "cry",
+   "switch": 0.55,
+   "text": "Bima membaca ayat itu berulang-ulang. Orang yang sudah pergi, ingin kembali. Sedangkan dia, masih di sini.",
+   "hl": [
+    "kembali",
+    "di",
+    "sini"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Setiap pagi yang kita dapat, adalah kesempatan yang diminta oleh mereka yang sudah pergi.",
+   "hl": [
+    "kesempatan"
+   ],
+   "kw": "KESEMPATAN"
+  },
+  {
+   "il": "choice",
+   "text": "Lalu, apa yang akan kamu lakukan dengan hari ini?",
+   "hl": [
+    "hari",
+    "ini"
+   ],
+   "kw": "HARI INI"
+  },
+  {
+   "il": "cta",
+   "text": "Part tujuh, hari ketika semua dibangkitkan. Tulis lanjut di komentar.",
+   "hl": [
+    "dibangkitkan",
+    "lanjut"
+   ],
+   "kw": "PART 7",
+   "kw2": "HARI DIBANGKITKAN"
+  }
+ ],
+ "caption": "Mereka yang sudah pergi hanya meminta satu hal: dikembalikan ke dunia untuk berbuat baik. Jawabannya: tidak.\n\n\"Ya Tuhanku, kembalikanlah aku (ke dunia), agar aku dapat berbuat kebajikan yang telah aku tinggalkan.\" (QS. Al-Mu'minun: 99-100)",
+ "cta": "Hari ini adalah kesempatan yang mereka minta. Tulis LANJUT untuk part 7."
+}

@@ -1,0 +1,134 @@
+{
+ "no": 7,
+ "series": "Setelah Napas Terakhir",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "part": 5,
+ "title": "Tamu yang|Dikenal",
+ "hook": "Siapa yang datang ke kuburnya?",
+ "cover_scene": 4,
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#alamkubur",
+  "#amalsaleh"
+ ],
+ "scenes": [
+  {
+   "il": "grave",
+   "text": "Gelap. Sempit. Arya masih terdiam, setelah ditanya.",
+   "hl": [
+    "Gelap",
+    "Sempit"
+   ],
+   "kw": "SETELAH DITANYA"
+  },
+  {
+   "il": "door",
+   "text": "Lalu dari arah yang tak terlihat, seseorang datang mendekat.",
+   "hl": [
+    "seseorang"
+   ]
+  },
+  {
+   "il": "gate",
+   "text": "Dalam hadits riwayat Imam Ahmad, digambarkan, orang beriman di kuburnya didatangi sosok berwajah indah, berpakaian bagus, dan berbau harum.",
+   "hl": [
+    "indah",
+    "harum"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "expr2": "neutral",
+   "switch": 0.6,
+   "text": "Siapa kamu? Wajahmu membawa kabar baik.",
+   "hl": [
+    "kabar",
+    "baik"
+   ]
+  },
+  {
+   "il": "angel",
+   "text": "Ia menjawab, aku adalah amal salehmu.",
+   "hl": [
+    "amal",
+    "salehmu"
+   ],
+   "kw": "AMAL SALEHMU"
+  },
+  {
+   "il": "scale",
+   "text": "Allah berfirman, siapa yang berbuat kebaikan seberat zarah pun, ia akan melihat balasannya.",
+   "hl": [
+    "zarah"
+   ],
+   "card": [
+    "Maka barang siapa mengerjakan kebaikan seberat zarah, niscaya dia akan melihat balasannya.",
+    "QS. Az-Zalzalah: 7"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "worry",
+   "text": "Bima teringat. Arya memang sering diam-diam membantu ibunya. Tapi apakah amal kecil itu cukup?",
+   "hl": [
+    "membantu",
+    "cukup"
+   ]
+  },
+  {
+   "il": "choice",
+   "text": "Kalau malam ini tamumu datang, wajah seperti apa yang akan kamu lihat?",
+   "hl": [
+    "wajah"
+   ],
+   "kw": "TAMUMU NANTI"
+  },
+  {
+   "il": "cta",
+   "text": "Part enam, menunggu di alam barzakh. Tulis lanjut di komentar.",
+   "hl": [
+    "barzakh",
+    "lanjut"
+   ],
+   "kw": "PART 6",
+   "kw2": "MENUNGGU"
+  }
+ ],
+ "caption": "Di kubur yang gelap, seseorang datang mendekat. Wajahnya indah, baunya harum. \"Aku adalah amal salehmu.\"\n\n\"Maka barang siapa mengerjakan kebaikan seberat zarah, niscaya dia akan melihat balasannya.\" (QS. Az-Zalzalah: 7)",
+ "cta": "Amal apa yang ingin kamu bawa? Tulis LANJUT untuk part 6."
+}

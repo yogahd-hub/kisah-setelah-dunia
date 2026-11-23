@@ -1,0 +1,128 @@
+{
+ "no": 10,
+ "series": "Tanda Akhir Zaman",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "part": 4,
+ "title": "Satu|Mata",
+ "hook": "Fitnah terbesar sejak Nabi Adam",
+ "cover_scene": 0,
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#dajjal"
+ ],
+ "scenes": [
+  {
+   "il": "eye",
+   "text": "Ada satu sosok yang diperingatkan oleh setiap nabi kepada umatnya.",
+   "hl": [
+    "setiap",
+    "nabi"
+   ],
+   "kw": "DIPERINGATKAN"
+  },
+  {
+   "il": "hourglass",
+   "text": "Rasulullah bersabda, sejak Nabi Adam diciptakan sampai kiamat, tidak ada perkara yang lebih besar dari Dajjal.",
+   "hl": [
+    "Dajjal"
+   ],
+   "card": [
+    "Tidak ada di antara penciptaan Adam hingga datangnya kiamat, perkara yang lebih besar daripada Dajjal.",
+    "HR. Muslim no. 2946",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Raka penasaran. Kalau sebesar itu, bagaimana cara mengenalinya?",
+   "hl": [
+    "mengenalinya"
+   ]
+  },
+  {
+   "il": "eye",
+   "text": "Rasulullah bersabda, ia buta sebelah matanya, sedangkan Tuhan kalian tidak buta sebelah. Di antara kedua matanya tertulis kafir.",
+   "hl": [
+    "buta",
+    "kafir"
+   ],
+   "card": [
+    "Ketahuilah, ia buta sebelah, dan Tuhan kalian tidak buta sebelah. Di antara kedua matanya tertulis: kafir.",
+    "HR. Bukhari no. 7131",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "worry",
+   "text": "Ilham menambahkan, dalam hadits shahih disebutkan, ia datang membawa sesuatu seperti surga, dan sesuatu seperti neraka.",
+   "hl": [
+    "surga",
+    "neraka"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Yang terlihat surga, ternyata neraka. Yang terlihat neraka, ternyata surga.",
+   "hl": [
+    "ternyata"
+   ],
+   "kw": "SERBA TERBALIK"
+  },
+  {
+   "il": "choice",
+   "text": "Di zaman yang serba terbalik, apa yang membuatmu tetap bisa membedakan?",
+   "hl": [
+    "membedakan"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part lima, nabi yang akan turun di menara putih. Tulis lanjut di komentar.",
+   "hl": [
+    "menara",
+    "putih",
+    "lanjut"
+   ],
+   "kw": "PART 5",
+   "kw2": "MENARA PUTIH"
+  }
+ ],
+ "caption": "Setiap nabi memperingatkan umatnya tentang satu sosok. Rasulullah menyebutnya perkara terbesar sejak Nabi Adam diciptakan.\n\n\"Ketahuilah, ia buta sebelah, dan Tuhan kalian tidak buta sebelah.\" (HR. Bukhari no. 7131)",
+ "cta": "Apa yang membuatmu tetap bisa membedakan yang benar? Tulis LANJUT untuk part 5."
+}

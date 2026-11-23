@@ -1,0 +1,130 @@
+{
+ "no": 8,
+ "series": "Tanda Akhir Zaman",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "part": 3,
+ "title": "Pemimpin yang|Ditunggu",
+ "hook": "Siapa yang akan memimpin di akhir zaman?",
+ "cover_scene": 0,
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#imammahdi"
+ ],
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Bayangkan dunia yang penuh kezaliman. Yang kuat menindas, yang lemah tak punya suara.",
+   "hl": [
+    "kezaliman",
+    "menindas"
+   ],
+   "kw": "PENUH KEZALIMAN"
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Raka bertanya pada Ilham, apakah akan ada yang memperbaikinya?",
+   "hl": [
+    "memperbaikinya"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Ilham menjawab, Rasulullah pernah mengabarkan tentang seorang pemimpin dari keturunan beliau.",
+   "hl": [
+    "pemimpin",
+    "keturunan"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Dalam hadits riwayat Abu Dawud, ia disebut Al-Mahdi, dari keturunan Fathimah.",
+   "hl": [
+    "Al-Mahdi",
+    "Fathimah"
+   ],
+   "card": [
+    "Al-Mahdi dari keturunanku, dari anak keturunan Fathimah.",
+    "HR. Abu Dawud no. 4284",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "scale",
+   "text": "Ia akan memenuhi bumi dengan keadilan, sebagaimana sebelumnya bumi dipenuhi kezaliman.",
+   "hl": [
+    "keadilan",
+    "kezaliman"
+   ],
+   "card": [
+    "Ia akan memenuhi bumi dengan keadilan sebagaimana sebelumnya dipenuhi kezaliman.",
+    "HR. Abu Dawud no. 4285",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "eye",
+   "text": "Tapi hati-hati. Sepanjang sejarah, banyak orang mengaku sebagai Al-Mahdi, dan semuanya terbukti dusta.",
+   "hl": [
+    "mengaku",
+    "dusta"
+   ],
+   "kw": "HATI-HATI"
+  },
+  {
+   "il": "choice",
+   "text": "Pertanyaannya, kalau zaman itu tiba, kamu ada di barisan mana?",
+   "hl": [
+    "barisan"
+   ],
+   "kw": "BARISAN MANA?"
+  },
+  {
+   "il": "cta",
+   "text": "Part empat, sosok bermata satu yang paling diperingatkan para nabi. Tulis lanjut di komentar.",
+   "hl": [
+    "bermata",
+    "lanjut"
+   ],
+   "kw": "PART 4",
+   "kw2": "SATU MATA"
+  }
+ ],
+ "caption": "Di dunia yang penuh kezaliman, Rasulullah mengabarkan akan datang seorang pemimpin yang memenuhi bumi dengan keadilan.\n\nHati-hati dengan siapa pun yang mengaku sebagai Al-Mahdi. Sepanjang sejarah, semuanya terbukti dusta.",
+ "cta": "Kalau zaman itu tiba, kamu di barisan mana? Tulis LANJUT untuk part 4."
+}
