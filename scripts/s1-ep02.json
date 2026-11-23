@@ -1,0 +1,131 @@
+{
+ "series": "Setelah Napas Terakhir",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "part": 2,
+ "title": "Siapa yang|Pergi",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#kematian"
+ ],
+ "scenes": [
+  {
+   "il": "clock",
+   "text": "Pagi itu, ponsel Bima bergetar. Sebuah pesan singkat, dari ibunya Arya.",
+   "hl": [
+    "ponsel",
+    "Arya"
+   ],
+   "kw": "PAGI ITU"
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "shock",
+   "expr2": "cry",
+   "switch": 0.45,
+   "text": "Arya meninggal dunia. Tadi malam ia tidur, dan tidak pernah bangun lagi.",
+   "hl": [
+    "meninggal",
+    "bangun"
+   ],
+   "kw": "ARYA PERGI"
+  },
+  {
+   "il": "dreams",
+   "who": "A",
+   "seed": 2,
+   "switch": 0.25,
+   "text": "Motor baru itu belum sempat dibeli. Rumah itu belum dibangun. Dan pernikahan itu, tidak akan pernah terjadi.",
+   "hl": [
+    "belum",
+    "tidak"
+   ]
+  },
+  {
+   "il": "globe",
+   "text": "Allah berfirman, tidak ada satu jiwa pun yang tahu, di bumi mana ia akan mati.",
+   "hl": [
+    "Allah",
+    "mati"
+   ],
+   "card": [
+    "وَمَا تَدْرِي نَفْسٌ بِأَيِّ أَرْضٍ تَمُوتُ",
+    "QS. Luqman: 34"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Jenazah Arya dimandikan. Tubuh yang kemarin masih tertawa, kini hanya diam, dibalut kain putih.",
+   "hl": [
+    "dimandikan",
+    "putih"
+   ],
+   "kw": "KAIN PUTIH"
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "text": "Malam itu Bima tidak bisa tidur. Kalau yang pergi adalah aku, apa yang sudah kusiapkan?",
+   "hl": [
+    "aku",
+    "kusiapkan"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Setiap jiwa pasti merasakan mati. Yang membedakan, hanya bekal yang dibawa.",
+   "hl": [
+    "jiwa",
+    "bekal"
+   ],
+   "card": [
+    "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ",
+    "QS. Ali 'Imran: 185"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Besok, Arya diantar ke rumah terakhirnya. Dan di sana, ia akan mendengar sesuatu. Tulis lanjut untuk part tiga.",
+   "hl": [
+    "mendengar",
+    "lanjut"
+   ],
+   "kw": "PART 3",
+   "kw2": "LANGKAH YANG MENJAUH"
+  }
+ ],
+ "caption": "Tadi malam Arya masih tertawa. Pagi ini, ia sudah dibalut kain putih.\n\n\"Dan tidak ada seorang pun yang mengetahui di bumi mana dia akan mati.\" (QS. Luqman: 34)",
+ "cta": "Kalau malam ini giliranmu, apa yang sudah kamu siapkan? Tulis LANJUT untuk part 3."
+}

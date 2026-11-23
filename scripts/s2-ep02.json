@@ -1,0 +1,125 @@
+{
+ "series": "Tanda Akhir Zaman",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "part": 2,
+ "title": "Waktu Makin|Cepat",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#waktu"
+ ],
+ "scenes": [
+  {
+   "il": "calendar",
+   "text": "Pernah merasa, seminggu lewat seperti sehari? Setahun lewat seperti sebulan?",
+   "hl": [
+    "seminggu",
+    "setahun"
+   ],
+   "kw": "TERASA CEPAT?"
+  },
+  {
+   "il": "duo",
+   "expr": "neutral",
+   "text": "Raka juga merasakannya. Rasanya baru kemarin ia lulus sekolah, sekarang usianya sudah kepala tiga.",
+   "hl": [
+    "kemarin",
+    "kepala",
+    "tiga"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Rasulullah bersabda, kiamat tidak akan terjadi, sampai zaman terasa semakin dekat.",
+   "hl": [
+    "kiamat",
+    "dekat"
+   ],
+   "card": [
+    "حَتَّى يَتَقَارَبَ الزَّمَانُ",
+    "HR. Bukhari no. 1036",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Sebagian ulama menjelaskan, maksudnya waktu terasa singkat, karena keberkahannya hilang.",
+   "hl": [
+    "singkat",
+    "keberkahannya"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Jam tetap dua puluh empat. Tapi yang bisa kita kerjakan, terasa semakin sedikit.",
+   "hl": [
+    "dua",
+    "puluh",
+    "empat",
+    "sedikit"
+   ],
+   "kw": "24 JAM"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Raka mulai menghitung. Berapa jam sehari untuk dunia, dan berapa menit untuk akhiratnya?",
+   "hl": [
+    "dunia",
+    "akhiratnya"
+   ],
+   "kw": "BERAPA MENIT?"
+  },
+  {
+   "il": "choice",
+   "text": "Kalau waktumu terus berlari, ke mana sebenarnya kamu sedang berlari?",
+   "hl": [
+    "berlari"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part tiga, tentang pemimpin yang ditunggu di akhir zaman. Tulis lanjut di komentar.",
+   "hl": [
+    "ditunggu",
+    "lanjut"
+   ],
+   "kw": "PART 3",
+   "kw2": "PEMIMPIN YANG DITUNGGU"
+  }
+ ],
+ "caption": "Seminggu terasa sehari, setahun terasa sebulan. Rasulullah sudah menyebutnya sebagai tanda akhir zaman.\n\nRasulullah bersabda: kiamat tidak akan terjadi sampai zaman saling berdekatan. (HR. Bukhari no. 1036)",
+ "cta": "Berapa menit sehari waktumu untuk akhirat? Tulis LANJUT untuk part 3."
+}

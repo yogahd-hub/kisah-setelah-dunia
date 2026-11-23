@@ -1,0 +1,132 @@
+{
+ "series": "Setelah Napas Terakhir",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "part": 4,
+ "title": "Ruang|Sempit",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#alamkubur",
+  "#pertanyaankubur"
+ ],
+ "scenes": [
+  {
+   "il": "grave",
+   "text": "Semua orang sudah pulang. Kini Arya sendirian, di ruang yang sempit dan gelap.",
+   "hl": [
+    "sendirian",
+    "gelap"
+   ],
+   "kw": "SENDIRIAN"
+  },
+  {
+   "il": "angel",
+   "text": "Lalu datanglah dua malaikat. Mereka mendudukkannya, dan mulai bertanya.",
+   "hl": [
+    "dua",
+    "malaikat"
+   ],
+   "card": [
+    "أَتَاهُ مَلَكَانِ فَأَقْعَدَاهُ",
+    "HR. Bukhari no. 1338",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Siapa Tuhanmu? Apa agamamu? Siapa nabimu?",
+   "hl": [
+    "Tuhanmu",
+    "agamamu",
+    "nabimu"
+   ],
+   "kw": "TIGA PERTANYAAN"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Pertanyaannya sederhana. Tapi jawabannya tidak cukup dihafal. Ia harus dijalani, sejak di dunia.",
+   "hl": [
+    "dihafal",
+    "dijalani"
+   ]
+  },
+  {
+   "il": "gate",
+   "text": "Allah berfirman, Allah meneguhkan orang-orang beriman dengan ucapan yang teguh, di dunia dan di akhirat.",
+   "hl": [
+    "meneguhkan",
+    "teguh"
+   ],
+   "card": [
+    "يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ",
+    "QS. Ibrahim: 27"
+   ]
+  },
+  {
+   "il": "dreams",
+   "who": "A",
+   "seed": 1,
+   "switch": 0.35,
+   "text": "Arya mencoba menjawab. Tapi yang muncul di kepalanya, justru rencana dunia yang belum selesai.",
+   "hl": [
+    "menjawab",
+    "dunia"
+   ]
+  },
+  {
+   "il": "choice",
+   "text": "Kalau malam ini giliranmu, apa jawabanmu?",
+   "hl": [
+    "jawabanmu"
+   ],
+   "kw": "APA JAWABANMU?"
+  },
+  {
+   "il": "cta",
+   "text": "Apakah Arya bisa menjawab? Tulis lanjut untuk part lima.",
+   "hl": [
+    "menjawab",
+    "lanjut"
+   ],
+   "kw": "PART 5",
+   "kw2": "TAMU YANG DIKENAL"
+  }
+ ],
+ "caption": "Siapa Tuhanmu? Apa agamamu? Siapa nabimu? Pertanyaannya sederhana, tapi jawabannya tidak bisa dihafal.\n\n\"Allah meneguhkan orang-orang yang beriman dengan ucapan yang teguh dalam kehidupan di dunia dan di akhirat.\" (QS. Ibrahim: 27)",
+ "cta": "Apa jawabanmu kalau malam ini giliranmu? Tulis LANJUT untuk part 5."
+}

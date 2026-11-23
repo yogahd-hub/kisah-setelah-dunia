@@ -358,6 +358,23 @@ def il_sunwest(img, t, T, sc, S):
     d.text((150, 1080), "BARAT", font=font(F_BOLD, 44), fill=(235, 235, 245), anchor="mm")
     d.text((W - 150, 1080), "TIMUR", font=font(F_BOLD, 44), fill=(120, 120, 140), anchor="mm")
 
+def il_city(img, t, T, sc, S):
+    """Gedung-gedung yang tumbuh makin tinggi dengan jendela menyala."""
+    d = ImageDraw.Draw(img); p = ease(t / max(T, 0.1))
+    d.rectangle((0, 1060, W, 1180), fill=(24, 26, 40))
+    rng = np.random.default_rng(11)
+    xs = [40, 170, 300, 430, 560, 690, 820, 950]
+    for k, x in enumerate(xs):
+        base_h = rng.uniform(160, 260); grow = rng.uniform(120, 240)
+        h = base_h + grow * p
+        w = rng.uniform(90, 120)
+        col = (34 + k % 3 * 6, 38 + k % 2 * 6, 58)
+        d.rectangle((x, 1060 - h, x + w, 1060), fill=col)
+        for wy in range(int(1060 - h + 20), 1040, 46):
+            for wx in range(int(x + 14), int(x + w - 20), 34):
+                if (wx * 7 + wy * 13 + k * 5) % 9 < 5:
+                    d.rectangle((wx, wy, wx + 16, wy + 22), fill=(255, 210, 120))
+
 def il_cta(img, t, T, sc, S):
     d = ImageDraw.Draw(img); s = ease_back(t / 0.5)
     cy = CY - 170 + math.sin(t * 2.4) * 12; w, h = 400 * s, 280 * s

@@ -1,0 +1,130 @@
+{
+ "series": "Setelah Napas Terakhir",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "ARYA",
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "shirt": [
+    176,
+    92,
+    64
+   ]
+  },
+  "B": {
+   "name": "BIMA",
+   "hair": [
+    30,
+    26,
+    30
+   ],
+   "shirt": [
+    64,
+    110,
+    100
+   ]
+  }
+ },
+ "part": 3,
+ "title": "Langkah yang|Menjauh",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#setelahnapasterakhir",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#alamkubur"
+ ],
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Siang itu, puluhan orang mengantar Arya ke pemakaman.",
+   "hl": [
+    "Arya",
+    "pemakaman"
+   ],
+   "kw": "RUMAH TERAKHIR"
+  },
+  {
+   "il": "grave",
+   "text": "Tubuhnya diturunkan perlahan. Tanah ditimbun, doa dibacakan, lalu satu per satu orang mulai pulang.",
+   "hl": [
+    "perlahan",
+    "pulang"
+   ]
+  },
+  {
+   "il": "grave",
+   "text": "Rasulullah bersabda, mayit yang baru dikubur, mendengar suara sandal orang-orang yang meninggalkannya.",
+   "hl": [
+    "mendengar",
+    "sandal"
+   ],
+   "card": [
+    "إِنَّهُ لَيَسْمَعُ قَرْعَ نِعَالِهِمْ",
+    "HR. Bukhari no. 1338",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "worry",
+   "expr2": "cry",
+   "switch": 0.6,
+   "text": "Bima ikut melangkah pergi. Setiap langkahnya terasa berat. Di bawah sana, sahabatnya mendengar semuanya.",
+   "hl": [
+    "berat",
+    "mendengar"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Rasulullah juga bersabda, ada tiga yang mengantar mayit. Keluarganya, hartanya, dan amalnya.",
+   "hl": [
+    "tiga",
+    "amalnya"
+   ],
+   "card": [
+    "يَتْبَعُ الْمَيِّتَ ثَلَاثَةٌ",
+    "HR. Bukhari no. 6514",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Dua kembali pulang. Hanya satu yang tetap tinggal, amalnya.",
+   "hl": [
+    "pulang",
+    "amalnya"
+   ],
+   "kw": "HANYA AMAL"
+  },
+  {
+   "il": "choice",
+   "text": "Hari ini kamu yang mengantar. Suatu hari nanti, kamu yang diantar.",
+   "hl": [
+    "mengantar",
+    "diantar"
+   ],
+   "kw": "SUATU HARI NANTI"
+  },
+  {
+   "il": "cta",
+   "text": "Lalu saat semua orang sudah pergi, siapa yang datang menemui Arya? Tulis lanjut untuk part empat.",
+   "hl": [
+    "datang",
+    "lanjut"
+   ],
+   "kw": "PART 4",
+   "kw2": "RUANG SEMPIT"
+  }
+ ],
+ "caption": "Satu per satu pengantar pulang. Keluarga kembali, harta kembali. Hanya amal yang tetap tinggal.\n\nRasulullah bersabda: yang mengantar mayit ada tiga, dua kembali dan satu tetap bersamanya, yaitu amalnya. (HR. Bukhari no. 6514)",
+ "cta": "Hari ini kita yang mengantar, suatu hari kita yang diantar. Tulis LANJUT untuk part 4."
+}

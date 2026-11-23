@@ -1,0 +1,128 @@
+{
+ "series": "Tanda Akhir Zaman",
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RAKA",
+   "hair": [
+    36,
+    30,
+    26
+   ],
+   "shirt": [
+    72,
+    84,
+    150
+   ]
+  },
+  "B": {
+   "name": "ILHAM",
+   "hair": [
+    28,
+    24,
+    22
+   ],
+   "shirt": [
+    150,
+    120,
+    60
+   ]
+  }
+ },
+ "part": 1,
+ "title": "Sudah|Terjadi?",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#tandaakhirzaman",
+  "#akhirzaman",
+  "#pengingatdiri",
+  "#ceritaislami"
+ ],
+ "scenes": [
+  {
+   "il": "eye",
+   "text": "Kiamat masih jauh? Lebih dari seribu empat ratus tahun lalu, Rasulullah sudah menyebut tanda-tandanya.",
+   "hl": [
+    "jauh",
+    "tanda-tandanya"
+   ],
+   "kw": "SUDAH DISEBUT"
+  },
+  {
+   "il": "hourglass",
+   "text": "Allah berfirman, sungguh tanda-tandanya telah datang.",
+   "hl": [
+    "tanda-tandanya",
+    "datang"
+   ],
+   "card": [
+    "فَقَدْ جَاءَ أَشْرَاطُهَا",
+    "QS. Muhammad: 18"
+   ]
+  },
+  {
+   "il": "duo",
+   "text": "Raka dan Ilham, dua sahabat yang suka nongkrong di atap gedung tinggi.",
+   "hl": [
+    "Raka",
+    "Ilham",
+    "tinggi"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "worry",
+   "text": "Malam itu Ilham bercerita, ada satu hadits yang membuatnya merinding.",
+   "hl": [
+    "hadits",
+    "merinding"
+   ],
+   "kw": "SATU HADITS"
+  },
+  {
+   "il": "city",
+   "text": "Ketika Jibril bertanya tentang tanda kiamat, Rasulullah menjawab, kamu akan melihat para penggembala yang dulu tak beralas kaki, berlomba-lomba meninggikan bangunan.",
+   "hl": [
+    "Jibril",
+    "meninggikan",
+    "bangunan"
+   ],
+   "card": [
+    "يَتَطَاوَلُونَ فِي الْبُنْيَانِ",
+    "HR. Muslim no. 8",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "city",
+   "text": "Raka menatap gedung-gedung di sekeliling mereka. Satu demi satu, semakin tinggi.",
+   "hl": [
+    "gedung-gedung",
+    "tinggi"
+   ],
+   "kw": "SEMAKIN TINGGI"
+  },
+  {
+   "il": "choice",
+   "text": "Kalau tanda kecilnya sudah terlihat, berapa lama lagi sampai tanda besarnya datang?",
+   "hl": [
+    "kecilnya",
+    "besarnya"
+   ],
+   "kw": "TANDA BESAR"
+  },
+  {
+   "il": "cta",
+   "text": "Part dua, waktu yang terasa makin cepat. Tulis lanjut di komentar.",
+   "hl": [
+    "cepat",
+    "lanjut"
+   ],
+   "kw": "PART 2",
+   "kw2": "WAKTU MAKIN CEPAT"
+  }
+ ],
+ "caption": "Rasulullah menyebut tanda-tanda kiamat lebih dari 1.400 tahun lalu. Salah satunya: orang-orang berlomba meninggikan bangunan.\n\n\"Maka sungguh, telah datang tanda-tandanya.\" (QS. Muhammad: 18)",
+ "cta": "Menurutmu tanda mana lagi yang sudah terlihat? Tulis LANJUT untuk part 2."
+}
