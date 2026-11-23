@@ -5,6 +5,7 @@ dengan kata naskah (difflib), jadi teks di layar tetap persis naskah, hanya wakt
 Kalau faster-whisper tidak terpasang atau gagal, kembalikan None (reel.py memakai perkiraan lama).
 """
 import os, re, difflib
+LAST_RATIO = 0.0
 
 def _norm(w):
     return re.sub(r"[^a-z0-9]", "", w.lower())
@@ -49,6 +50,7 @@ def align(scene_texts, wav):
                 st[i1 + k] = t0 + (t1 - t0) * k / n; en[i1 + k] = t0 + (t1 - t0) * (k + 1) / n
     matched = sum(1 for x in st if x is not None)
     print(f"[whisper] {len(heard)} kata terdengar, {matched}/{len(a)} kata naskah dapat waktu", flush=True)
+    global LAST_RATIO; LAST_RATIO = matched / max(1, len(a))
     if matched < 0.6 * len(a): return None
     # isi yang kosong dengan interpolasi di antara tetangga
     idx = [k for k, x in enumerate(st) if x is not None]

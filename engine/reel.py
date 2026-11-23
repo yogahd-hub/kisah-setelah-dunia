@@ -92,7 +92,7 @@ def make_vo(S, work, name=None):
         words = [[(w, s0) for w, s0, _ in ws] for ws in wa]
         spans = [[ws[0][1], ws[-1][2]] for ws in wa]
         json.dump(wa, open(f"{work}/vo/words_abs.json", "w"), ensure_ascii=False)
-        open(f"{work}/vo/whisper_ok", "w").write("1")
+        if WT.LAST_RATIO >= 0.9: open(f"{work}/vo/whisper_ok", "w").write("1")   # >=90% kata cocok = VO lengkap
     else:    # cadangan: perkiraan dari jeda suara + suku kata
         words, spans = A.align_scenes(texts, ivs)
         json.dump([[(w, t, t + 0.3) for w, t in ws] for ws in words], open(f"{work}/vo/words_abs.json", "w"), ensure_ascii=False)
