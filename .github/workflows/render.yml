@@ -52,8 +52,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -z "$GEMINI_API_KEY" ]; then
-            echo "::warning::GEMINI_API_KEY belum diisi (Settings > Secrets and variables > Actions). Render dilewati."
-            echo "ok=no" >> "$GITHUB_OUTPUT"
+            echo "::warning::GEMINI_API_KEY belum diisi. Render tetap jalan memakai suara manual (folder suara/) atau Edge TTS (\"tts\": \"edge\" di naskah)."
+            echo "ok=yes" >> "$GITHUB_OUTPUT"
           else
             echo "ok=yes" >> "$GITHUB_OUTPUT"
           fi
@@ -75,7 +75,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libraqm0 libfribidi0 > /dev/null
-          pip install -q pillow numpy faster-whisper
+          pip install -q pillow numpy faster-whisper edge-tts
           mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
           python -c "from PIL import features; assert features.check('raqm'), 'raqm (teks Arab) tidak aktif'; print('raqm ok')"
 
@@ -87,6 +87,7 @@ jobs:
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TTS_CADANGAN: ${{ vars.TTS_CADANGAN }}
         run: |
           mkdir -p done
           for f in ${{ steps.pick.outputs.list }}; do
@@ -104,6 +105,23 @@ jobs:
           name: video-${{ github.run_number }}
           path: out/
           retention-days: 30
+
+      - name: Simpan permanen di Releases (unduh langsung, tanpa zip)
+        if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes' && github.event.repository.visibility == 'public'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p rel
+          for d in out/*/; do
+            n=$(basename "$d")
+            for f in "$d"*.mp4; do [ -f "$f" ] && cp "$f" "rel/$n.mp4"; done
+            [ -f "$d/cover.jpg" ] && cp "$d/cover.jpg" "rel/$n - cover.jpg"
+            [ -f "$d/caption.txt" ] && cp "$d/caption.txt" "rel/$n - caption.txt"
+          done
+          ls rel
+          gh release create "video-${{ github.run_number }}" rel/* \
+            --title "Video render #${{ github.run_number }}" \
+            --notes "Naskah: ${{ steps.pick.outputs.list }}" || echo "::warning::Gagal membuat Release; video tetap ada di Artifacts."
 
       - name: Tandai selesai
         if: steps.pick.outputs.list != '' && steps.key.outputs.ok == 'yes'

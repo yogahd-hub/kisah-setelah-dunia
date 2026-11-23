@@ -77,11 +77,12 @@ Setiap video = satu file JSON di folder `scripts/`. **Gaya default: anime 3D** (
 Ekspresi (`expr`): `neutral`, `smile`, `worry`, `shock`, `cry`.
 
 ## Aturan isi (wajib)
-1. **Dalil harus pasti.** Ayat Al-Qur'an: teks Arab dan nomor ayat dicek ke mushaf. Hadits: hanya yang sumbernya jelas (perawi + nomor) dan derajatnya shahih/hasan. Kalau ragu, jangan pakai kartu.
-2. **Misteri boleh di cara bercerita, bukan di klaim.** Tidak boleh: ramalan tanggal kiamat, "Dajjal sudah muncul di negara X", teori konspirasi sebagai fakta.
+Aturan khusus niche (sumber yang wajib, nada, larangan, tokoh) ada di **`NICHE.md`**. Aturan umum untuk semua niche:
+1. **Klaim penting harus punya sumber jelas** sesuai `NICHE.md`. Kalau ragu, jangan pakai kartu.
+2. **Misteri boleh di cara bercerita, bukan di klaim.** Tidak boleh teori konspirasi/ramalan sebagai fakta.
 3. **Tiap video harus terasa beda** (aturan "konten berulang" YouTube/Facebook): cerita baru, tokoh/ekspresi/ilustrasi bervariasi, hook berbeda.
 4. **Jangan meniru** judul/urutan akun lain.
-5. Struktur yang terbukti: hook dramatis (scene 1–2) → cerita tokoh → dalil → refleksi "kamu" → teaser part berikutnya + ajakan komen. Momen paling dramatis taruh di depan atau tengah, jangan di akhir.
+5. Struktur: hook dramatis (scene 1–2) → cerita tokoh → kartu sumber → refleksi "kamu" → teaser part berikutnya + ajakan komen.
 6. Panjang ideal 7–10 scene, total narasi 55–90 detik.
 
 ## Materi sumber (jurnal, berita, artikel)

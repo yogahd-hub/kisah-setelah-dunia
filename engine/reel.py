@@ -27,8 +27,19 @@ DEFAULT_STYLE = ""  # JANGAN isi: model TTS kadang ikut membacakan instruksi gay
 def _norm(s):
     return re.findall(r"[a-z0-9]+", s.lower())
 
+def _edge_tts(S, text, raw):
+    """Cadangan gratis tanpa API key: Microsoft Edge TTS (pip install edge-tts). Layanan tidak resmi,
+    jadi hanya dipakai bila naskah berisi "tts": "edge" atau env TTS_CADANGAN=edge saat Gemini gagal."""
+    voice = S.get("edge_voice", "id-ID-ArdiNeural")
+    mp3 = raw[:-4] + ".mp3"
+    print(f"[vo] Edge TTS {voice}", flush=True)
+    subprocess.run([sys.executable, "-m", "edge_tts", "--voice", voice, "--rate", S.get("edge_rate", "-5%"), "--text", text, "--write-media", mp3], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ac", "1", raw], check=True)
+
 def _gen_raw(S, raw):
     text = "\n\n".join(sc["text"] for sc in S["scenes"])
+    if S.get("tts") == "edge":
+        return _edge_tts(S, text.replace("\n\n", " "), raw)
     models = [S["tts_model"]] if S.get("tts_model") else TTS_MODELS
     last = None
     for m in models:
@@ -44,6 +55,9 @@ def _gen_raw(S, raw):
                 if code == 429 and "PerDay" in body: break      # kuota harian model ini habis -> model berikutnya
                 if code in (400, 404): break                      # model tidak tersedia
                 time.sleep(20)
+    if os.environ.get("TTS_CADANGAN") == "edge":
+        print("[vo] semua model Gemini gagal -> cadangan Edge TTS", flush=True)
+        return _edge_tts(S, text.replace("\n\n", " "), raw)
     raise SystemExit(f"TTS gagal di semua model: {last}")
 
 def _head_ok(S, work):

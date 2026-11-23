@@ -53,5 +53,5 @@ python engine/preview_anime.py work/<nama>/hf 1
 
 ## 7. Laporan ke user + checkpoint
 - Sebutkan file yang dibuat, judul, dan **daftar dalil** (sumber + arti) untuk dicek user ke mushaf/kitab sebelum upload.
-- Perbarui `SERI.md` (tandai part yang sudah ditulis, tambah rencana baru kalau ada) supaya AI lain atau user bisa melanjutkan tanpa Claude.
+- Perbarui kolom Status di `SERI.md` dan baris **Status seri** + `no` terakhir di `CHECKPOINT.md`, supaya chat baru/AI lain (ChatGPT, Gemini) bisa melanjutkan hanya dengan menempel `CHECKPOINT.md`.
 - Kalau ada aturan baru dari user, tulis ke `PANDUAN_NASKAH.md` dan `PROMPT_AI.md` juga, jadi alur tanpa Claude (`MANDIRI.md`) tetap sama kualitasnya.
