@@ -1,0 +1,130 @@
+{
+ "no": 44,
+ "series": "Hari Itu",
+ "part": 6,
+ "title": "Ibu yang|Lupa",
+ "hook": "Ibu melupakan bayi yang disusuinya",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "BAYU",
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "shirt": [
+    90,
+    90,
+    100
+   ]
+  },
+  "B": {
+   "name": "ADIT",
+   "hair": [
+    46,
+    34,
+    26
+   ],
+   "shirt": [
+    130,
+    100,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "cry",
+   "text": "Tidak ada yang lebih erat dari pelukan ibu kepada bayinya. Tapi hari itu, pelukan itu terlepas.",
+   "hl": [
+    "terlepas"
+   ],
+   "kw": "PELUKAN TERLEPAS"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, setiap ibu yang menyusui lalai terhadap anak yang disusuinya.",
+   "hl": [
+    "lalai"
+   ],
+   "card": [
+    "Pada hari ketika kamu melihatnya, semua perempuan yang menyusui akan lalai terhadap anak yang disusuinya, dan setiap perempuan hamil akan keguguran kandungannya.",
+    "QS. Al-Hajj: 2"
+   ]
+  },
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Manusia terlihat seperti orang mabuk, padahal tidak mabuk. Tapi azab Allah sangat keras.",
+   "hl": [
+    "mabuk"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "smile",
+   "expr2": "worry",
+   "switch": 0.6,
+   "text": "Bayu menelepon istrinya yang baru melahirkan. Ia mendengar suara bayinya menangis kecil.",
+   "hl": [
+    "bayinya"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Adit berkata, kalau cinta seorang ibu saja bisa terlepas hari itu, apalagi urusan dunia kita.",
+   "hl": [
+    "cinta",
+    "ibu"
+   ]
+  },
+  {
+   "il": "calendar",
+   "text": "Ayat itu dibuka dengan sebuah perintah. Wahai manusia, bertakwalah kepada Tuhanmu.",
+   "hl": [
+    "bertakwalah"
+   ],
+   "card": [
+    "Wahai manusia! Bertakwalah kepada Tuhanmu. Sungguh, guncangan hari kiamat itu adalah suatu kejadian yang sangat besar.",
+    "QS. Al-Hajj: 1"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Peluk keluargamu malam ini. Lalu ajak mereka menyiapkan bekal bersama.",
+   "hl": [
+    "bekal",
+    "bersama"
+   ],
+   "kw": "BEKAL BERSAMA"
+  },
+  {
+   "il": "cta",
+   "text": "Part tujuh, saat semua catatan dibuka. Tulis lanjut di komentar.",
+   "hl": [
+    "catatan",
+    "lanjut"
+   ],
+   "kw": "PART 7",
+   "kw2": "CATATAN DIBUKA"
+  }
+ ],
+ "caption": "Guncangan hari itu begitu besar, sampai seorang ibu lalai terhadap bayi yang disusuinya.\n\n\"Wahai manusia! Bertakwalah kepada Tuhanmu. Sungguh, guncangan hari kiamat itu adalah suatu kejadian yang sangat besar.\" (QS. Al-Hajj: 1)",
+ "cta": "Sudah peluk keluargamu hari ini? Tulis LANJUT untuk part 7.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#hariitu",
+  "#harikiamat"
+ ]
+}

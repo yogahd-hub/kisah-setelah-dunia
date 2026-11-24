@@ -1,0 +1,127 @@
+{
+ "no": 41,
+ "series": "Amal Kecil",
+ "part": 5,
+ "title": "Seekor|Kucing",
+ "hook": "Masuk neraka karena seekor kucing",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "worry",
+   "text": "Seekor kucing dikurung di sudut rumah. Tidak diberi makan. Tidak diberi minum. Sampai mati.",
+   "hl": [
+    "dikurung",
+    "mati"
+   ],
+   "kw": "SEEKOR KUCING"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Rizki terkejut. Di part sebelumnya, seekor anjing menjadi sebab ampunan. Kali ini sebaliknya.",
+   "hl": [
+    "sebaliknya"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Rasulullah bersabda, seorang wanita disiksa karena kucing yang ia kurung sampai mati.",
+   "hl": [
+    "disiksa",
+    "kucing"
+   ],
+   "card": [
+    "Seorang wanita disiksa karena kucing yang ia kurung hingga mati, lalu ia masuk neraka karenanya. Ia tidak memberinya makan dan minum.",
+    "HR. Bukhari no. 3482",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Ia tidak memberinya makan. Ia juga tidak melepaskannya agar bisa mencari makan sendiri.",
+   "hl": [
+    "melepaskannya"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Hanif berkata pelan. Amal kecil bisa menyelamatkan. Tapi kezaliman kecil juga bisa mencelakakan.",
+   "hl": [
+    "kezaliman",
+    "kecil"
+   ]
+  },
+  {
+   "il": "city",
+   "text": "Hewan peliharaan yang lupa diberi makan. Burung dalam sangkar yang airnya kering.",
+   "hl": [
+    "lupa",
+    "kering"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Malam ini, cek lagi makhluk yang ada dalam tanggunganmu.",
+   "hl": [
+    "tanggunganmu"
+   ],
+   "kw": "CEK TANGGUNGANMU"
+  },
+  {
+   "il": "cta",
+   "text": "Part enam, separuh kurma yang menjadi perisai dari api. Tulis lanjut di komentar.",
+   "hl": [
+    "separuh",
+    "lanjut"
+   ],
+   "kw": "PART 6",
+   "kw2": "SEPARUH KURMA"
+  }
+ ],
+ "caption": "Amal kecil bisa menyelamatkan, kezaliman kecil juga bisa mencelakakan.\n\n\"Seorang wanita disiksa karena kucing yang ia kurung hingga mati.\" (HR. Bukhari no. 3482)",
+ "cta": "Sudah cek hewan peliharaanmu hari ini? Tulis LANJUT untuk part 6.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan"
+ ]
+}

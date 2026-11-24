@@ -1,0 +1,126 @@
+{
+ "no": 46,
+ "series": "Hari Itu",
+ "part": 7,
+ "title": "Catatan|Dibuka",
+ "hook": "Setiap jiwa tahu apa yang ia bawa",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "BAYU",
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "shirt": [
+    90,
+    90,
+    100
+   ]
+  },
+  "B": {
+   "name": "ADIT",
+   "hair": [
+    46,
+    34,
+    26
+   ],
+   "shirt": [
+    130,
+    100,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "clock",
+   "text": "Lembaran demi lembaran dibentangkan. Semua yang pernah tercatat, kini terbuka.",
+   "hl": [
+    "dibentangkan",
+    "terbuka"
+   ],
+   "kw": "CATATAN DIBUKA"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, apabila catatan amal dibuka, neraka dinyalakan, dan surga didekatkan.",
+   "hl": [
+    "neraka",
+    "surga"
+   ],
+   "card": [
+    "Apabila lembaran-lembaran catatan amal dibuka, langit dilenyapkan, neraka Jahim dinyalakan, dan surga didekatkan, setiap jiwa akan mengetahui apa yang telah dikerjakannya.",
+    "QS. At-Takwir: 10-14"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Di satu sisi, api neraka dinyalakan begitu dekat.",
+   "hl": [
+    "api"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Di sisi lain, surga didekatkan, harum dan bercahaya.",
+   "hl": [
+    "didekatkan"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "expr2": "cry",
+   "switch": 0.6,
+   "text": "Bayu melihat catatannya. Ada hari-hari yang membuatnya lega. Ada malam-malam yang membuatnya ingin menutup mata.",
+   "hl": [
+    "lega",
+    "menutup"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "neutral",
+   "text": "Adit menepuk bahunya. Hari ini, catatan kita belum dibuka. Kita masih bisa menambah halaman yang baik.",
+   "hl": [
+    "menambah",
+    "halaman"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Kalau catatanmu dibuka malam ini, halaman mana yang ingin kamu tunjukkan duluan?",
+   "hl": [
+    "halaman"
+   ],
+   "kw": "HALAMAN MANA?"
+  },
+  {
+   "il": "cta",
+   "text": "Part delapan, penutup seri, saat semua manusia berdiri. Tulis lanjut di komentar.",
+   "hl": [
+    "berdiri",
+    "lanjut"
+   ],
+   "kw": "PART 8",
+   "kw2": "SEMUA BERDIRI"
+  }
+ ],
+ "caption": "Setiap jiwa akan tahu apa yang ia bawa, saat catatan dibuka.\n\n\"Setiap jiwa akan mengetahui apa yang telah dikerjakannya.\" (QS. At-Takwir: 14)",
+ "cta": "Halaman baik apa yang mau kamu tambah hari ini? Tulis LANJUT untuk part 8.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#hariitu",
+  "#harikiamat"
+ ]
+}

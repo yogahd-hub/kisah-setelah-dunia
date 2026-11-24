@@ -18,10 +18,10 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
   - Seri 2 "Tanda Akhir Zaman" (RAKA & ILHAM): part 1–8 selesai — TAMAT.
   - Seri 3 "Jalan Pulang" (DIMAS & FARHAN): part 1–8 selesai — TAMAT.
   - Seri 4 "Andai Dulu" (YUDA & SATRIA): part 1–8 selesai — TAMAT.
-  - Seri 5 "Amal Kecil" (RIZKI & HANIF, chars: `{"A":{"name":"RIZKI","hair":[40,30,22],"shirt":[200,140,60]},"B":{"name":"HANIF","hair":[22,20,24],"shirt":[70,90,130]}}`): part 1–4 selesai. Berikutnya part 5 (Kucing).
-  - Seri 6 "Hari Itu" (BAYU & ADIT, chars: `{"A":{"name":"BAYU","hair":[30,24,20],"shirt":[90,90,100]},"B":{"name":"ADIT","hair":[46,34,26],"shirt":[130,100,70]}}`): part 1–4 selesai. Berikutnya part 5 (Langit Terbelah).
-  - Rencana part 5–8 Seri 5 & 6 ada di SERI.md. Selang-seling Seri 5 dan Seri 6. Seri 3 & 4 tamat: perlu usulan Seri 7 & 8.
-  - Nomor tayang (`no`) terakhir: **40**.
+  - Seri 5 "Amal Kecil" (RIZKI & HANIF): part 1–8 selesai — TAMAT.
+  - Seri 6 "Hari Itu" (BAYU & ADIT): part 1–8 selesai — TAMAT.
+  - Semua seri (1–6) tamat. Langkah berikutnya: usulkan Seri 7 & 8 di SERI.md, tunggu persetujuan Yoga.
+  - Nomor tayang (`no`) terakhir: **48**.
   - Render: satu run maksimal ±20 video (batas waktu 300 menit). Upload semua JSON dalam SATU commit.
 
 ## Aturan niche (ganti bagian ini untuk niche lain)
@@ -33,7 +33,7 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
 ## Format JSON
 ```json
 {
- "no": 41, "series": "Amal Kecil", "part": 5,
+ "no": 49, "series": "(Seri 7)", "part": 1,
  "title": "Hari|Dibangkitkan", "hook": "Kalimat penasaran maks 40 huruf",
  "cover_scene": 1, "voice": "Charon",
  "chars": {"A": {"name": "ARYA", "hair": [40,28,22], "shirt": [176,92,64]},

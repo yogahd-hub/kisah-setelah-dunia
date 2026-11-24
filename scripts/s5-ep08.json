@@ -1,0 +1,128 @@
+{
+ "no": 47,
+ "series": "Amal Kecil",
+ "part": 8,
+ "title": "Sedikit|tapi Rutin",
+ "hook": "Amal yang paling dicintai Allah",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Rizki pernah semangat sekali. Shalat malam sebelas rakaat, tiga hari berturut-turut. Lalu berhenti total.",
+   "hl": [
+    "berhenti",
+    "total"
+   ],
+   "kw": "LALU BERHENTI"
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Hanif tertawa kecil. Ia sendiri hanya shalat malam dua rakaat. Tapi tidak pernah putus, sejak bertahun-tahun.",
+   "hl": [
+    "dua",
+    "rakaat"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, amal yang paling dicintai Allah adalah yang paling rutin, walaupun sedikit.",
+   "hl": [
+    "rutin",
+    "sedikit"
+   ],
+   "card": [
+    "Amalan yang paling dicintai Allah adalah yang paling rutin, walaupun sedikit.",
+    "HR. Bukhari no. 6464",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Setetes air yang jatuh terus-menerus, bisa melubangi batu.",
+   "hl": [
+    "terus-menerus"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Satu halaman Al-Qur'an setiap hari. Satu sedekah kecil setiap Jumat. Satu doa untuk orang tua setiap selesai shalat.",
+   "hl": [
+    "setiap",
+    "hari"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "smile",
+   "text": "Delapan kisah amal kecil. Semuanya tidak mahal. Yang mahal hanya istiqamahnya.",
+   "hl": [
+    "istiqamahnya"
+   ],
+   "kw": "ISTIQAMAH"
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "smile",
+   "text": "Pilih satu amal kecil. Jalankan setiap hari. Mulai malam ini.",
+   "hl": [
+    "satu",
+    "amal"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Seri Amal Kecil tamat. Amal kecil apa yang mau kamu rutinkan? Tulis lanjut di komentar.",
+   "hl": [
+    "tamat",
+    "lanjut"
+   ],
+   "kw": "TAMAT",
+   "kw2": "SERI BARU SEGERA"
+  }
+ ],
+ "caption": "Penutup Seri Amal Kecil. Yang paling dicintai Allah bukan yang paling besar, tapi yang paling rutin.\n\n\"Amalan yang paling dicintai Allah adalah yang paling rutin, walaupun sedikit.\" (HR. Bukhari no. 6464)",
+ "cta": "Amal kecil apa yang mau kamu rutinkan? Tulis di komentar.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan",
+  "#istiqamah"
+ ]
+}

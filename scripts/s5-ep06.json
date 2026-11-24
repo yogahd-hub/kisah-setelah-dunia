@@ -1,0 +1,128 @@
+{
+ "no": 43,
+ "series": "Amal Kecil",
+ "part": 6,
+ "title": "Separuh|Kurma",
+ "hook": "Perisai dari api seharga separuh kurma",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Rizki menghitung uang di dompetnya. Hanya dua ribu rupiah. Ah, terlalu kecil untuk sedekah.",
+   "hl": [
+    "terlalu",
+    "kecil"
+   ],
+   "kw": "TERLALU KECIL?"
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, lindungilah dirimu dari neraka, walau dengan separuh kurma.",
+   "hl": [
+    "separuh",
+    "kurma"
+   ],
+   "card": [
+    "Lindungilah diri kalian dari api neraka, walaupun dengan bersedekah separuh kurma.",
+    "HR. Bukhari no. 1417",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "gate",
+   "text": "Separuh kurma. Bukan sekarung. Bukan sebutir emas. Hanya separuh.",
+   "hl": [
+    "separuh"
+   ],
+   "kw": "HANYA SEPARUH"
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Hanif tersenyum. Dan kalau tidak punya apa-apa, beliau bersabda, maka dengan kata-kata yang baik.",
+   "hl": [
+    "kata-kata",
+    "baik"
+   ]
+  },
+  {
+   "il": "city",
+   "text": "Senyum untuk tukang parkir. Ucapan terima kasih untuk kurir. Doa untuk teman yang sedang susah.",
+   "hl": [
+    "terima",
+    "kasih"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "smile",
+   "text": "Rizki memasukkan dua ribu itu ke kotak amal. Ringan sekali rasanya.",
+   "hl": [
+    "ringan"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Tidak ada sedekah yang terlalu kecil. Yang ada hanya yang tidak pernah dimulai.",
+   "hl": [
+    "dimulai"
+   ],
+   "kw": "MULAI SEKARANG"
+  },
+  {
+   "il": "cta",
+   "text": "Part tujuh, kebaikan yang bisa kamu berikan tanpa uang sepeser pun. Tulis lanjut di komentar.",
+   "hl": [
+    "tanpa",
+    "lanjut"
+   ],
+   "kw": "PART 7",
+   "kw2": "WAJAH CERIA"
+  }
+ ],
+ "caption": "Tidak ada sedekah yang terlalu kecil. Separuh kurma pun bisa menjadi perisai. Kalau tidak punya, dengan kata yang baik (HR. Bukhari no. 6540).\n\n\"Lindungilah diri kalian dari api neraka, walaupun dengan separuh kurma.\" (HR. Bukhari no. 1417)",
+ "cta": "Sedekah kecil apa yang kamu lakukan hari ini? Tulis LANJUT untuk part 7.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan",
+  "#sedekah"
+ ]
+}

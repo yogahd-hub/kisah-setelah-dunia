@@ -1,0 +1,128 @@
+{
+ "no": 42,
+ "series": "Hari Itu",
+ "part": 5,
+ "title": "Langit|Terbelah",
+ "hook": "Apa yang memperdayamu?",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "BAYU",
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "shirt": [
+    90,
+    90,
+    100
+   ]
+  },
+  "B": {
+   "name": "ADIT",
+   "hair": [
+    46,
+    34,
+    26
+   ],
+   "shirt": [
+    130,
+    100,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "globe",
+   "text": "Langit yang selama ini menaungi kita, hari itu terbelah.",
+   "hl": [
+    "terbelah"
+   ],
+   "kw": "LANGIT TERBELAH"
+  },
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Bintang-bintang berserakan. Lautan meluap. Kuburan-kuburan dibongkar.",
+   "hl": [
+    "berserakan",
+    "dibongkar"
+   ]
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, saat itu setiap jiwa mengetahui apa yang telah ia kerjakan dan apa yang ia lalaikan.",
+   "hl": [
+    "lalaikan"
+   ],
+   "card": [
+    "Apabila langit terbelah, bintang-bintang jatuh berserakan, lautan meluap, dan kuburan dibongkar, setiap jiwa akan mengetahui apa yang telah dikerjakan dan yang dilalaikannya.",
+    "QS. Al-Infithar: 1-5"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Bayu teringat daftar yang selalu ia tunda. Shalat tepat waktu. Membaca Al-Qur'an. Menjenguk ibunya.",
+   "hl": [
+    "tunda"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Lalu Allah bertanya, wahai manusia, apa yang telah memperdayamu terhadap Tuhanmu Yang Maha Pengasih?",
+   "hl": [
+    "memperdayamu"
+   ],
+   "card": [
+    "Wahai manusia! Apakah yang telah memperdayakan kamu berbuat durhaka terhadap Tuhanmu Yang Maha Pengasih?",
+    "QS. Al-Infithar: 6"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Adit terdiam. Bukan musuh yang memperdaya. Seringnya, hanya rasa masih ada waktu.",
+   "hl": [
+    "masih",
+    "ada",
+    "waktu"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Apa yang selama ini paling sering membuatmu lalai?",
+   "hl": [
+    "lalai"
+   ],
+   "kw": "APA YANG MEMPERDAYA?"
+  },
+  {
+   "il": "cta",
+   "text": "Part enam, hari ketika seorang ibu melupakan bayinya. Tulis lanjut di komentar.",
+   "hl": [
+    "ibu",
+    "lanjut"
+   ],
+   "kw": "PART 6",
+   "kw2": "IBU YANG LUPA"
+  }
+ ],
+ "caption": "Saat langit terbelah, setiap jiwa tahu apa yang ia kerjakan dan apa yang ia lalaikan.\n\n\"Wahai manusia! Apakah yang telah memperdayakan kamu terhadap Tuhanmu Yang Maha Pengasih?\" (QS. Al-Infithar: 6)",
+ "cta": "Apa yang paling sering membuatmu lalai? Tulis LANJUT untuk part 6.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#hariitu",
+  "#harikiamat"
+ ]
+}

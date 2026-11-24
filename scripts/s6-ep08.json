@@ -1,0 +1,123 @@
+{
+ "no": 48,
+ "series": "Hari Itu",
+ "part": 8,
+ "title": "Semua|Berdiri",
+ "hook": "Hari ketika semua berdiri di hadapan-Nya",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "BAYU",
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "shirt": [
+    90,
+    90,
+    100
+   ]
+  },
+  "B": {
+   "name": "ADIT",
+   "hair": [
+    46,
+    34,
+    26
+   ],
+   "shirt": [
+    130,
+    100,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": false,
+   "text": "Semua manusia, dari yang pertama sampai yang terakhir, berdiri di satu tempat.",
+   "hl": [
+    "berdiri"
+   ],
+   "kw": "SEMUA BERDIRI"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, tidakkah mereka mengira akan dibangkitkan, pada hari yang besar, hari ketika manusia berdiri menghadap Tuhan semesta alam.",
+   "hl": [
+    "menghadap",
+    "Tuhan"
+   ],
+   "card": [
+    "Tidakkah mereka mengira bahwa mereka akan dibangkitkan pada suatu hari yang besar, hari ketika manusia berdiri menghadap Tuhan seluruh alam?",
+    "QS. Al-Mutaffifin: 4-6"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Bayu teringat ayat ini justru diturunkan tentang orang yang curang dalam timbangan. Hal kecil di pasar.",
+   "hl": [
+    "curang"
+   ]
+  },
+  {
+   "il": "scale",
+   "text": "Takaran yang dikurangi sedikit. Janji yang diingkari sedikit. Semuanya dibawa ke hari itu.",
+   "hl": [
+    "sedikit"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "neutral",
+   "text": "Adit berkata, delapan part tentang hari itu. Tapi sebenarnya kita sedang bicara tentang hari ini.",
+   "hl": [
+    "hari",
+    "ini"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Karena cara kita berdiri hari itu, ditentukan oleh cara kita berdiri hari ini. Di atas sajadah, dan di atas kejujuran.",
+   "hl": [
+    "sajadah",
+    "kejujuran"
+   ],
+   "kw": "BERDIRI HARI INI"
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Kapan terakhir kamu berdiri lama di hadapan-Nya, tanpa terburu-buru?",
+   "hl": [
+    "terburu-buru"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Seri Hari Itu tamat. Kisah apa yang ingin kamu tonton berikutnya? Tulis lanjut di komentar.",
+   "hl": [
+    "tamat",
+    "lanjut"
+   ],
+   "kw": "TAMAT",
+   "kw2": "SERI BARU SEGERA"
+  }
+ ],
+ "caption": "Penutup Seri Hari Itu. Cara kita berdiri hari itu ditentukan oleh cara kita berdiri hari ini.\n\n\"Hari ketika manusia berdiri menghadap Tuhan seluruh alam.\" (QS. Al-Mutaffifin: 6)",
+ "cta": "Kisah apa yang ingin kamu tonton berikutnya? Tulis di komentar.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#hariitu",
+  "#harikiamat"
+ ]
+}

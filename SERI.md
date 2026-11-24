@@ -62,7 +62,7 @@ Ayat-ayat penyesalan di akhirat, dibawakan sebagai kisah orang biasa, ditutup de
 | 7 | Sehari Saja | Hidup di dunia terasa hanya sehari | QS. Al-Mu'minun: 112-114 | ✅ naskah ada (no 38) |
 | 8 | Masih Ada Waktu | Jangan putus asa dari rahmat Allah (penutup penuh harapan) | QS. Az-Zumar: 53 | ✅ naskah ada (no 40) — seri tamat |
 
-## Seri 5 — Amal Kecil (berjalan)
+## Seri 5 — Amal Kecil (TAMAT)
 Kisah amal sederhana dari hadits shahih yang menjadi sebab ampunan. Tokoh: RIZKI (A) & HANIF (B).
 
 | Part | Judul kerja | Topik | Dalil utama | Status |
@@ -71,12 +71,12 @@ Kisah amal sederhana dari hadits shahih yang menjadi sebab ampunan. Tokoh: RIZKI
 | 2 | Pohon yang Ditanam | Menanam pohon jadi sedekah | HR. Bukhari no. 2320 | ✅ naskah ada (no 27) |
 | 3 | Air di Sepatu | Memberi minum anjing yang kehausan | HR. Bukhari no. 2363 | ✅ naskah ada (no 31) |
 | 4 | Ranting Berduri | Menyingkirkan duri dari jalan | HR. Bukhari no. 2472 | ✅ naskah ada (no 35) |
-| 5 | Kucing | Amal kecil yang buruk: menyiksa kucing (teaser sudah disebut di part 4) | HR. Bukhari no. 3482 (cek ulang) | belum |
-| 6 | Separuh Kurma | Berlindung dari neraka walau dengan separuh kurma | HR. Bukhari no. 1417 (cek ulang) | belum |
-| 7 | Wajah yang Ceria | Jangan remehkan kebaikan walau wajah ceria | HR. Muslim no. 2626 (cek ulang) | belum |
-| 8 | Sedikit tapi Rutin | Amal yang paling dicintai Allah (penutup) | HR. Bukhari no. 6464 (cek ulang) | belum |
+| 5 | Kucing | Amal kecil yang buruk: menyiksa kucing (teaser sudah disebut di part 4) | HR. Bukhari no. 3482 | ✅ naskah ada (no 41) |
+| 6 | Separuh Kurma | Berlindung dari neraka walau dengan separuh kurma | HR. Bukhari no. 1417 | ✅ naskah ada (no 43) |
+| 7 | Wajah yang Ceria | Jangan remehkan kebaikan walau wajah ceria | HR. Muslim no. 2626 | ✅ naskah ada (no 45) |
+| 8 | Sedikit tapi Rutin | Amal yang paling dicintai Allah (penutup) | HR. Bukhari no. 6464 | ✅ naskah ada (no 47) — seri tamat |
 
-## Seri 6 — Hari Itu (berjalan)
+## Seri 6 — Hari Itu (TAMAT)
 Peristiwa saat kiamat terjadi, hanya dari ayat Al-Qur'an. Tanpa tanggal, tanpa mengaitkan ke berita. Tokoh: BAYU (A) & ADIT (B).
 
 | Part | Judul kerja | Topik | Dalil utama | Status |
@@ -85,10 +85,10 @@ Peristiwa saat kiamat terjadi, hanya dari ayat Al-Qur'an. Tanpa tanggal, tanpa m
 | 2 | Gunung Beterbangan | Manusia seperti laron, gunung seperti bulu | QS. Al-Qari'ah: 4-5 | ✅ naskah ada (no 28) |
 | 3 | Lautan Menyala | Matahari digulung, lautan dipanaskan | QS. At-Takwir: 1-3, 6 | ✅ naskah ada (no 32) |
 | 4 | Bumi Bercerita | Bumi menyampaikan beritanya | QS. Az-Zalzalah: 1-8 | ✅ naskah ada (no 36) |
-| 5 | Langit Terbelah | Langit terbelah, kubur dibongkar (teaser sudah disebut di part 4) | QS. Al-Infithar: 1-5 | belum |
-| 6 | Ibu yang Lupa | Ibu menyusui lalai dari bayinya | QS. Al-Hajj: 1-2 | belum |
-| 7 | Catatan Dibuka | Lembaran amal dibentangkan | QS. At-Takwir: 10-14 | belum |
-| 8 | Semua Berdiri | Manusia berdiri menghadap Tuhan semesta alam (penutup) | QS. Al-Mutaffifin: 4-6 | belum |
+| 5 | Langit Terbelah | Langit terbelah, kubur dibongkar (teaser sudah disebut di part 4) | QS. Al-Infithar: 1-5 | ✅ naskah ada (no 42) |
+| 6 | Ibu yang Lupa | Ibu menyusui lalai dari bayinya | QS. Al-Hajj: 1-2 | ✅ naskah ada (no 44) |
+| 7 | Catatan Dibuka | Lembaran amal dibentangkan | QS. At-Takwir: 10-14 | ✅ naskah ada (no 46) |
+| 8 | Semua Berdiri | Manusia berdiri menghadap Tuhan semesta alam (penutup) | QS. Al-Mutaffifin: 4-6 | ✅ naskah ada (no 48) — seri tamat |
 
 ## Evaluasi
 Setiap minggu catat views, like, komentar, share, dan follower baru per video. Seri/part yang paling ramai jadi acuan naskah minggu berikutnya.

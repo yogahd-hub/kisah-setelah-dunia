@@ -15,13 +15,13 @@ SISTEM (sudah jadi, jangan diubah kecuali saya minta):
 - Gaya anime = default. Hanya pakai adegan (il) yang ada di daftar.
 
 TARGET:
-- Upload 3 video/hari (2 Seri 1 + 1 Seri 2, atau sesuai performa).
-- Tulis naskah per BATCH (5–7 naskah sekali jalan) supaya hemat kuota.
+- Upload 3 video/hari, urut sesuai nomor tayang "no" (angka paling depan nama file).
+- Tulis naskah per BATCH (8–20 naskah sekali jalan) supaya hemat kuota.
 
 TUGAS SEKARANG:
-1. Cek status di SERI.md & CHECKPOINT.md (part terakhir dan nomor tayang "no" terakhir).
-2. Tulis batch berikutnya: Seri 1 part 7 (Hari Dibangkitkan) & part 8 (Kitab di Tangan); Seri 2 part 5 (Turunnya Nabi Isa), 6 (Yakjuj Makjuj), 7 (Matahari dari Barat), 8 (Penutup). Nomor "no" lanjut dari yang terakhir; selang-seling Seri 1 dan Seri 2.
-3. Karena kedua seri akan tamat, usulkan rencana Seri 3 dan Seri 4 (8 part, judul kerja + topik + dalil utama) di SERI.md, tapi TUNGGU persetujuan saya sebelum menulis naskahnya.
+1. Baca CHECKPOINT.md bagian "Status seri" dan SERI.md (part terakhir + "no" terakhir).
+2. Kalau ada seri yang belum tamat: tulis part berikutnya, selang-seling antar seri, "no" lanjut dari yang terakhir.
+3. Kalau semua seri tamat: usulkan 2 seri baru (8 part: judul kerja + topik + dalil utama + tokoh baru) di SERI.md, lalu TUNGGU persetujuan saya.
 
 ATURAN WAJIB:
 - Dalil hanya Al-Qur'an atau hadits shahih/hasan dengan sumber jelas. Cek nomornya di web (quran.com, sunnah.com). Ragu → jangan buat kartu.
@@ -38,6 +38,20 @@ SETELAH MENULIS:
 4. Laporkan ke saya dalam tabel: no | file | judul | hook | dalil (sumber + arti singkat). Saya akan cek dalil sebelum upload.
 5. Ingatkan saya: tunggu render di tab Actions, unduh di Releases, dan salin CHECKPOINT.md terbaru untuk chat berikutnya.
 
+CATATAN TEKNIS (pelajaran dari sesi sebelumnya):
+- Satu run render maksimal ±20 video (batas 300 menit, ±12 menit/video). Push semua naskah batch dalam SATU commit.
+- Antrean render hanya menyimpan 1 run tunggu: jangan push/commit lagi sebelum render selesai, nanti antrean tergeser.
+- Kalau ada naskah yang belum dirender: Actions → Render video → Run workflow, kolom kosong = render semua yang belum.
+- Semua video & cover wajib 9:16 (1080x1920), dicek otomatis. Gaya anime = default.
+- Nama file hasil: "NN - S<seri>P<part> Judul" (NN = nomor tayang). Satu Release bisa berisi banyak video.
+- Tokoh tiap seri berbeda; salin warna "chars" dari naskah part 1 seri itu.
+
 EVALUASI MINGGUAN (kalau saya kirim angka views/like/komen/share/follower):
 Analisis part mana yang paling kuat, lalu sesuaikan hook, durasi, dan topik batch berikutnya. Catat pelajaran penting ke NICHE.md.
 ```
+
+## Kalau pakai akun Claude lain
+- Paling mudah: menu **Code** (Claude Code) → pilih repo `yogahd-hub/kisah-setelah-dunia` → tempel prompt di atas.
+- Kalau muncul "Claude GitHub App on yogahd-hub isn't connected": login GitHub sebagai **yogahd-hub**, lalu klik "Install on another account" → pilih yogahd-hub → Only select repositories → kisah-setelah-dunia. Status collaborator saja tidak cukup.
+- Chat biasa (bukan Code) tidak bisa membuka github.com kecuali internetnya diizinkan (Settings → Capabilities). Kalau tetap tidak bisa, tempel isi CHECKPOINT.md + SERI.md + PANDUAN_NASKAH.md + 1 contoh naskah, lalu upload JSON hasilnya manual ke folder scripts/ dalam satu commit.
+

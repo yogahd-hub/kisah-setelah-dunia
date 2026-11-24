@@ -1,0 +1,125 @@
+{
+ "no": 45,
+ "series": "Amal Kecil",
+ "part": 7,
+ "title": "Wajah|Ceria",
+ "hook": "Sedekah tanpa uang sepeser pun",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "city",
+   "text": "Hanif bertemu satpam kompleks setiap pagi. Ia selalu menyapa, sambil tersenyum lebar.",
+   "hl": [
+    "tersenyum"
+   ],
+   "kw": "SENYUM PAGI"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Rizki bertanya heran, kenapa repot-repot? Hanif menjawab, karena itu juga kebaikan.",
+   "hl": [
+    "kebaikan"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, jangan meremehkan kebaikan sedikit pun, walau hanya bertemu saudaramu dengan wajah ceria.",
+   "hl": [
+    "wajah",
+    "ceria"
+   ],
+   "card": [
+    "Janganlah kamu meremehkan kebaikan sedikit pun, walaupun hanya bertemu saudaramu dengan wajah yang ceria.",
+    "HR. Muslim no. 2626",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Satpam itu pernah bercerita, hanya Hanif yang menyapanya selama tiga tahun bekerja.",
+   "hl": [
+    "tiga",
+    "tahun"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Kita sering menunggu punya banyak uang untuk berbuat baik. Padahal wajah kita sudah cukup.",
+   "hl": [
+    "wajah",
+    "kita"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "smile",
+   "text": "Esok paginya, Rizki mencoba. Menyapa tukang sayur, sambil tersenyum. Hatinya terasa hangat.",
+   "hl": [
+    "hangat"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "smile",
+   "text": "Siapa orang yang hari ini belum kamu beri senyum?",
+   "hl": [
+    "senyum"
+   ],
+   "kw": "SENYUMMU"
+  },
+  {
+   "il": "cta",
+   "text": "Part delapan, penutup seri, amal yang paling dicintai Allah. Tulis lanjut di komentar.",
+   "hl": [
+    "dicintai",
+    "lanjut"
+   ],
+   "kw": "PART 8",
+   "kw2": "SEDIKIT TAPI RUTIN"
+  }
+ ],
+ "caption": "Kebaikan tidak selalu butuh uang. Wajah yang ceria pun bernilai.\n\n\"Janganlah kamu meremehkan kebaikan sedikit pun, walaupun hanya bertemu saudaramu dengan wajah yang ceria.\" (HR. Muslim no. 2626)",
+ "cta": "Siapa yang mau kamu sapa besok pagi? Tulis LANJUT untuk part 8.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan"
+ ]
+}
