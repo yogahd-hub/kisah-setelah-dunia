@@ -18,8 +18,8 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
   - Seri 2 "Tanda Akhir Zaman" (RAKA & ILHAM): part 1–8 selesai — TAMAT.
   - Seri 3 "Jalan Pulang" (DIMAS & FARHAN): part 1–8 selesai — TAMAT.
   - Seri 4 "Andai Dulu" (YUDA & SATRIA): part 1–8 selesai — TAMAT.
-  - Seri 5 "Amal Kecil" (RIZKI & HANIF, warna chars lihat scripts/s5-ep01.json): part 1–4 selesai. Berikutnya part 5 (Kucing).
-  - Seri 6 "Hari Itu" (BAYU & ADIT, warna chars lihat scripts/s6-ep01.json): part 1–4 selesai. Berikutnya part 5 (Langit Terbelah).
+  - Seri 5 "Amal Kecil" (RIZKI & HANIF, chars: `{"A":{"name":"RIZKI","hair":[40,30,22],"shirt":[200,140,60]},"B":{"name":"HANIF","hair":[22,20,24],"shirt":[70,90,130]}}`): part 1–4 selesai. Berikutnya part 5 (Kucing).
+  - Seri 6 "Hari Itu" (BAYU & ADIT, chars: `{"A":{"name":"BAYU","hair":[30,24,20],"shirt":[90,90,100]},"B":{"name":"ADIT","hair":[46,34,26],"shirt":[130,100,70]}}`): part 1–4 selesai. Berikutnya part 5 (Langit Terbelah).
   - Rencana part 5–8 Seri 5 & 6 ada di SERI.md. Selang-seling Seri 5 dan Seri 6. Seri 3 & 4 tamat: perlu usulan Seri 7 & 8.
   - Nomor tayang (`no`) terakhir: **40**.
   - Render: satu run maksimal ±20 video (batas waktu 300 menit). Upload semua JSON dalam SATU commit.
