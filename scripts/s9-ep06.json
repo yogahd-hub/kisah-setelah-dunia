@@ -1,0 +1,76 @@
+{
+  "no": 54,
+  "series": "Kisah Setelah Dunia",
+  "part": 6,
+  "title": "Sungai|Kautsar",
+  "hook": "Sungai Kautsar, pemberian Allah kepada Nabi",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "door",
+      "text": "Sungai Kautsar mengalir di surga, pemberian Allah kepada Nabi Muhammad.",
+      "hl": ["Kautsar", "pemberian"],
+      "kw": "SUNGAI KAUTSAR"
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "worry",
+      "text": "Arif bertanya, \"Bagaimana airnya, Reza? Harus dipesan dulu?\"",
+      "hl": ["air", "pesan"]
+    },
+    {
+      "il": "duo",
+      "expr": "neutral",
+      "text": "Reza menjawab, \"Tidak. Airnya mengalir leluasa untuk siapa saja yang mau minum.\"",
+      "hl": ["minum"]
+    },
+    {
+      "il": "mosque",
+      "text": "Allah berfirman tentang sungai tersebut di dalam Al-Qur'an.",
+      "hl": ["Al-Qur'an"],
+      "card": [
+        "Sungai Kautsar adalah pemberian Allah kepada Nabi Muhammad yang mengalir di surga.",
+        "QS. Al-Kautsar: 1",
+        "AL-QUR'AN"
+      ]
+    },
+    {
+      "il": "solo",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza berkata, \"Minum sekali dari sana, tidak akan haus lagi selamanya.\"",
+      "hl": ["haus"]
+    },
+    {
+      "il": "cta",
+      "text": "Minuman apa yang paling kamu suka di dunia? Tulis LANJUT untuk part 7.",
+      "hl": ["minuman", "suka"],
+      "kw": "PART 7",
+      "kw2": "TUBUH BARU"
+    }
+  ],
+  "caption": "Sungai Kautsar mengalir di surga, pemberian Allah kepada Nabi Muhammad.\n\n\"Sungai Kautsar adalah pemberian Allah kepada Nabi Muhammad yang mengalir di surga.\" (QS. Al-Kautsar: 1)",
+  "cta": "Minuman apa yang paling kamu suka di dunia? Tulis LANJUT untuk part 7.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#air"
+  ]
+}

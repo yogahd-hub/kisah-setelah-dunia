@@ -1,0 +1,73 @@
+{
+  "no": 51,
+  "series": "Kisah Setelah Dunia",
+  "part": 3,
+  "title": "Yang Tak|Pernah Dilihat",
+  "hook": "Kenikmatan yang belum pernah dilihat mata",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "globe",
+      "text": "Allah berfirman, di sana ada kenikmatan yang belum pernah dilihat mata.",
+      "hl": ["belum", "dilihat"],
+      "kw": "TAK PERNAH DILIHAT"
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "worry",
+      "text": "Arif bertanya, \"Apa itu? Bisa dibandingkan dengan apa di dunia?\"",
+      "hl": ["dibandingkan"]
+    },
+    {
+      "il": "duo",
+      "expr": "neutral",
+      "text": "Reza menjawab, \"Tidak ada yang bisa dibandingkan, Arif. Itu milik orang yang beramal.\"",
+      "hl": ["beramal"]
+    },
+    {
+      "il": "night",
+      "who": "A",
+      "expr": "smile",
+      "text": "Arif teringat semua doa yang ia berikan pada malam hari.",
+      "hl": ["doa"]
+    },
+    {
+      "il": "solo",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza berkata, \"Setiap doa adalah bekal untuk hari itu.\"",
+      "hl": ["bekal"]
+    },
+    {
+      "il": "cta",
+      "text": "Doa apa yang paling sering kamu baca? Tulis LANJUT untuk part 4.",
+      "hl": ["doa", "baca"],
+      "kw": "PART 4",
+      "kw2": "PASAR SURGA"
+    }
+  ],
+  "caption": "Di sana ada kenikmatan yang belum pernah dilihat mata, milik orang yang beramal.\n\n\"Tidak seorang pun mengetahui apa yang disembunyikan untuk mereka berupa kesenangan mata.\" (QS. As-Sajdah: 17)",
+  "cta": "Doa apa yang paling sering kamu baca? Tulis LANJUT untuk part 4.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#doa"
+  ]
+}

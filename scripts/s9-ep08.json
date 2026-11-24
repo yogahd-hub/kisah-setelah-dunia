@@ -1,0 +1,74 @@
+{
+  "no": 56,
+  "series": "Kisah Setelah Dunia",
+  "part": 8,
+  "title": "Ridha|Selamanya",
+  "hook": "Allah ridha pada mereka, mereka kekal selamanya",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "gate",
+      "dark": true,
+      "text": "Allah ridha pada mereka, dan mereka kekal selamanya di surga.",
+      "hl": ["ridha", "kekal"],
+      "kw": "RIDHA SELAMANYA"
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "neutral",
+      "text": "Arif merasakan kedamaian yang tak pernah padam di hatinya.",
+      "hl": ["kedamaian", "padam"]
+    },
+    {
+      "il": "duo",
+      "expr": "smile",
+      "text": "Reza tersenyum, \"Ini yang kita cari sejak awal. Ridha Allah.\"",
+      "hl": ["Ridha Allah"]
+    },
+    {
+      "il": "solo",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza menambahkan, \"Allah tidak akan marah pada mereka selamanya.\"",
+      "hl": ["marah"]
+    },
+    {
+      "il": "night",
+      "who": "A",
+      "expr": "smile",
+      "text": "Arif merasa hatinya tenang, tak ada lagi ketakutan.",
+      "hl": ["tenang", "takut"]
+    },
+    {
+      "il": "cta",
+      "text": "Doa apa yang ingin kamu buat untuk diri sendiri? Tulis di komentar.",
+      "hl": ["doa", "diri"],
+      "kw": "TAMAT",
+      "kw2": "SERI BARU SEGERA"
+    }
+  ],
+  "caption": "Allah ridha pada mereka, dan mereka kekal selamanya di surga.\n\n\"Allah ridha pada mereka dan mereka ridha pada-Nya. Itu bagi yang takut kepada Tuhannya.\" (QS. Al-Bayyinah: 8)",
+  "cta": "Doa apa yang ingin kamu buat untuk diri sendiri? Tulis di komentar.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#ridha"
+  ]
+}

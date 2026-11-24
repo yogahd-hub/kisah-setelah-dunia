@@ -1,0 +1,76 @@
+{
+  "no": 49,
+  "series": "Kisah Setelah Dunia",
+  "part": 1,
+  "title": "Pintu Dibuka",
+  "hook": "Surga dibuka, mata melengkup",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "gate",
+      "dark": true,
+      "text": "Allah berfirman, pintu surga dibuka untuk orang yang takut-Nya.",
+      "hl": ["dibuka", "takut"],
+      "kw": "PINTA DIBUKA"
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "surprise",
+      "text": "Arif melihat pintu surga terbuka, terlihat cahaya dan angin sejuk.",
+      "hl": ["cahaya", "angin"],
+      "kw": "MATA MELLENGKUP"
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "worry",
+      "text": "Arif bertanya, \"Apakah semua yang kita lakukan cukup?\"",
+      "hl": ["cukup"]
+    },
+    {
+      "il": "solo",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza menjawab, \"Allah akan menilai dengan cara-Nya, bukan dengan cara kita.\"",
+      "hl": ["menilai"]
+    },
+    {
+      "il": "night",
+      "who": "A",
+      "expr": "neutral",
+      "text": "Arif mendengar angin sejuk, merasakan kehangatan yang baru.",
+      "hl": ["kehangatan"]
+    },
+    {
+      "il": "cta",
+      "text": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part 2.",
+      "hl": ["mendapatkan", "kebaikan"],
+      "kw": "PART 2",
+      "kw2": "ALAMTAN HARI INI"
+    }
+  ],
+  "caption": "Surga dibuka, mata melengkup. Allah akan menilai dengan cara-Nya, bukan dengan cara kita.\n\n\"Apa yang dimasukkan ke dalam hati adalah yang Allah lihat.\" (QS. At-Takwir: 10-14)",
+  "cta": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part 2.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#reza"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "no": 55,
+  "series": "Kisah Setelah Dunia",
+  "part": 7,
+  "title": "Tubuh|Baru",
+  "hook": "Di surga, tubuh muda dan tidak pernah sakit",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "smile",
+      "text": "Arif merasa tubuhnya segar, tidak ada rasa sakit sama sekali.",
+      "hl": ["segar", "sakit"],
+      "kw": "TIDAK PERNAH SAKIT"
+    },
+    {
+      "il": "duo",
+      "expr": "smile",
+      "text": "Reza berkata, \"Di sini semua orang muda, tanpa usia, tanpa penuaan.\"",
+      "hl": ["muda", "usia"]
+    },
+    {
+      "il": "calendar",
+      "text": "Rasulullah bersabda, penduduk surga akan sehat, tidak sakit, muda, dan tidak tua.",
+      "hl": ["sehat", "muda"],
+      "card": [
+        "Penduduk surga akan sehat dan tidak pernah sakit, hidup dan tidak mati, muda dan tidak tua, kaya dan tidak miskin.",
+        "HR. Muslim no. 2837",
+        "HADITS"
+      ]
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "neutral",
+      "text": "Arif merasakan perasaan yang sama, beban pikiran hilang.",
+      "hl": ["beban", "hilang"]
+    },
+    {
+      "il": "night",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza menutup mata, menikmati kedamaian yang tak pernah berakhir.",
+      "hl": ["kedamaian"]
+    },
+    {
+      "il": "cta",
+      "text": "Rasa damai apa yang ingin kamu miliki sekarang? Tulis LANJUT untuk part 8.",
+      "hl": ["damai", "miliki"],
+      "kw": "PART 8",
+      "kw2": "RIDHA SELAMANYA"
+    }
+  ],
+  "caption": "Di surga, penduduknya sehat, tidak sakit, muda, dan tidak tua.\n\n\"Penduduk surga akan sehat dan tidak pernah sakit, hidup dan tidak mati, muda dan tidak tua, kaya dan tidak miskin.\" (HR. Muslim no. 2837)",
+  "cta": "Rasa damai apa yang ingin kamu miliki sekarang? Tulis LANJUT untuk part 8.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#sehat"
+  ]
+}

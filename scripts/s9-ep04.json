@@ -1,0 +1,77 @@
+{
+  "no": 52,
+  "series": "Kisah Setelah Dunia",
+  "part": 4,
+  "title": "Pasar|di Surga",
+  "hook": "Pasar di surga setiap hari Jumat",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "city",
+      "move": true,
+      "text": "Di surga terdapat sebuah pasar yang datangi setiap hari Jumat.",
+      "hl": ["pasar", "Jumat"],
+      "kw": "PASAR SURGA"
+    },
+    {
+      "il": "duo",
+      "expr": "smile",
+      "text": "Arif dan Reza berkunjung bersama, melihat wajah para penduduk surga makin bercahaya.",
+      "hl": ["bercahaya"]
+    },
+    {
+      "il": "calendar",
+      "text": "Rasulullah bersabda, angin utara akan bertiup, mempercantik wajah mereka.",
+      "hl": ["angin", "mempercantik"],
+      "card": [
+        "Di surga terdapat sebuah pasar yang datangi mereka setiap hari Jumat. Angin utara bertiup, mempercantik wajah dan pakaian mereka.",
+        "HR. Muslim no. 2833",
+        "HADITS"
+      ]
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "neutral",
+      "text": "Arif melihat wajahnya sendiri di air, makin muda dan segar.",
+      "hl": ["muda", "segarr"]
+    },
+    {
+      "il": "night",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza berkata, \"Kembali kepada keluarga, mereka pun makin bercahaya.\"",
+      "hl": ["keluarga"]
+    },
+    {
+      "il": "cta",
+      "text": "Keluarga siapa yang ingin kamu bercahaya bersamanya di sana? Tulis LANJUT untuk part 5.",
+      "hl": ["keluarga", "bersama"],
+      "kw": "PART 5",
+      "kw2": "POHON RAKSASA"
+    }
+  ],
+  "caption": "Di surga terdapat pasar yang datangi setiap hari Jumat, angin utara mempercantik wajah penduduk surga.\n\n\"Di surga terdapat sebuah pasar yang datangi mereka setiap hari Jumat.\" (HR. Muslim no. 2833)",
+  "cta": "Keluarga siapa yang ingin kamu bercahaya bersamanya di sana? Tulis LANJUT untuk part 5.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#pohon"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "no": 50,
+  "series": "Kisah Setelah Dunia",
+  "part": 2,
+  "title": "Surga|Bergerak",
+  "hook": "Pintu surga terbuka, cahaya mengalir",
+  "cover_scene": 0,
+  "voice": "Charon",
+  "chars": {
+    "A": {
+      "name": "ARIF",
+      "hair": [40, 30, 22],
+      "shirt": [200, 140, 60]
+    },
+    "B": {
+      "name": "REZA",
+      "hair": [22, 20, 24],
+      "shirt": [70, 90, 130]
+    }
+  },
+  "scenes": [
+    {
+      "il": "gate",
+      "dark": true,
+      "text": "Pintu surga terbuka dengan lembut, cahaya mengalir dari dalam.",
+      "hl": ["cahaya", "melangir"],
+      "kw": "PINTA DIBUKA"
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "surprise",
+      "text": "Arif terkejut melihat langit berubah menjadi biru cerah, bukan gelap.",
+      "hl": ["terkejut", "biru"],
+      "kw": "BIRU CERAH"
+    },
+    {
+      "il": "duo",
+      "expr": "smile",
+      "text": "Reza tersenyum, \"Ini pertama kalinya kita masuk surga, Arif.\"",
+      "hl": ["masuk", "surga"]
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "worry",
+      "text": "Arif bertanya, \"Apakah semua yang kita lakukan cukup?\"",
+      "hl": ["cukup"]
+    },
+    {
+      "il": "night",
+      "who": "B",
+      "expr": "neutral",
+      "text": "Reza menjawab pelan, \"Kita akan berjalan di bawah sungai, lalu ke istana.",
+      "hl": ["berjalan"]
+    },
+    {
+      "il": "solo",
+      "who": "A",
+      "expr": "worry",
+      "text": "Arif mendengar suara air mengalir, terasa hangat.",
+      "hl": ["hangat"]
+    },
+    {
+      "il": "city",
+      "move": true,
+      "text": "Para penjaga surga menunggu, menunggu mereka untuk membawa makanan.",
+      "hl": ["menunggu"]
+    },
+    {
+      "il": "cta",
+      "text": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part 3.",
+      "hl": ["merasa", "melakukannya"],
+      "kw": "PART 3",
+      "kw2": "ALAMTAN HARI INI"
+    }
+  ],
+  "caption": "Surga dibuka, cahaya mengalir. Kita akan berjalan di bawah sungai, lalu ke istana.",
+  "cta": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part 3.",
+  "hashtags": [
+    "#kisahsetelahdunia",
+    "#pengingatdiri",
+    "#ceritaislami",
+    "#animasi",
+    "#surga",
+    "#reza"
+  ]
+}
