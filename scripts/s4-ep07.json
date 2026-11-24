@@ -1,0 +1,125 @@
+{
+ "no": 38,
+ "series": "Andai Dulu",
+ "part": 7,
+ "title": "Sehari|Saja",
+ "hook": "Enam puluh tahun terasa sehari",
+ "cover_scene": 4,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "clock",
+   "text": "Enam puluh tahun hidup. Ribuan hari. Tapi saat ditanya, jawabannya hanya, sehari.",
+   "hl": [
+    "sehari"
+   ],
+   "kw": "HANYA SEHARI"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah bertanya, berapa tahun kamu tinggal di bumi? Mereka menjawab, sehari atau setengah hari.",
+   "hl": [
+    "setengah",
+    "hari"
+   ],
+   "card": [
+    "Allah berfirman, berapa tahun lamanya kamu tinggal di bumi? Mereka menjawab, kami tinggal sehari atau setengah hari.",
+    "QS. Al-Mu'minun: 112-113"
+   ]
+  },
+  {
+   "il": "dreams",
+   "who": "A",
+   "seed": 11,
+   "switch": 0.6,
+   "text": "Yuda menghabiskan hari-harinya mengejar target. Promosi, rumah besar, liburan ke luar negeri.",
+   "hl": [
+    "target"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "cry",
+   "text": "Semua itu terasa begitu panjang. Sampai ia berdiri di sini, dan semuanya terasa sekejap.",
+   "hl": [
+    "sekejap"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Satria berkata, waktu di dunia memang pendek. Yang panjang adalah akibatnya.",
+   "hl": [
+    "pendek",
+    "akibatnya"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Pasir yang jatuh hari ini, tidak akan pernah naik lagi.",
+   "hl": [
+    "pasir",
+    "naik"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Kalau sisa umurmu terasa sehari, apa yang ingin kamu lakukan hari ini?",
+   "hl": [
+    "sehari"
+   ],
+   "kw": "KALAU SEHARI"
+  },
+  {
+   "il": "cta",
+   "text": "Part delapan, penutup seri, masih ada waktu. Tulis lanjut di komentar.",
+   "hl": [
+    "masih",
+    "lanjut"
+   ],
+   "kw": "PART 8",
+   "kw2": "MASIH ADA WAKTU"
+  }
+ ],
+ "caption": "Puluhan tahun hidup di dunia, nanti terasa hanya sehari atau setengah hari.\n\n\"Berapa tahun lamanya kamu tinggal di bumi? Mereka menjawab, kami tinggal sehari atau setengah hari.\" (QS. Al-Mu'minun: 112-113)",
+ "cta": "Kalau tinggal sehari, apa yang kamu lakukan? Tulis LANJUT untuk part 8.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#andaidulu",
+  "#penyesalan"
+ ]
+}

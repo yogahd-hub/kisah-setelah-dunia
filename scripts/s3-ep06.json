@@ -1,0 +1,128 @@
+{
+ "no": 33,
+ "series": "Jalan Pulang",
+ "part": 6,
+ "title": "Seperti|Purnama",
+ "hook": "Wajah mereka bersinar seperti purnama",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "gate",
+   "text": "Gerbang surga terbuka. Rombongan pertama masuk, dan wajah mereka bersinar seperti bulan purnama.",
+   "hl": [
+    "purnama"
+   ],
+   "kw": "SEPERTI PURNAMA"
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, rombongan pertama yang masuk surga, wajahnya seperti bulan saat purnama.",
+   "hl": [
+    "rombongan",
+    "pertama"
+   ],
+   "card": [
+    "Rombongan pertama yang masuk surga wajahnya seperti bulan pada malam purnama.",
+    "HR. Bukhari no. 3245",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "shock",
+   "expr2": "smile",
+   "switch": 0.5,
+   "text": "Farhan menatap mereka dengan takjub. Tidak ada wajah lelah. Tidak ada wajah sedih.",
+   "hl": [
+    "takjub"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Hati mereka seperti hati satu orang. Tidak ada dendam, tidak ada iri, tidak ada saling benci.",
+   "hl": [
+    "dendam",
+    "iri"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Dendam yang kita pelihara bertahun-tahun, di sana semua dicabut.",
+   "hl": [
+    "dendam"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Dimas teringat seseorang yang belum ia maafkan sampai hari ini.",
+   "hl": [
+    "belum",
+    "maafkan"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Kalau di surga tidak ada dendam, kenapa tidak mulai melepaskannya sekarang?",
+   "hl": [
+    "melepaskannya"
+   ],
+   "kw": "LEPASKAN"
+  },
+  {
+   "il": "cta",
+   "text": "Part tujuh, orang terakhir yang masuk surga. Tulis lanjut di komentar.",
+   "hl": [
+    "terakhir",
+    "lanjut"
+   ],
+   "kw": "PART 7",
+   "kw2": "ORANG TERAKHIR"
+  }
+ ],
+ "caption": "Penghuni surga masuk dengan wajah bersinar, dan hati mereka tanpa dendam (HR. Bukhari no. 3246).\n\n\"Rombongan pertama yang masuk surga wajahnya seperti bulan pada malam purnama.\" (HR. Bukhari no. 3245)",
+ "cta": "Dendam apa yang ingin kamu lepaskan? Tulis LANJUT untuk part 7.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#jalanpulang",
+  "#akhirat",
+  "#surga"
+ ]
+}

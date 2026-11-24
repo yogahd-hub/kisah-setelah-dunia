@@ -1,0 +1,130 @@
+{
+ "no": 24,
+ "series": "Hari Itu",
+ "part": 1,
+ "title": "Tiupan|Pertama",
+ "hook": "Satu tiupan, semua berhenti",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "BAYU",
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "shirt": [
+    90,
+    90,
+    100
+   ]
+  },
+  "B": {
+   "name": "ADIT",
+   "hair": [
+    46,
+    34,
+    26
+   ],
+   "shirt": [
+    130,
+    100,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "angel",
+   "text": "Satu tiupan sangkakala. Dan semua yang bernyawa di langit dan di bumi, berhenti.",
+   "hl": [
+    "sangkakala",
+    "berhenti"
+   ],
+   "kw": "TIUPAN PERTAMA"
+  },
+  {
+   "il": "city",
+   "text": "Pasar sedang ramai. Orang sedang tawar-menawar. Tidak ada yang sempat menyelesaikan kalimatnya.",
+   "hl": [
+    "ramai",
+    "kalimatnya"
+   ]
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, mereka tidak sempat berwasiat, dan tidak bisa kembali kepada keluarganya.",
+   "hl": [
+    "berwasiat",
+    "keluarganya"
+   ],
+   "card": [
+    "Mereka hanya menunggu satu teriakan yang akan membinasakan mereka ketika sedang bertengkar. Mereka tidak mampu berwasiat dan tidak dapat kembali kepada keluarganya.",
+    "QS. Yasin: 49-50"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Bayu pernah menunda minta maaf pada ayahnya. Nanti saja, pikirnya, masih ada waktu.",
+   "hl": [
+    "minta",
+    "maaf"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Tapi hari itu tidak ada nanti.",
+   "hl": [
+    "nanti"
+   ],
+   "kw": "TIDAK ADA NANTI"
+  },
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Lalu sangkakala ditiup sekali lagi. Seketika semua bangkit, berdiri menunggu keputusan.",
+   "hl": [
+    "sekali",
+    "lagi",
+    "menunggu"
+   ],
+   "card": [
+    "Sangkakala ditiup, maka matilah semua di langit dan di bumi kecuali yang dikehendaki Allah. Kemudian ditiup sekali lagi, seketika mereka bangun menunggu.",
+    "QS. Az-Zumar: 68"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Siapa yang paling ingin kamu mintai maaf, sebelum tidak ada lagi nanti?",
+   "hl": [
+    "mintai",
+    "maaf"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part dua, saat gunung beterbangan seperti bulu. Tulis lanjut di komentar.",
+   "hl": [
+    "gunung",
+    "lanjut"
+   ],
+   "kw": "PART 2",
+   "kw2": "GUNUNG BETERBANGAN"
+  }
+ ],
+ "caption": "Seri baru: Hari Itu. Detik-detik kiamat menurut Al-Qur'an. Kapan terjadinya, hanya Allah yang tahu.\n\n\"Mereka tidak mampu berwasiat dan tidak dapat kembali kepada keluarganya.\" (QS. Yasin: 50)",
+ "cta": "Siapa yang ingin kamu mintai maaf hari ini? Tulis LANJUT untuk part 2.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#hariitu",
+  "#harikiamat"
+ ]
+}

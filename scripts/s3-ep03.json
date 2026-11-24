@@ -1,0 +1,131 @@
+{
+ "no": 21,
+ "series": "Jalan Pulang",
+ "part": 3,
+ "title": "Telaga",
+ "hook": "Sekali minum, tak haus selamanya",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "sun",
+   "text": "Di padang mahsyar, haus terasa lebih tajam dari apa pun. Tenggorokan kering, matahari begitu dekat.",
+   "hl": [
+    "haus",
+    "kering"
+   ],
+   "kw": "HAUS"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Dimas menjulurkan tangan. Di kejauhan, ia melihat kilau air yang tidak pernah ia lihat di dunia.",
+   "hl": [
+    "kilau",
+    "air"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, telaga beliau luasnya sejauh perjalanan sebulan. Airnya lebih putih dari susu.",
+   "hl": [
+    "sebulan",
+    "susu"
+   ],
+   "card": [
+    "Telagaku sejauh perjalanan sebulan. Airnya lebih putih dari susu, baunya lebih harum dari kesturi. Siapa yang meminumnya tidak akan haus selamanya.",
+    "HR. Bukhari no. 6579",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "globe",
+   "text": "Gelasnya sebanyak bintang di langit. Siapa yang meminumnya, tidak akan pernah haus lagi.",
+   "hl": [
+    "bintang",
+    "haus"
+   ],
+   "kw": "TAK HAUS LAGI"
+  },
+  {
+   "il": "duo",
+   "expr": "neutral",
+   "text": "Farhan berbisik. Yang diizinkan mendekat adalah mereka yang mengikuti jalan Nabinya.",
+   "hl": [
+    "mengikuti",
+    "jalan"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Sunnah yang kita tinggalkan karena malas. Shalawat yang jarang kita ucapkan.",
+   "hl": [
+    "malas",
+    "shalawat"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "worry",
+   "text": "Kalau hari itu kamu berdiri di tepi telaga, apakah kamu dikenali sebagai umatnya?",
+   "hl": [
+    "dikenali",
+    "umatnya"
+   ],
+   "kw": "DIKENALI?"
+  },
+  {
+   "il": "cta",
+   "text": "Part empat, saat semua nabi berkata, diriku, diriku. Tulis lanjut di komentar.",
+   "hl": [
+    "diriku",
+    "lanjut"
+   ],
+   "kw": "PART 4",
+   "kw2": "SYAFAAT"
+  }
+ ],
+ "caption": "Di tengah haus padang mahsyar, ada telaga yang airnya lebih putih dari susu.\n\n\"Siapa yang meminumnya tidak akan haus selamanya.\" (HR. Bukhari no. 6579)",
+ "cta": "Sudah bershalawat hari ini? Tulis LANJUT untuk part 4.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#jalanpulang",
+  "#akhirat",
+  "#telagakautsar"
+ ]
+}

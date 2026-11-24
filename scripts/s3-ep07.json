@@ -1,0 +1,130 @@
+{
+ "no": 37,
+ "series": "Jalan Pulang",
+ "part": 7,
+ "title": "Orang|Terakhir",
+ "hook": "Ia keluar merangkak",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Seorang lelaki keluar dari neraka sambil merangkak. Ia adalah orang terakhir yang masuk surga.",
+   "hl": [
+    "merangkak",
+    "terakhir"
+   ],
+   "kw": "ORANG TERAKHIR"
+  },
+  {
+   "il": "door",
+   "text": "Allah berfirman kepadanya, pergilah, masuklah ke surga. Ia mendekat, tapi mengira surga sudah penuh.",
+   "hl": [
+    "penuh"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Ia kembali dan berkata, wahai Tuhanku, aku mendapatinya sudah penuh. Hal itu terulang beberapa kali.",
+   "hl": [
+    "penuh"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Allah berfirman, masuklah, bagimu seperti dunia dan sepuluh kali lipatnya.",
+   "hl": [
+    "sepuluh",
+    "kali"
+   ],
+   "kw": "10X DUNIA",
+   "card": [
+    "Pergilah dan masuklah surga, bagimu seperti dunia dan sepuluh kali lipatnya.",
+    "HR. Muslim no. 186",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Lelaki itu tidak percaya. Apakah Engkau mengejekku, padahal Engkau adalah Raja?",
+   "hl": [
+    "mengejekku",
+    "Raja"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Saat menceritakan ini, Rasulullah tertawa hingga gigi geraham beliau terlihat.",
+   "hl": [
+    "tertawa"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Kalau penghuni surga paling rendah saja mendapat sepuluh kali dunia, apa yang kita kejar mati-matian di sini?",
+   "hl": [
+    "mati-matian"
+   ],
+   "kw": "APA YANG DIKEJAR?"
+  },
+  {
+   "il": "cta",
+   "text": "Part delapan, penutup seri, nikmat yang paling besar. Tulis lanjut di komentar.",
+   "hl": [
+    "nikmat",
+    "lanjut"
+   ],
+   "kw": "PART 8",
+   "kw2": "NIKMAT TERBESAR"
+  }
+ ],
+ "caption": "Penghuni surga yang paling rendah kedudukannya mendapat seperti dunia dan sepuluh kali lipatnya.\n\n\"Pergilah dan masuklah surga, bagimu seperti dunia dan sepuluh kali lipatnya.\" (HR. Muslim no. 186)",
+ "cta": "Apa yang selama ini kamu kejar mati-matian? Tulis LANJUT untuk part 8.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#jalanpulang",
+  "#akhirat",
+  "#surga"
+ ]
+}

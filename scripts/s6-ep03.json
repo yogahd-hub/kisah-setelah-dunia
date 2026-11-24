@@ -1,0 +1,126 @@
+{
+ "no": 32,
+ "series": "Hari Itu",
+ "part": 3,
+ "title": "Lautan|Menyala",
+ "hook": "Laut yang menyala",
+ "cover_scene": 2,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "BAYU",
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "shirt": [
+    90,
+    90,
+    100
+   ]
+  },
+  "B": {
+   "name": "ADIT",
+   "hair": [
+    46,
+    34,
+    26
+   ],
+   "shirt": [
+    130,
+    100,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "sun",
+   "text": "Matahari yang selama ini menyinari bumi, hari itu digulung. Bintang-bintang berjatuhan.",
+   "hl": [
+    "digulung",
+    "berjatuhan"
+   ],
+   "kw": "DIGULUNG"
+  },
+  {
+   "il": "globe",
+   "text": "Dan lautan, yang luasnya tak terukur, dipanaskan hingga meluap.",
+   "hl": [
+    "lautan",
+    "dipanaskan"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Allah berfirman, apabila matahari digulung, bintang berjatuhan, dan lautan dipanaskan.",
+   "hl": [
+    "lautan",
+    "dipanaskan"
+   ],
+   "card": [
+    "Apabila matahari digulung, apabila bintang-bintang berjatuhan, apabila gunung-gunung dihancurkan, dan apabila lautan dipanaskan.",
+    "QS. At-Takwir: 1-3, 6"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "shock",
+   "text": "Adit bekerja di kapal. Ia pernah melihat badai, dan merasa sangat kecil di tengah laut.",
+   "hl": [
+    "badai",
+    "kecil"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Bayu bertanya, kalau laut saja menyala, ke mana manusia akan berlindung? Adit tidak menjawab.",
+   "hl": [
+    "berlindung"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Hanya satu tempat berlindung hari itu. Rahmat Allah, yang dicari sejak hari ini.",
+   "hl": [
+    "rahmat",
+    "Allah"
+   ],
+   "kw": "SATU TEMPAT"
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Kamu biasanya lari ke mana saat takut? Ke layar, atau ke sajadah?",
+   "hl": [
+    "layar",
+    "sajadah"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part empat, saat bumi menceritakan semua yang terjadi di atasnya. Tulis lanjut di komentar.",
+   "hl": [
+    "bumi",
+    "lanjut"
+   ],
+   "kw": "PART 4",
+   "kw2": "BUMI BERCERITA"
+  }
+ ],
+ "caption": "Matahari digulung, bintang berjatuhan, lautan dipanaskan. Kapan terjadinya, hanya Allah yang tahu.\n\n\"Apabila lautan dipanaskan.\" (QS. At-Takwir: 6)",
+ "cta": "Ke mana kamu lari saat takut? Tulis LANJUT untuk part 4.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#hariitu",
+  "#harikiamat"
+ ]
+}

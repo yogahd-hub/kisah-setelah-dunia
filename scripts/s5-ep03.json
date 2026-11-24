@@ -1,0 +1,124 @@
+{
+ "no": 31,
+ "series": "Amal Kecil",
+ "part": 3,
+ "title": "Air di|Sepatu",
+ "hook": "Diampuni karena seteguk air",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "sun",
+   "text": "Siang itu panas sekali. Seorang lelaki berjalan sendirian, kehausan.",
+   "hl": [
+    "kehausan"
+   ],
+   "kw": "KEHAUSAN"
+  },
+  {
+   "il": "hourglass",
+   "text": "Ia menemukan sumur, turun, lalu minum sampai puas.",
+   "hl": [
+    "sumur",
+    "puas"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "worry",
+   "text": "Saat naik, ia melihat seekor anjing menjulurkan lidah, menjilati tanah basah karena haus.",
+   "hl": [
+    "anjing",
+    "haus"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Ia berpikir, anjing ini merasakan haus yang sama denganku. Ia turun lagi, mengisi sepatunya dengan air.",
+   "hl": [
+    "sepatunya"
+   ],
+   "kw": "TURUN LAGI"
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, Allah berterima kasih kepadanya, lalu mengampuninya.",
+   "hl": [
+    "mengampuninya"
+   ],
+   "card": [
+    "Ia mengisi sepatunya dengan air, menggigitnya dengan mulut, lalu naik dan memberi minum anjing itu. Allah berterima kasih kepadanya dan mengampuninya.",
+    "HR. Bukhari no. 2363",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "shock",
+   "text": "Para sahabat bertanya, apakah menolong hewan pun berpahala? Beliau menjawab, pada setiap makhluk hidup ada pahala.",
+   "hl": [
+    "setiap",
+    "makhluk"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "smile",
+   "text": "Rizki memandangi kucing liar di depan rumahnya. Malam ini, ia menaruh semangkuk air.",
+   "hl": [
+    "semangkuk",
+    "air"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part empat, sebatang ranting yang membuka pintu surga. Tulis lanjut di komentar.",
+   "hl": [
+    "ranting",
+    "lanjut"
+   ],
+   "kw": "PART 4",
+   "kw2": "RANTING BERDURI"
+  }
+ ],
+ "caption": "Seteguk air untuk seekor anjing yang kehausan menjadi sebab ampunan.\n\n\"Allah berterima kasih kepadanya dan mengampuninya.\" (HR. Bukhari no. 2363)",
+ "cta": "Makhluk siapa yang bisa kamu tolong hari ini? Tulis LANJUT untuk part 4.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan"
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "no": 35,
+ "series": "Amal Kecil",
+ "part": 4,
+ "title": "Ranting|Berduri",
+ "hook": "Ia masuk surga karena sebatang ranting",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "neutral",
+   "text": "Seorang lelaki sedang berjalan. Di tengah jalan, ia melihat ranting berduri yang bisa melukai orang.",
+   "hl": [
+    "ranting",
+    "berduri"
+   ],
+   "kw": "SEBATANG RANTING"
+  },
+  {
+   "il": "door",
+   "text": "Ia tidak berpikir panjang. Ia memungutnya, lalu menyingkirkannya dari jalan.",
+   "hl": [
+    "menyingkirkannya"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, Allah berterima kasih kepadanya, lalu mengampuninya.",
+   "hl": [
+    "berterima",
+    "kasih"
+   ],
+   "card": [
+    "Ketika seorang lelaki berjalan, ia menemukan dahan berduri di jalan lalu menyingkirkannya. Allah berterima kasih kepadanya dan mengampuninya.",
+    "HR. Bukhari no. 2472",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "shock",
+   "expr2": "smile",
+   "switch": 0.55,
+   "text": "Rizki tidak percaya. Hanya itu? Hanif mengangguk. Kita tidak pernah tahu amal mana yang diterima.",
+   "hl": [
+    "diterima"
+   ]
+  },
+  {
+   "il": "city",
+   "text": "Paku di jalan. Kulit pisang di tangga. Sampah di selokan depan rumah.",
+   "hl": [
+    "paku",
+    "sampah"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "smile",
+   "text": "Pagi itu, Rizki memungut pecahan kaca di gang dekat masjid. Tidak ada yang melihat. Tapi Allah melihat.",
+   "hl": [
+    "Allah",
+    "melihat"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Jangan meremehkan kebaikan kecil. Bisa jadi itulah yang menyelamatkanmu.",
+   "hl": [
+    "menyelamatkanmu"
+   ],
+   "kw": "JANGAN REMEHKAN"
+  },
+  {
+   "il": "cta",
+   "text": "Part lima, seekor kucing yang mengubah nasib seseorang. Tulis lanjut di komentar.",
+   "hl": [
+    "kucing",
+    "lanjut"
+   ],
+   "kw": "PART 5",
+   "kw2": "KUCING"
+  }
+ ],
+ "caption": "Menyingkirkan satu ranting berduri dari jalan menjadi sebab ampunan.\n\n\"Ia menemukan dahan berduri di jalan lalu menyingkirkannya. Allah berterima kasih kepadanya dan mengampuninya.\" (HR. Bukhari no. 2472)",
+ "cta": "Kebaikan kecil apa yang kamu lakukan hari ini? Tulis LANJUT untuk part 5.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan"
+ ]
+}

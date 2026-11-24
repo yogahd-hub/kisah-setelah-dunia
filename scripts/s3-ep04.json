@@ -1,0 +1,128 @@
+{
+ "no": 25,
+ "series": "Jalan Pulang",
+ "part": 4,
+ "title": "Diriku,|Diriku",
+ "hook": "Semua nabi menolak, kecuali satu",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Manusia terhimpit di padang mahsyar. Mereka mencari siapa pun yang bisa memohonkan pertolongan.",
+   "hl": [
+    "terhimpit",
+    "pertolongan"
+   ],
+   "kw": "CARI PENOLONG"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Dimas ikut berjalan bersama ribuan orang. Mereka mendatangi Nabi Adam.",
+   "hl": [
+    "Nabi",
+    "Adam"
+   ]
+  },
+  {
+   "il": "gate",
+   "text": "Nabi Adam berkata, diriku, diriku. Pergilah kepada yang lain. Pergilah kepada Nuh.",
+   "hl": [
+    "diriku",
+    "Nuh"
+   ],
+   "card": [
+    "Adam berkata: Diriku, diriku, diriku. Pergilah kepada selainku, pergilah kepada Nuh.",
+    "HR. Bukhari no. 4712",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Nuh, Ibrahim, Musa, lalu Isa. Semua menjawab hal yang sama.",
+   "hl": [
+    "sama"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "shock",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Hingga mereka datang kepada Nabi Muhammad. Beliau bersujud di bawah Arsy.",
+   "hl": [
+    "bersujud",
+    "Arsy"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Saat semua sibuk dengan dirinya sendiri, beliau memohon, umatku, umatku.",
+   "hl": [
+    "umatku"
+   ],
+   "kw": "UMATKU"
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Beliau memikirkan kita sejak dulu. Sudahkah kita memikirkan beliau hari ini?",
+   "hl": [
+    "memikirkan"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Part lima, pintu surga khusus untuk orang yang berpuasa. Tulis lanjut di komentar.",
+   "hl": [
+    "pintu",
+    "lanjut"
+   ],
+   "kw": "PART 5",
+   "kw2": "AR-RAYYAN"
+  }
+ ],
+ "caption": "Di hari ketika para nabi berkata \"diriku, diriku\", Rasulullah bersujud dan memohon untuk umatnya (HR. Bukhari no. 7510).\n\n\"Adam berkata: Diriku, diriku, diriku. Pergilah kepada Nuh.\" (HR. Bukhari no. 4712)",
+ "cta": "Kirim shalawat untuk beliau di kolom komentar, lalu tulis LANJUT untuk part 5.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#jalanpulang",
+  "#akhirat",
+  "#syafaat"
+ ]
+}

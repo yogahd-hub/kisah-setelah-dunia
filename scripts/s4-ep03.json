@@ -1,0 +1,131 @@
+{
+ "no": 22,
+ "series": "Andai Dulu",
+ "part": 3,
+ "title": "Tangan yang|Bicara",
+ "hook": "Mulutnya dikunci, tangannya bersaksi",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "text": "Yuda ingin membela diri. Tapi mulutnya tidak bisa terbuka. Lalu tangannya mulai bicara.",
+   "hl": [
+    "mulutnya",
+    "tangannya"
+   ],
+   "kw": "MULUT DIKUNCI"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, pada hari itu Kami tutup mulut mereka, tangan mereka berkata, kaki mereka bersaksi.",
+   "hl": [
+    "tangan",
+    "kaki"
+   ],
+   "card": [
+    "Pada hari ini Kami tutup mulut mereka. Tangan mereka akan berkata kepada Kami dan kaki mereka akan memberi kesaksian terhadap apa yang dahulu mereka kerjakan.",
+    "QS. Yasin: 65"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Tangan yang dulu mengetik komentar kasar. Kaki yang melangkah ke tempat yang salah.",
+   "hl": [
+    "komentar",
+    "kasar"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "cry",
+   "text": "Yuda menatap kulitnya sendiri. Kenapa kalian bersaksi melawanku?",
+   "hl": [
+    "bersaksi"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Kulit mereka menjawab, Allah yang membuat segala sesuatu bisa bicara, juga membuat kami bisa bicara.",
+   "hl": [
+    "bisa",
+    "bicara"
+   ],
+   "card": [
+    "Mereka berkata kepada kulit mereka, mengapa kamu bersaksi terhadap kami? Kulit menjawab, Allah yang menjadikan segala sesuatu pandai berkata telah menjadikan kami pandai berkata.",
+    "QS. Fussilat: 21"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Satria menunduk. Tidak ada yang tersembunyi. Bahkan dari tubuh kita sendiri.",
+   "hl": [
+    "tersembunyi"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Hari ini tanganmu masih milikmu. Biarkan ia mencatat hal-hal yang ingin kamu dengar nanti.",
+   "hl": [
+    "tanganmu",
+    "nanti"
+   ],
+   "kw": "SAKSI DI TUBUHMU"
+  },
+  {
+   "il": "cta",
+   "text": "Part empat, harta yang tidak menolong sedikit pun. Tulis lanjut di komentar.",
+   "hl": [
+    "harta",
+    "lanjut"
+   ],
+   "kw": "PART 4",
+   "kw2": "HARTA TAK MENOLONG"
+  }
+ ],
+ "caption": "Tubuh kita sendiri akan menjadi saksi. Tangan berkata, kaki bersaksi, kulit pun bicara.\n\n\"Pada hari ini Kami tutup mulut mereka; tangan mereka akan berkata kepada Kami.\" (QS. Yasin: 65)",
+ "cta": "Apa yang ingin kamu dengar dari tanganmu nanti? Tulis LANJUT untuk part 4.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#andaidulu",
+  "#penyesalan"
+ ]
+}

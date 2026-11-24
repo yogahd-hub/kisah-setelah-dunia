@@ -1,0 +1,133 @@
+{
+ "no": 40,
+ "series": "Andai Dulu",
+ "part": 8,
+ "title": "Masih Ada|Waktu",
+ "hook": "Pintunya masih terbuka",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "candle",
+   "text": "Tujuh kisah penyesalan. Dan semuanya punya satu kesamaan. Terlambat.",
+   "hl": [
+    "terlambat"
+   ],
+   "kw": "TERLAMBAT"
+  },
+  {
+   "il": "solo",
+   "who": "B",
+   "expr": "neutral",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Tapi kamu yang menonton ini, belum terlambat. Napasmu masih ada.",
+   "hl": [
+    "belum",
+    "terlambat"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Allah memanggil, wahai hamba-Ku yang melampaui batas, jangan berputus asa dari rahmat-Ku.",
+   "hl": [
+    "berputus",
+    "asa"
+   ],
+   "card": [
+    "Katakanlah, wahai hamba-hamba-Ku yang melampaui batas terhadap diri mereka sendiri, janganlah berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya.",
+    "QS. Az-Zumar: 53"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Yuda di dunia akhirnya datang ke masjid. Malu, canggung, tidak hafal bacaan.",
+   "hl": [
+    "malu",
+    "canggung"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Rasulullah bersabda, Allah lebih gembira dengan taubat hamba-Nya, daripada orang yang menemukan untanya yang hilang di gurun.",
+   "hl": [
+    "lebih",
+    "gembira"
+   ],
+   "card": [
+    "Allah lebih gembira dengan taubat hamba-Nya daripada salah seorang dari kalian yang menemukan untanya yang hilang di padang luas.",
+    "HR. Bukhari no. 6309",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Satria memeluknya. Selamat datang kembali.",
+   "hl": [
+    "kembali"
+   ],
+   "kw": "SELAMAT DATANG"
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "smile",
+   "text": "Kalau ada satu dosa yang ingin kamu tinggalkan, mulailah malam ini. Allah sedang menunggu.",
+   "hl": [
+    "menunggu"
+   ]
+  },
+  {
+   "il": "cta",
+   "text": "Seri Andai Dulu tamat. Kisah apa yang ingin kamu tonton berikutnya? Tulis lanjut di komentar.",
+   "hl": [
+    "tamat",
+    "lanjut"
+   ],
+   "kw": "TAMAT",
+   "kw2": "SERI BARU SEGERA"
+  }
+ ],
+ "caption": "Penutup Seri Andai Dulu. Selama napas masih ada, pintu taubat masih terbuka.\n\n\"Janganlah berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya.\" (QS. Az-Zumar: 53)",
+ "cta": "Tulis AAMIIN kalau kamu mau mulai hari ini.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#andaidulu",
+  "#penyesalan",
+  "#taubat"
+ ]
+}

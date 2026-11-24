@@ -1,0 +1,127 @@
+{
+ "no": 30,
+ "series": "Andai Dulu",
+ "part": 5,
+ "title": "Lari dari|Saudara",
+ "hook": "Ia lari dari ibunya sendiri",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Hari itu, orang berlari. Bukan menuju keluarganya, tapi menjauh dari mereka.",
+   "hl": [
+    "menjauh"
+   ],
+   "kw": "SEMUA BERLARI"
+  },
+  {
+   "il": "calendar",
+   "text": "Allah berfirman, manusia lari dari saudaranya, dari ibu dan bapaknya, dari istri dan anak-anaknya.",
+   "hl": [
+    "ibu",
+    "bapaknya"
+   ],
+   "card": [
+    "Pada hari ketika manusia lari dari saudaranya, dari ibu dan bapaknya, dari istri dan anak-anaknya. Setiap orang sibuk dengan urusannya sendiri.",
+    "QS. 'Abasa: 34-37"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "cry",
+   "text": "Yuda melihat ibunya di tengah kerumunan. Ia ingin memanggil, tapi takut ditanya utang budinya.",
+   "hl": [
+    "ibunya",
+    "takut"
+   ]
+  },
+  {
+   "il": "grave",
+   "text": "Ibu yang dulu bangun malam untuknya. Yang dulu ia bentak karena terlalu banyak bertanya.",
+   "hl": [
+    "bangun",
+    "malam"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Satria menggenggam tangannya. Di dunia, ibumu masih menunggu teleponmu.",
+   "hl": [
+    "menunggu",
+    "teleponmu"
+   ]
+  },
+  {
+   "il": "hourglass",
+   "text": "Hari itu tidak ada yang bisa menolong orang lain. Tapi hari ini, kamu masih bisa.",
+   "hl": [
+    "masih",
+    "bisa"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "worry",
+   "text": "Kapan terakhir kamu menelepon ibumu, hanya untuk bertanya kabar?",
+   "hl": [
+    "menelepon",
+    "ibumu"
+   ],
+   "kw": "TELEPON IBUMU"
+  },
+  {
+   "il": "cta",
+   "text": "Part enam, penyesalan karena tidak mau mendengar. Tulis lanjut di komentar.",
+   "hl": [
+    "mendengar",
+    "lanjut"
+   ],
+   "kw": "PART 6",
+   "kw2": "ANDAI KAMI MENDENGAR"
+  }
+ ],
+ "caption": "Hari itu, setiap orang sibuk dengan urusannya sendiri, bahkan dari orang yang paling ia cintai.\n\n\"Pada hari ketika manusia lari dari saudaranya, dari ibu dan bapaknya.\" (QS. 'Abasa: 34-35)",
+ "cta": "Sudah telepon ibu hari ini? Tulis LANJUT untuk part 6.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#andaidulu",
+  "#penyesalan",
+  "#baktiorangtua"
+ ]
+}

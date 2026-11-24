@@ -1,0 +1,133 @@
+{
+ "no": 27,
+ "series": "Amal Kecil",
+ "part": 2,
+ "title": "Pohon yang|Ditanam",
+ "hook": "Seekor burung memakan buahnya",
+ "cover_scene": 4,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "dreams",
+   "who": "A",
+   "seed": 7,
+   "switch": 0.55,
+   "text": "Hanif menanam satu bibit mangga di depan rumah. Rizki tertawa. Kapan berbuahnya?",
+   "hl": [
+    "bibit",
+    "berbuahnya"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Hanif menjawab santai. Mungkin bukan aku yang makan buahnya. Tidak apa-apa.",
+   "hl": [
+    "bukan",
+    "aku"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Bertahun-tahun berlalu. Pohon itu tumbuh tinggi dan berbuah lebat.",
+   "hl": [
+    "tumbuh",
+    "berbuah"
+   ]
+  },
+  {
+   "il": "crowd",
+   "move": false,
+   "text": "Anak-anak berteduh di bawahnya. Tetangga memetik buahnya. Burung-burung bersarang di dahannya.",
+   "hl": [
+    "berteduh",
+    "burung-burung"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, setiap yang dimakan dari tanamanmu, oleh burung, manusia, atau hewan, menjadi sedekah.",
+   "hl": [
+    "menjadi",
+    "sedekah"
+   ],
+   "kw": "SEDEKAH",
+   "card": [
+    "Tidaklah seorang muslim menanam pohon atau tanaman, lalu dimakan burung, manusia, atau hewan, melainkan menjadi sedekah baginya.",
+    "HR. Bukhari no. 2320",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "shock",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Rizki terdiam. Ternyata ada amal yang terus bekerja, bahkan saat kita tidur.",
+   "hl": [
+    "terus",
+    "bekerja"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Apa satu bibit kebaikan yang bisa kamu tanam minggu ini?",
+   "hl": [
+    "bibit",
+    "kebaikan"
+   ],
+   "kw": "TANAM SEKARANG"
+  },
+  {
+   "il": "cta",
+   "text": "Part tiga, seteguk air untuk seekor anjing yang kehausan. Tulis lanjut di komentar.",
+   "hl": [
+    "seteguk",
+    "lanjut"
+   ],
+   "kw": "PART 3",
+   "kw2": "AIR DI SEPATU"
+  }
+ ],
+ "caption": "Satu pohon bisa menjadi sedekah yang terus mengalir, bahkan saat penanamnya sudah tiada.\n\n\"Tidaklah seorang muslim menanam pohon, lalu dimakan burung, manusia, atau hewan, melainkan menjadi sedekah baginya.\" (HR. Bukhari no. 2320)",
+ "cta": "Bibit kebaikan apa yang mau kamu tanam? Tulis LANJUT untuk part 3.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan"
+ ]
+}

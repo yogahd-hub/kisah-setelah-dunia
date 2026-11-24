@@ -1,0 +1,130 @@
+{
+ "no": 23,
+ "series": "Amal Kecil",
+ "part": 1,
+ "title": "Tiga yang|Tak Putus",
+ "hook": "Mati, tapi pahalanya terus mengalir",
+ "cover_scene": 1,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "RIZKI",
+   "hair": [
+    40,
+    30,
+    22
+   ],
+   "shirt": [
+    200,
+    140,
+    60
+   ]
+  },
+  "B": {
+   "name": "HANIF",
+   "hair": [
+    22,
+    20,
+    24
+   ],
+   "shirt": [
+    70,
+    90,
+    130
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "grave",
+   "who": "B",
+   "expr": "cry",
+   "text": "Saat seseorang wafat, catatan amalnya ditutup. Tapi tidak semuanya.",
+   "hl": [
+    "ditutup",
+    "tidak"
+   ],
+   "kw": "BELUM DITUTUP"
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Rizki baru saja mengantar kakeknya ke makam. Ia bertanya, apa yang masih bisa sampai kepada kakek?",
+   "hl": [
+    "masih",
+    "sampai"
+   ]
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, saat manusia meninggal, amalnya terputus, kecuali tiga perkara.",
+   "hl": [
+    "tiga",
+    "perkara"
+   ],
+   "card": [
+    "Apabila manusia meninggal dunia, terputuslah amalnya kecuali tiga: sedekah jariyah, ilmu yang bermanfaat, atau anak shalih yang mendoakannya.",
+    "HR. Muslim no. 1631",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "door",
+   "text": "Sedekah jariyah. Sumur yang terus diminum, masjid yang terus dipakai shalat.",
+   "hl": [
+    "sumur",
+    "masjid"
+   ]
+  },
+  {
+   "il": "candle",
+   "text": "Ilmu yang bermanfaat. Satu ayat yang kamu ajarkan, lalu diajarkan lagi.",
+   "hl": [
+    "ayat",
+    "diajarkan"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "cry",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Dan anak shalih yang mendoakan. Malam itu, Rizki menengadahkan tangan untuk kakeknya.",
+   "hl": [
+    "mendoakan",
+    "kakeknya"
+   ]
+  },
+  {
+   "il": "choice",
+   "text": "Dari tiga perkara itu, mana yang sudah mulai kamu siapkan?",
+   "hl": [
+    "siapkan"
+   ],
+   "kw": "SUDAH SIAP?"
+  },
+  {
+   "il": "cta",
+   "text": "Part dua, sebatang pohon yang pahalanya tak berhenti. Tulis lanjut di komentar.",
+   "hl": [
+    "pohon",
+    "lanjut"
+   ],
+   "kw": "PART 2",
+   "kw2": "POHON YANG DITANAM"
+  }
+ ],
+ "caption": "Seri baru: Amal Kecil. Kisah-kisah amal sederhana yang ternyata sangat berat di sisi Allah.\n\n\"Terputuslah amalnya kecuali tiga: sedekah jariyah, ilmu yang bermanfaat, atau anak shalih yang mendoakannya.\" (HR. Muslim no. 1631)",
+ "cta": "Dari tiga itu, mana yang sedang kamu siapkan? Tulis LANJUT untuk part 2.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#amalkecil",
+  "#kebaikan",
+  "#amaljariyah"
+ ]
+}

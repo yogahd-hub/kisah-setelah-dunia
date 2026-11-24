@@ -1,0 +1,127 @@
+{
+ "no": 34,
+ "series": "Andai Dulu",
+ "part": 6,
+ "title": "Andai Kami|Mendengar",
+ "hook": "Peringatannya sudah datang berkali-kali",
+ "cover_scene": 4,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "YUDA",
+   "hair": [
+    44,
+    32,
+    24
+   ],
+   "shirt": [
+    150,
+    60,
+    60
+   ]
+  },
+  "B": {
+   "name": "SATRIA",
+   "hair": [
+    24,
+    22,
+    26
+   ],
+   "shirt": [
+    90,
+    120,
+    70
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "worry",
+   "text": "Yuda ingat semua video ceramah yang ia lewati. Semua ajakan yang ia jawab dengan nanti.",
+   "hl": [
+    "lewati",
+    "nanti"
+   ],
+   "kw": "DILEWATI"
+  },
+  {
+   "il": "city",
+   "text": "Peringatan datang lewat banyak cara. Kematian teman. Sakit. Bahkan satu ayat yang lewat di beranda.",
+   "hl": [
+    "peringatan",
+    "ayat"
+   ]
+  },
+  {
+   "il": "duo",
+   "expr": "worry",
+   "text": "Satria pernah mengirim pesan, ayo kajian malam ini. Yuda membacanya, lalu menghapusnya.",
+   "hl": [
+    "menghapusnya"
+   ]
+  },
+  {
+   "il": "clock",
+   "text": "Satu, dua, sepuluh kali. Sampai akhirnya tidak ada lagi kesempatan.",
+   "hl": [
+    "kesempatan"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Allah mengabadikan pengakuan mereka. Andai dulu kami mendengar, atau mau berpikir.",
+   "hl": [
+    "mendengar",
+    "berpikir"
+   ],
+   "card": [
+    "Mereka berkata, sekiranya dahulu kami mendengarkan atau memikirkan peringatan itu, tentulah kami tidak termasuk penghuni neraka yang menyala-nyala.",
+    "QS. Al-Mulk: 10"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "cry",
+   "text": "Penyesalannya bukan karena tidak tahu. Tapi karena tahu, lalu tidak peduli.",
+   "hl": [
+    "tidak",
+    "peduli"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "B",
+   "expr": "neutral",
+   "text": "Video ini juga sebuah peringatan kecil. Mau kamu lewati juga?",
+   "hl": [
+    "peringatan",
+    "kecil"
+   ],
+   "kw": "MAU DILEWATI?"
+  },
+  {
+   "il": "cta",
+   "text": "Part tujuh, hidup bertahun-tahun yang terasa hanya sehari. Tulis lanjut di komentar.",
+   "hl": [
+    "sehari",
+    "lanjut"
+   ],
+   "kw": "PART 7",
+   "kw2": "SEHARI SAJA"
+  }
+ ],
+ "caption": "Penyesalan terbesar bukan karena tidak tahu, tapi karena tahu lalu tidak mau mendengar.\n\n\"Sekiranya dahulu kami mendengarkan atau memikirkan peringatan itu.\" (QS. Al-Mulk: 10)",
+ "cta": "Peringatan apa yang selama ini kamu lewati? Tulis LANJUT untuk part 7.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#andaidulu",
+  "#penyesalan"
+ ]
+}

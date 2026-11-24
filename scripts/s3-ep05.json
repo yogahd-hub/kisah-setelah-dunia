@@ -1,0 +1,130 @@
+{
+ "no": 29,
+ "series": "Jalan Pulang",
+ "part": 5,
+ "title": "Pintu|Ar-Rayyan",
+ "hook": "Pintu yang dipanggil, lalu ditutup",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {
+   "name": "DIMAS",
+   "hair": [
+    34,
+    26,
+    20
+   ],
+   "shirt": [
+    120,
+    70,
+    140
+   ]
+  },
+  "B": {
+   "name": "FARHAN",
+   "hair": [
+    26,
+    22,
+    22
+   ],
+   "shirt": [
+    60,
+    130,
+    150
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "il": "door",
+   "text": "Sebuah pintu surga terbuka. Lalu sebuah seruan terdengar. Di mana orang-orang yang berpuasa?",
+   "hl": [
+    "berpuasa"
+   ],
+   "kw": "AR-RAYYAN"
+  },
+  {
+   "il": "mosque",
+   "text": "Rasulullah bersabda, di surga ada pintu bernama Ar-Rayyan, khusus untuk orang yang berpuasa.",
+   "hl": [
+    "Ar-Rayyan"
+   ],
+   "card": [
+    "Di surga ada pintu bernama Ar-Rayyan. Orang-orang yang berpuasa masuk darinya pada hari kiamat. Tidak ada yang masuk darinya selain mereka.",
+    "HR. Bukhari no. 1896",
+    "HADITS"
+   ]
+  },
+  {
+   "il": "solo",
+   "who": "A",
+   "expr": "neutral",
+   "expr2": "smile",
+   "switch": 0.6,
+   "text": "Dimas teringat hari-hari puasanya. Lapar di siang yang panas. Haus yang ia tahan sampai magrib.",
+   "hl": [
+    "lapar",
+    "haus"
+   ]
+  },
+  {
+   "il": "crowd",
+   "move": true,
+   "text": "Mereka berdiri, lalu masuk berbondong-bondong. Setelah mereka masuk, pintu itu ditutup.",
+   "hl": [
+    "ditutup"
+   ]
+  },
+  {
+   "il": "gate",
+   "dark": true,
+   "text": "Dan tidak ada lagi yang masuk melaluinya.",
+   "hl": [
+    "tidak",
+    "ada"
+   ],
+   "kw": "DITUTUP"
+  },
+  {
+   "il": "duo",
+   "expr": "smile",
+   "text": "Farhan berkata, nama Ar-Rayyan artinya yang puas minum. Haus di dunia dibalas puas di sana.",
+   "hl": [
+    "puas",
+    "minum"
+   ]
+  },
+  {
+   "il": "night",
+   "who": "A",
+   "expr": "worry",
+   "text": "Puasa sunnah Senin dan Kamis, kapan terakhir kamu menjalaninya?",
+   "hl": [
+    "Senin",
+    "Kamis"
+   ],
+   "kw": "SENIN KAMIS"
+  },
+  {
+   "il": "cta",
+   "text": "Part enam, wajah-wajah yang bersinar seperti purnama. Tulis lanjut di komentar.",
+   "hl": [
+    "purnama",
+    "lanjut"
+   ],
+   "kw": "PART 6",
+   "kw2": "SEPERTI PURNAMA"
+  }
+ ],
+ "caption": "Ada pintu surga yang hanya dibuka untuk orang-orang yang berpuasa.\n\n\"Di surga ada pintu bernama Ar-Rayyan. Orang-orang yang berpuasa masuk darinya.\" (HR. Bukhari no. 1896)",
+ "cta": "Siapa yang mau mulai puasa Senin Kamis? Tulis LANJUT untuk part 6.",
+ "hashtags": [
+  "#kisahsetelahdunia",
+  "#pengingatdiri",
+  "#ceritaislami",
+  "#animasi",
+  "#jalanpulang",
+  "#akhirat",
+  "#puasa"
+ ]
+}
