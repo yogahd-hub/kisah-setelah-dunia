@@ -23,13 +23,13 @@
       "il": "gate",
       "dark": true,
       "text": "Pintu surga terbuka dengan lembut, cahaya mengalir dari dalam.",
-      "hl": ["cahaya", "melangir"],
+      "hl": ["cahaya", "dalam"],
       "kw": "PINTA DIBUKA"
     },
     {
       "il": "solo",
       "who": "A",
-      "expr": "surprise",
+      "expr": "shock",
       "text": "Arif terkejut melihat langit berubah menjadi biru cerah, bukan gelap.",
       "hl": ["terkejut", "biru"],
       "kw": "BIRU CERAH"
@@ -51,7 +51,7 @@
       "il": "night",
       "who": "B",
       "expr": "neutral",
-      "text": "Reza menjawab pelan, \"Kita akan berjalan di bawah sungai, lalu ke istana.",
+      "text": "Reza menjawab pelan. Kita akan berjalan di bawah sungai, lalu ke istana.",
       "hl": ["berjalan"]
     },
     {
@@ -69,8 +69,8 @@
     },
     {
       "il": "cta",
-      "text": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part 3.",
-      "hl": ["merasa", "melakukannya"],
+      "text": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part tiga.",
+      "hl": ["merasa", "baik"],
       "kw": "PART 3",
       "kw2": "ALAMTAN HARI INI"
     }

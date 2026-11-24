@@ -47,7 +47,7 @@
       "who": "A",
       "expr": "neutral",
       "text": "Arif melihat wajahnya sendiri di air, makin muda dan segar.",
-      "hl": ["muda", "segarr"]
+      "hl": ["muda", "segar"]
     },
     {
       "il": "night",
@@ -58,7 +58,7 @@
     },
     {
       "il": "cta",
-      "text": "Keluarga siapa yang ingin kamu bercahaya bersamanya di sana? Tulis LANJUT untuk part 5.",
+      "text": "Keluarga siapa yang ingin kamu bercahaya bersamanya di sana? Tulis LANJUT untuk part lima.",
       "hl": ["keluarga", "bersama"],
       "kw": "PART 5",
       "kw2": "POHON RAKSASA"

@@ -2,7 +2,7 @@
   "no": 49,
   "series": "Kisah Setelah Dunia",
   "part": 1,
-  "title": "Pintu Dibuka",
+  "title": "Pintu|Dibuka",
   "hook": "Surga dibuka, mata melengkup",
   "cover_scene": 0,
   "voice": "Charon",
@@ -29,7 +29,7 @@
     {
       "il": "solo",
       "who": "A",
-      "expr": "surprise",
+      "expr": "shock",
       "text": "Arif melihat pintu surga terbuka, terlihat cahaya dan angin sejuk.",
       "hl": ["cahaya", "angin"],
       "kw": "MATA MELLENGKUP"
@@ -57,8 +57,8 @@
     },
     {
       "il": "cta",
-      "text": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part 2.",
-      "hl": ["mendapatkan", "kebaikan"],
+      "text": "Bagaimana kamu merasa saat membuat amal yang baik? Tulis LANJUT untuk part dua.",
+      "hl": ["merasa", "baik"],
       "kw": "PART 2",
       "kw2": "ALAMTAN HARI INI"
     }
