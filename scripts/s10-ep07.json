@@ -14,7 +14,7 @@
   {"il": "door", "text": "Dani sedang sibuk dengan teleponnya saat ibunya memanggil pelan dari kamar.", "hl": ["teleponnya", "ibunya"]},
   {"il": "solo", "who": "B", "expr": "worry", "text": "Ia merasa terganggu. Nanti saja, jawabnya tanpa menoleh.", "hl": ["terganggu"]},
   {"il": "mosque", "text": "Faisal mengingatkannya. Ridha Allah ada pada ridha orang tua, dan murka-Nya ada pada murka mereka.", "hl": ["ridha", "murka"], "card": ["Ridha Allah ada pada ridha orang tua, dan murka Allah ada pada murka orang tua.", "HR. Tirmidzi no. 1899", "HADITS"]},
-  {"il": "heart", "text": "Orang tua adalah pintu surga yang paling tengah. Kamu bisa menyia-nyiakannya atau menjaganya.", "hl": ["pintu", "surga"]},
+  {"il": "candle", "text": "Orang tua adalah pintu surga yang paling tengah. Kamu bisa menyia-nyiakannya atau menjaganya.", "hl": ["pintu", "surga"]},
   {"il": "duo", "expr": "smile", "text": "Dani tersentak. Ia segera mematikan teleponnya dan menghampiri ibunya dengan senyum tulus.", "hl": ["menghampiri"]},
   {"il": "night", "who": "B", "expr": "smile", "text": "Hanya dengan membahagiakan mereka, dunia dan akhiratmu akan terasa jauh lebih mudah.", "hl": ["membahagiakan"]},
   {"il": "cta", "text": "Kapan terakhir kali kamu mencium tangan orang tuamu? Tulis LANJUT untuk part delapan.", "hl": ["mencium", "tangan"], "kw": "PART 8", "kw2": "ISTIQAMAH HINGGA AKHIR"}
