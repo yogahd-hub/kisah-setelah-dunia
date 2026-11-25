@@ -1,0 +1,25 @@
+{
+ "no": 62,
+ "series": "Sifat Mereka",
+ "part": 6,
+ "title": "Langkah ke|Masjid",
+ "hook": "Satu langkah, satu rumah di surga",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "mosque", "text": "Setiap kali azan berkumandang, Faisal bergegas menuju masjid. Ia tidak ingin ketinggalan sedetik pun.", "hl": ["bergegas", "masjid"]},
+  {"il": "calendar", "text": "Rasulullah bersabda, siapa yang pergi ke masjid, Allah siapkan baginya rumah di surga.", "hl": ["surga", "rumah"], "card": ["Siapa yang pergi ke masjid, Allah akan menyiapkan baginya satu tempat tinggal di surga.", "HR. Bukhari no. 662", "HADITS"]},
+  {"il": "solo", "who": "B", "expr": "neutral", "text": "Dani sering merasa malas. Lebih nyaman shalat di rumah, pikirnya.", "hl": ["malas", "rumah"]},
+  {"il": "city", "text": "Tapi ia lupa, setiap langkah kaki kanannya menghapus dosa, dan langkah kirinya mengangkat derajat.", "hl": ["langkah", "derajat"]},
+  {"il": "duo", "expr": "smile", "text": "Faisal menepuk bahunya. Masjid adalah rumah Allah. Mana mungkin tamu-Nya dibiarkan pulang dengan tangan kosong?", "hl": ["tamu-Nya"]},
+  {"il": "night", "who": "B", "expr": "smile", "text": "Dani kini bersemangat. Ia ingin istananya di surga terus dibangun, langkah demi langkah.", "hl": ["semangat"]},
+  {"il": "cta", "text": "Masjid mana yang paling membuatmu tenang? Tulis LANJUT untuk part tujuh.", "hl": ["masjid", "tenang"], "kw": "PART 7", "kw2": "MULIA PADA ORANG TUA"}
+ ],
+ "caption": "Setiap langkah menuju masjid adalah investasi untuk rumah kita di surga.\n\n\"Allah akan menyiapkan baginya satu tempat tinggal di surga.\" (HR. Bukhari no. 662)",
+ "cta": "Masjid mana yang paling membuatmu tenang? Tulis LANJUT untuk part 7.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#masjid", "#pengingatdiri", "#animasi"]
+}

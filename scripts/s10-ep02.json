@@ -1,0 +1,25 @@
+{
+ "no": 58,
+ "series": "Sifat Mereka",
+ "part": 2,
+ "title": "Hati yang|Bersih",
+ "hook": "Harta tidak berguna tanpa hati yang bersih",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "scale", "text": "Pada hari itu, harta yang melimpah dan anak-anak yang banyak tidak akan memberi manfaat.", "hl": ["harta", "manfaat"]},
+  {"il": "calendar", "text": "Kecuali mereka yang datang menghadap Allah dengan hati yang bersih.", "hl": ["menghadap", "bersih"], "card": ["Kecuali orang yang menghadap Allah dengan hati yang bersih (selamat).", "QS. Asy-Syu'ara: 89", "AL-QUR'AN"]},
+  {"il": "solo", "who": "B", "expr": "worry", "text": "Dani merasa dadanya sesak. Ia teringat rasa iri saat melihat kesuksesan temannya.", "hl": ["iri", "sesak"]},
+  {"il": "duo", "expr": "neutral", "text": "Faisal berkata lembut. Hati yang bersih tidak punya ruang untuk dendam atau benci.", "hl": ["dendam", "benci"]},
+  {"il": "candle", "text": "Ia mendoakan kebaikan untuk orang lain, bahkan saat orang itu menyakitinya.", "hl": ["mendoakan"]},
+  {"il": "night", "who": "B", "expr": "smile", "text": "Dani memejamkan mata. Ya Allah, bersihkan hatiku dari segala penyakit yang merusak.", "hl": ["bersihkan"]},
+  {"il": "cta", "text": "Siapa orang yang ingin kamu maafkan malam ini? Tulis LANJUT untuk part tiga.", "hl": ["maafkan"], "kw": "PART 3", "kw2": "SUJUD MALAM"}
+ ],
+ "caption": "Hati yang bersih adalah kunci keselamatan di akhirat.\n\n\"Kecuali orang yang menghadap Allah dengan hati yang bersih.\" (QS. Asy-Syu'ara: 89)",
+ "cta": "Siapa orang yang ingin kamu maafkan malam ini? Tulis LANJUT untuk part 3.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#hatibersih", "#pengingatdiri", "#animasi"]
+}

@@ -1,0 +1,25 @@
+{
+ "no": 61,
+ "series": "Sifat Mereka",
+ "part": 5,
+ "title": "Mata yang|Menangis",
+ "hook": "Dua pasang mata yang tidak disentuh api",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "gate", "dark": true, "text": "Neraka itu sangat panas. Namun ada mata yang tidak akan pernah disentuh oleh apinya.", "hl": ["mata", "disentuh"]},
+  {"il": "solo", "who": "A", "expr": "cry", "text": "Mata yang menangis karena takut kepada Allah, dan mata yang berjaga dalam ketaatan.", "hl": ["menangis", "berjaga"], "card": ["Dua mata yang tidak akan disentuh api neraka: mata yang menangis karena takut kepada Allah, dan mata yang berjaga di jalan Allah.", "HR. Tirmidzi no. 1639", "HADITS"]},
+  {"il": "duo", "expr": "worry", "text": "Dani bertanya. Apakah menangis saat menyesali dosa itu termasuk?", "hl": ["menangis", "dosa"]},
+  {"il": "solo", "who": "A", "expr": "smile", "text": "Faisal mengangguk. Air mata itu seperti pemadam api yang sedang kita sulut sendiri.", "hl": ["pemadam"]},
+  {"il": "night", "who": "B", "expr": "cry", "text": "Malam itu, di kesunyian, Dani menumpahkan air matanya. Ia menyadari betapa luas ampunan-Nya.", "hl": ["kesunyian", "ampunan"]},
+  {"il": "hourglass", "text": "Jangan biarkan hatimu membatu. Lembutkan ia dengan tetesan air mata tobat.", "hl": ["hatimu", "tobat"]},
+  {"il": "cta", "text": "Kapan terakhir kali kamu menangis saat berdoa? Tulis LANJUT untuk part enam.", "hl": ["menangis", "berdoa"], "kw": "PART 6", "kw2": "LANGKAH KE MASJID"}
+ ],
+ "caption": "Air mata karena takut kepada Allah adalah pelindung dari api neraka.\n\n\"Mata yang menangis karena takut kepada Allah tidak akan disentuh api neraka.\" (HR. Tirmidzi no. 1639)",
+ "cta": "Kapan terakhir kali kamu menangis saat berdoa? Tulis LANJUT untuk part 6.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#tobat", "#pengingatdiri", "#animasi"]
+}

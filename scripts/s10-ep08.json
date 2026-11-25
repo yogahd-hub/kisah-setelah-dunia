@@ -1,0 +1,25 @@
+{
+ "no": 64,
+ "series": "Sifat Mereka",
+ "part": 8,
+ "title": "Istiqamah|Hingga Akhir",
+ "hook": "Bukan seberapa cepat, tapi seberapa bertahan",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "hourglass", "text": "Seri terakhir telah tiba. Dani melihat kembali perjalanannya dari awal.", "hl": ["akhir", "perjalanan"]},
+  {"il": "solo", "who": "B", "expr": "neutral", "text": "Ternyata menjadi baik itu bukan tentang sekali beramal besar, lalu berhenti.", "hl": ["baik", "berhenti"]},
+  {"il": "mosque", "text": "Seorang sahabat bertanya kepada Nabi, katakanlah kepadaku kalimat yang mencakup semuanya. Beliau menjawab, berimanlah kemudian istiqamah.", "hl": ["beriman", "istiqamah"], "card": ["Katakanlah: Aku beriman kepada Allah, kemudian istiqamahlah.", "HR. Muslim no. 38", "HADITS"]},
+  {"il": "clock", "text": "Istiqamah. Tetap berjalan meskipun lelah. Tetap berdoa meskipun jawaban belum terlihat.", "hl": ["istiqamah", "berjalan"]},
+  {"il": "duo", "expr": "smile", "text": "Faisal dan Dani berdiri bersama. Dunia hanya persinggahan sebentar. Akhirat adalah tempat tinggal kita yang sebenarnya.", "hl": ["persinggahan", "sebenarnya"]},
+  {"il": "night", "who": "A", "expr": "smile", "text": "Semoga kita semua dikumpulkan kembali di sana, di bawah rida-Nya.", "hl": ["dikumpulkan", "rida-Nya"]},
+  {"il": "cta", "text": "Terima kasih telah menonton. Seri apa lagi yang ingin kamu lihat? Tulis di komentar.", "hl": ["komentar"], "kw": "TAMAT", "kw2": "SAMPAI JUMPA DI SURGA"}
+ ],
+ "caption": "Istiqamah adalah kunci untuk meraih Husnul Khatimah.\n\n\"Katakanlah: Aku beriman kepada Allah, kemudian istiqamahlah.\" (HR. Muslim no. 38)",
+ "cta": "Semoga kita semua termasuk orang yang istiqamah. Tulis AAMIIN di komentar.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#istiqamah", "#penutup", "#animasi"]
+}

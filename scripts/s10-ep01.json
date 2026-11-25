@@ -1,0 +1,25 @@
+{
+ "no": 57,
+ "series": "Sifat Mereka",
+ "part": 1,
+ "title": "Lisan yang|Basah",
+ "hook": "Rahasia lisan yang tidak pernah lelah",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "solo", "who": "A", "expr": "smile", "text": "Faisal terlihat selalu tenang. Bibirnya bergerak pelan, seperti membisikkan sesuatu.", "hl": ["tenang", "bergerak"]},
+  {"il": "duo", "expr": "neutral", "text": "Dani bertanya penasaran. Apa yang sedang kamu bicarakan sendirian?", "hl": ["penasaran"]},
+  {"il": "mosque", "text": "Faisal tersenyum. Rasulullah berpesan, hendaknya lisanmu terus basah dengan zikir kepada Allah.", "hl": ["basah", "zikir"], "card": ["Hendaknya lisanmu senantiasa basah dengan berzikir kepada Allah.", "HR. Tirmidzi no. 3375", "HADITS"]},
+  {"il": "clock", "text": "Di tengah macet, saat menunggu antrean, atau ketika bekerja. Lisan itu tidak pernah kosong.", "hl": ["macet", "bekerja"]},
+  {"il": "heart", "text": "Zikir bukan sekadar kata. Ia adalah cara hati untuk selalu merasa dekat dengan Penciptanya.", "hl": ["hati", "dekat"]},
+  {"il": "night", "who": "B", "expr": "smile", "text": "Dani mulai mencoba. Subhanallah, Alhamdulillah. Hatinya perlahan terasa lebih ringan.", "hl": ["ringan"]},
+  {"il": "cta", "text": "Zikir apa yang paling sering kamu ucapkan hari ini? Tulis LANJUT untuk part dua.", "hl": ["zikir", "ucapkan"], "kw": "PART 2", "kw2": "HATI YANG BERSIH"}
+ ],
+ "caption": "Lisan yang basah dengan zikir adalah tanda hati yang hidup.\n\n\"Hendaknya lisanmu senantiasa basah dengan berzikir kepada Allah.\" (HR. Tirmidzi no. 3375)",
+ "cta": "Zikir apa yang paling sering kamu ucapkan hari ini? Tulis LANJUT untuk part 2.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#zikir", "#pengingatdiri", "#animasi"]
+}

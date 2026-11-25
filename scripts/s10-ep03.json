@@ -1,0 +1,25 @@
+{
+ "no": 59,
+ "series": "Sifat Mereka",
+ "part": 3,
+ "title": "Sujud di|Tengah Malam",
+ "hook": "Saat dunia terlelap, mereka bangun",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "night", "who": "A", "expr": "neutral", "text": "Jam menunjukkan pukul tiga pagi. Faisal bangun, mengambil wudu, dan bersujud.", "hl": ["tiga", "bangun"]},
+  {"il": "mosque", "text": "Rasulullah bersabda, shalat yang paling utama setelah shalat fardu adalah shalat malam.", "hl": ["utama", "malam"], "card": ["Shalat yang paling utama setelah shalat fardu adalah shalat malam.", "HR. Muslim no. 1163", "HADITS"]},
+  {"il": "solo", "who": "B", "expr": "worry", "text": "Dani sering kali berat untuk sekadar bangun. Selimut terasa terlalu hangat.", "hl": ["berat", "selimut"]},
+  {"il": "candle", "text": "Padahal di sepertiga malam terakhir, Allah turun ke langit dunia dan mengabulkan setiap doa.", "hl": ["terakhir", "doa"]},
+  {"il": "duo", "expr": "smile", "text": "Faisal membisikkan rahasianya. Paksa dirimu satu kali, maka berikutnya kamu akan merindukannya.", "hl": ["paksa", "merindukannya"]},
+  {"il": "night", "who": "B", "expr": "smile", "text": "Malam ini, Dani memasang alarm. Ia ingin menjadi bagian dari mereka yang dipanggil-Nya.", "hl": ["alarm"]},
+  {"il": "cta", "text": "Pernahkah kamu merasakan ketenangan setelah tahajjud? Tulis LANJUT untuk part empat.", "hl": ["tahajjud"], "kw": "PART 4", "kw2": "TANGAN MEMBERI"}
+ ],
+ "caption": "Shalat malam adalah cahaya bagi pelakunya.\n\n\"Shalat yang paling utama setelah shalat fardu adalah shalat malam.\" (HR. Muslim no. 1163)",
+ "cta": "Pernahkah kamu merasakan ketenangan setelah tahajjud? Tulis LANJUT untuk part 4.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#tahajjud", "#pengingatdiri", "#animasi"]
+}

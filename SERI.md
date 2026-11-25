@@ -90,5 +90,19 @@ Peristiwa saat kiamat terjadi, hanya dari ayat Al-Qur'an. Tanpa tanggal, tanpa m
 | 7 | Catatan Dibuka | Lembaran amal dibentangkan | QS. At-Takwir: 10-14 | ✅ naskah ada (no 46) |
 | 8 | Semua Berdiri | Manusia berdiri menghadap Tuhan semesta alam (penutup) | QS. Al-Mutaffifin: 4-6 | ✅ naskah ada (no 48) — seri tamat |
 
+## Seri 10 — Sifat Mereka (TAMAT)
+Karakter para calon penghuni surga agar dapat ditiru. Tokoh: FAISAL (A, tenang) & DANI (B, ragu).
+
+| Part | Judul kerja | Topik | Dalil utama | Status |
+|---|---|---|---|---|
+| 1 | Lisan yang Basah | Zikir yang terus-menerus | HR. Tirmidzi no. 3375 | ✅ naskah ada (no 57) |
+| 2 | Hati yang Bersih | Takut kepada Allah, tanpa iri dan dendam | QS. Asy-Syu'ara: 88-89 | ✅ naskah ada (no 58) |
+| 3 | Sujud di Tengah Malam | Shalat malam setelah shalat fardu | HR. Muslim no. 1163 | ✅ naskah ada (no 59) |
+| 4 | Tangan yang Memberi | Sedekah tidak mengurangi harta | HR. Muslim no. 2588 | ✅ naskah ada (no 60) |
+| 5 | Mata yang Menangis | Takut kepada Allah hingga menangis | HR. Tirmidzi no. 1639 | ✅ naskah ada (no 61) |
+| 6 | Langkah ke Masjid | Rumah di surga bagi yang rajin masjid | HR. Bukhari no. 662 | ✅ naskah ada (no 62) |
+| 7 | Mulia kepada Orang Tua | Ridha Allah ada pada ridha orang tua | HR. Tirmidzi no. 1899 | ✅ naskah ada (no 63) |
+| 8 | Istiqamah Hingga Akhir | Beriman lalu istiqamah | HR. Muslim no. 38 | ✅ naskah ada (no 64) — seri tamat |
+
 ## Evaluasi
 Setiap minggu catat views, like, komentar, share, dan follower baru per video. Seri/part yang paling ramai jadi acuan naskah minggu berikutnya.

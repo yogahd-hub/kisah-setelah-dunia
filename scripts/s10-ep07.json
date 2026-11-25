@@ -1,0 +1,25 @@
+{
+ "no": 63,
+ "series": "Sifat Mereka",
+ "part": 7,
+ "title": "Mulia kepada|Orang Tua",
+ "hook": "Kunci surga ada di depan matamu",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "door", "text": "Dani sedang sibuk dengan teleponnya saat ibunya memanggil pelan dari kamar.", "hl": ["teleponnya", "ibunya"]},
+  {"il": "solo", "who": "B", "expr": "worry", "text": "Ia merasa terganggu. Nanti saja, jawabnya tanpa menoleh.", "hl": ["terganggu"]},
+  {"il": "mosque", "text": "Faisal mengingatkannya. Ridha Allah ada pada ridha orang tua, dan murka-Nya ada pada murka mereka.", "hl": ["ridha", "murka"], "card": ["Ridha Allah ada pada ridha orang tua, dan murka Allah ada pada murka orang tua.", "HR. Tirmidzi no. 1899", "HADITS"]},
+  {"il": "heart", "text": "Orang tua adalah pintu surga yang paling tengah. Kamu bisa menyia-nyiakannya atau menjaganya.", "hl": ["pintu", "surga"]},
+  {"il": "duo", "expr": "smile", "text": "Dani tersentak. Ia segera mematikan teleponnya dan menghampiri ibunya dengan senyum tulus.", "hl": ["menghampiri"]},
+  {"il": "night", "who": "B", "expr": "smile", "text": "Hanya dengan membahagiakan mereka, dunia dan akhiratmu akan terasa jauh lebih mudah.", "hl": ["membahagiakan"]},
+  {"il": "cta", "text": "Kapan terakhir kali kamu mencium tangan orang tuamu? Tulis LANJUT untuk part delapan.", "hl": ["mencium", "tangan"], "kw": "PART 8", "kw2": "ISTIQAMAH HINGGA AKHIR"}
+ ],
+ "caption": "Berbakti kepada orang tua adalah jalan pintas menuju rida Allah.\n\n\"Ridha Allah ada pada ridha orang tua.\" (HR. Tirmidzi no. 1899)",
+ "cta": "Kapan terakhir kali kamu mencium tangan orang tuamu? Tulis LANJUT untuk part 8.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#birrulwalidain", "#pengingatdiri", "#animasi"]
+}

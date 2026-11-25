@@ -20,8 +20,9 @@ Setelah JSON, tulis daftar singkat **sumber/dalil yang dipakai** supaya user bis
   - Seri 4 "Andai Dulu" (YUDA & SATRIA): part 1–8 selesai — TAMAT.
   - Seri 5 "Amal Kecil" (RIZKI & HANIF): part 1–8 selesai — TAMAT.
   - Seri 6 "Hari Itu" (BAYU & ADIT): part 1–8 selesai — TAMAT.
-  - Semua seri (1–6) tamat. Langkah berikutnya: usulkan Seri 7 & 8 di SERI.md, tunggu persetujuan Yoga.
-  - Nomor tayang (`no`) terakhir: **48**.
+  - Seri 9 "Indahnya Surga" (ARIF & REZA): part 1–8 selesai — TAMAT.
+  - Seri 10 "Sifat Mereka" (FAISAL & DANI): part 1–8 selesai — TAMAT.
+  - Nomor tayang (`no`) terakhir: **64**.
   - Render: satu run maksimal ±20 video (batas waktu 300 menit). Upload semua JSON dalam SATU commit.
 
 ## Aturan niche (ganti bagian ini untuk niche lain)

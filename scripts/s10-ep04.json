@@ -1,0 +1,25 @@
+{
+ "no": 60,
+ "series": "Sifat Mereka",
+ "part": 4,
+ "title": "Tangan yang|Memberi",
+ "hook": "Harta tidak berkurang karena sedekah",
+ "cover_scene": 0,
+ "voice": "Charon",
+ "chars": {
+  "A": {"name": "FAISAL", "hair": [35, 45, 60], "shirt": [240, 240, 240]},
+  "B": {"name": "DANI", "hair": [50, 35, 25], "shirt": [60, 100, 60]}
+ },
+ "scenes": [
+  {"il": "city", "text": "Dani ragu memberikan uang terakhirnya kepada pengemis di pinggir jalan.", "hl": ["ragu", "terakhirnya"]},
+  {"il": "scale", "text": "Ia takut besok tidak cukup untuk makan. Namun ia teringat sebuah pesan.", "hl": ["takut", "cukup"]},
+  {"il": "mosque", "text": "Sedekah itu tidak akan mengurangi harta. Justru ia akan tumbuh dan memberkahi sisanya.", "hl": ["mengurangi", "harta"], "card": ["Sedekah itu tidak akan mengurangi harta.", "HR. Muslim no. 2588", "HADITS"]},
+  {"il": "duo", "expr": "smile", "text": "Faisal memberikan sebungkus nasi. Memberi bukan karena kita punya banyak, tapi karena kita tahu rasanya tidak punya.", "hl": ["nasi", "rasanya"]},
+  {"il": "solo", "who": "B", "expr": "smile", "text": "Dani akhirnya mengulurkan tangannya. Ajaib, hatinya yang tadi cemas berubah menjadi sangat lapang.", "hl": ["cemas", "lapang"]},
+  {"il": "night", "who": "A", "expr": "neutral", "text": "Apa yang kita simpan akan habis. Apa yang kita berikan, itulah yang akan abadi.", "hl": ["simpan", "berikan"]},
+  {"il": "cta", "text": "Kebaikan apa yang kamu bagikan hari ini? Tulis LANJUT untuk part lima.", "hl": ["bagikan"], "kw": "PART 5", "kw2": "MATA MENANGIS"}
+ ],
+ "caption": "Sedekah adalah investasi yang tidak pernah rugi.\n\n\"Sedekah itu tidak akan mengurangi harta.\" (HR. Muslim no. 2588)",
+ "cta": "Kebaikan apa yang kamu bagikan hari ini? Tulis LANJUT untuk part 5.",
+ "hashtags": ["#kisahsetelahdunia", "#sifatmereka", "#sedekah", "#pengingatdiri", "#animasi"]
+}
